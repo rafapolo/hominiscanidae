@@ -1,0 +1,44 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Local env
+.env
+.env.local
+*.local
+
+# Build artifacts
+dist/
+build/
+
+# Node
+node_modules/
+
+# Local-only claude-code state
+.claude/
+
+# Local symlink / archive dir
+unzips
+
+# Scraped post cache (too many files; regenerate with scrape_posts.py)
+posts/
+
+# Uncompressed album JSON (use .json.gz)
+js/homi-albums.json
+
+# Generated files (rebuilt by pipeline scripts)
+genres.json
+limpos.txt
+
+# Temp files
+.megatmp*
+
+# Rust build artifacts
+script/generate-albums/target/
+
+# ML models (downloaded on first run)
+script/models/

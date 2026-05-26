@@ -1,0 +1,53 @@
+name: Deploy Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'js/**'
+      - 'config.json'
+      - '.github/workflows/deploy-pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: Assemble site
+        run: |
+          mkdir -p _site/js _site/assets
+          cp tocador/index.html   _site/
+          cp tocador/3d.html      _site/
+          cp tocador/assets/*     _site/assets/
+          cp tocador/js/ui.js     _site/js/
+          cp config.json          _site/
+          cp js/homi-albums.json.gz _site/js/
+
+      - uses: actions/configure-pages@v4
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4
