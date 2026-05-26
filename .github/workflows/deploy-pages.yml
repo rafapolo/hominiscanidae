@@ -6,6 +6,7 @@ on:
     paths:
       - 'js/**'
       - 'config.json'
+      - 'tocador'
       - '.github/workflows/deploy-pages.yml'
   workflow_dispatch:
 
