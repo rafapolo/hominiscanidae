@@ -24,10 +24,10 @@ Arquivo digital do blog **Hominiscanidae** — um dos principais repositórios d
 
 ```bash
 # 1. Scrape do blog (posts.json + posts/*.md)
-python3 scripts/scrape_posts.py --sitemap
+python3 scripts/scrape/scrape_posts.py --sitemap
 
 # 2. Download de todos os arquivos
-python3 -u scripts/download_all.py
+python3 -u scripts/download/download_all.py
 
 # 3. Descompactar e normalizar nomes de pasta
 node script/unzip.js
@@ -66,8 +66,8 @@ python3 tocador/script/extract-genres.py --model discogs400
 
 | Script | O que faz |
 |---|---|
-| `scripts/scrape_posts.py` | Scrape do blog: constrói/atualiza `posts.json` e `posts/*.md` |
-| `scripts/download_all.py` | Download de todos os arquivos (16 workers, multi-serviço) |
+| `scripts/scrape/scrape_posts.py` | Scrape do blog: constrói/atualiza `posts.json` e `posts/*.md` |
+| `scripts/download/download_all.py` | Download de todos os arquivos (64 workers, multi-serviço) |
 | `script/unzip.js` | Descompacta `.rar`/`.zip` em `unzips/` |
 | `script/normalize-folders.py` | Normaliza nomes de pasta para `AAAA - Artista - Álbum` |
 | `script/generate-albums/` | Binário Rust: gera `js/homi-albums.json.gz` com metadados ID3 |
@@ -79,10 +79,10 @@ python3 tocador/script/extract-genres.py --model discogs400
 
 ```bash
 # Re-escanear sitemap (novos posts):
-python3 scripts/scrape_posts.py --sitemap
+python3 scripts/scrape/scrape_posts.py --sitemap
 
 # Re-scrape de uma label/série específica:
-python3 scripts/scrape_posts.py --label "https://www.hominiscanidae.org/search/label/NOME"
+python3 scripts/scrape/scrape_posts.py --label "https://www.hominiscanidae.org/search/label/NOME"
 
 # Verificar arquivos .md vazios:
 find posts/ -empty
@@ -92,7 +92,7 @@ find posts/ -empty
 
 ```bash
 # Download normal (sem mega se quota esgotada):
-python3 -u scripts/download_all.py > /dev/null 2>&1 &
+python3 -u scripts/download/download_all.py > /dev/null 2>&1 &
 
 # Reabilitar mega: remover a linha "return skip-mega" no dispatcher (~linha 520)
 ```

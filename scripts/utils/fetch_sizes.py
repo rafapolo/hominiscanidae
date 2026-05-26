@@ -5,7 +5,8 @@ import requests
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
-POSTS_JSON = Path(__file__).parent / "posts.json"
+ROOT = Path(__file__).resolve().parents[2]
+POSTS_JSON = ROOT / "posts.json"
 WORKERS = 30
 
 _local = threading.local()

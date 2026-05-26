@@ -8,8 +8,9 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 DEST = Path("/Volumes/EXTRA/hominiscanidae")
-POSTS_JSON = Path(__file__).parent / "posts.json"
-POSTS_DIR = Path(__file__).parent / "posts"
+ROOT = Path(__file__).resolve().parents[2]
+POSTS_JSON = ROOT / "posts.json"
+POSTS_DIR = ROOT / "posts"
 DELAY = 4  # seconds between yt-dlp calls (avoid 429)
 
 

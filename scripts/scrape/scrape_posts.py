@@ -8,8 +8,9 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
 
-POSTS_DIR = Path(__file__).parent / "posts"
-POSTS_JSON = Path(__file__).parent / "posts.json"
+ROOT = Path(__file__).resolve().parents[2]
+POSTS_DIR = ROOT / "posts"
+POSTS_JSON = ROOT / "posts.json"
 SITEMAP_URL = "https://www.hominiscanidae.org/sitemap.xml"
 WORKERS = 20
 

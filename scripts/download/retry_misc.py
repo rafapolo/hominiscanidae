@@ -9,7 +9,8 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 DEST = Path("/Volumes/EXTRA/hominiscanidae")
-POSTS_JSON = Path(__file__).parent / "posts.json"
+ROOT = Path(__file__).resolve().parents[2]
+POSTS_JSON = ROOT / "posts.json"
 
 session = requests.Session()
 session.headers["User-Agent"] = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"

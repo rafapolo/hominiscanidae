@@ -15,8 +15,9 @@ from urllib.parse import urlparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 DEST = Path("/Volumes/EXTRA/hominiscanidae")
-POSTS_JSON = Path(__file__).parent / "posts.json"
-LOG = Path(__file__).parent / "download.log"
+ROOT = Path(__file__).resolve().parents[2]
+POSTS_JSON = ROOT / "posts.json"
+LOG = ROOT / "download.log"
 WORKERS = 64
 MEGA_PROXY_HOSTS = [None, "finland", "livre", "tor"]  # local first, escalate on quota
 MEGA_PROXY_PORT = 1080
@@ -367,7 +368,7 @@ def dl_dropbox(url, slug):
 def dl_bandcamp(url, slug):
     # Expired time-limited download token → find artist page in local .md and try yt-dlp
     if "bandcamp.com/download?" in url:
-        md_file = Path(__file__).parent / "posts" / f"{slug}.md"
+        md_file = ROOT / "posts" / f"{slug}.md"
         if md_file.exists():
             text = md_file.read_text(errors="replace")
             bc_urls = re.findall(r'https?://[\w.-]+\.bandcamp\.com[^\s\)\]"\'<>]*', text)
@@ -724,7 +725,7 @@ def scrape_nolink_posts():
         "docs.google.com", "dropbox.com", "dl.dropbox.com", "dl.dropboxusercontent.com",
         "archive.org", "4shared.com", "bandcamp.com", "bit.ly", "tinyurl.com",
     }
-    POSTS_DIR = Path(__file__).parent / "posts"
+    POSTS_DIR = ROOT / "posts"
     no_link = [p for p in posts_data if not p.get("download")]
     if not no_link:
         return
