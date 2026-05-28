@@ -8,12 +8,12 @@ Full archival of hominiscanidae.org — a Brazilian independent music blog with 
 - `posts/<slug>.md` — local HTML→markdown cache of each post body (used offline for link extraction)
 - `scripts/download/download_all.py` — main downloader (multi-service dispatch, 16 workers)
 - `scripts/scrape/scrape_posts.py` — scraper: builds/updates posts.json and posts/*.md
-- `script/generate-albums/` — Rust binary that scans `unzips/` and writes `js/homi-albums.json` + `js/homi-albums.json.gz`
+- `tocador/script/generate-albums/` — Rust binary that scans `unzips/` and writes `js/homi-albums.json` + `js/homi-albums.json.gz`
 
 ## Generating album metadata
 
 ```bash
-cd script/generate-albums
+cd tocador/script/generate-albums
 cargo build --release
 ./target/release/generate-albums          # writes js/homi-albums.json + .json.gz
 ./target/release/generate-albums /path/to/out.json  # custom output path
@@ -54,6 +54,30 @@ Note: cannot discover posts not yet in posts.json — use `--sitemap` for that.
 python3 -u scripts/download/download_all.py > /dev/null 2>&1 &
 
 # Re-enable mega: remove the "return skip-mega" line in the dispatcher (~line 517)
+```
+
+## Extracting archives
+
+**Always use `unar`** — `unrar` and macOS Archive Utility silently drop files whose names use PT-BR characters (ã, ô, ç, etc.) encoded as Latin-1/CP850 inside RAR files. `unar` auto-detects charset and extracts all tracks correctly.
+
+```bash
+python3 scripts/utils/unzip.py          # extract all archives in DEST → unzips/
+python3 scripts/utils/unzip.py --force  # re-extract even if folder exists
+```
+
+## Fixing charset gaps in existing albums
+
+1,805 albums in `unzips/` had missing tracks due to PT-BR charset. The fix:
+
+```bash
+# Re-download and re-extract with unar; copies missing tracks to unzips/ and uploads to S3
+python3 scripts/download/refix_charset.py --tor
+
+# Track progress
+tail -f refix_charset.log
+
+# Status CSV (regenerate anytime)
+# unzips/to_fix/to_fix.csv — title, download_url, status for all 1805 gap albums
 ```
 
 ## Status lifecycle

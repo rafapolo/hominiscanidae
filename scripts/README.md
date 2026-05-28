@@ -126,6 +126,31 @@ python3 scripts/utils/fix_unzip_names.py --apply
 python3 scripts/utils/fix_unzip_names.py --uncertain
 ```
 
+### `unzip.py` — Descompactar com unar
+
+Extrai arquivos `.rar`/`.zip`/`.7z` de DEST para `unzips/` usando **`unar`** (suporte correto a charset PT-BR — evita o drop silencioso de faixas com ã, ô, ç etc. que ocorre com `unrar`/Archive Utility).
+
+```bash
+python3 scripts/utils/unzip.py           # extrai apenas novos
+python3 scripts/utils/unzip.py --force   # re-extrai mesmo se pasta já existe
+```
+
+### `fix_dup_year_folders.py` — Corrigir pastas com ano duplicado
+
+Remove ano duplicado de pastas como `2020 - 2020 - Artista - Álbum`.
+
+```bash
+python3 scripts/utils/fix_dup_year_folders.py
+```
+
+### `refix_charset.py` — Corrigir faixas perdidas por charset PT-BR
+
+Re-baixa 1.805 álbuns com gaps de track, extrai com `unar`, copia faixas faltantes para `unzips/` e sobe para S3.
+
+```bash
+python3 scripts/download/refix_charset.py --tor
+```
+
 ---
 
 ## Manutenção periódica
@@ -140,10 +165,13 @@ find posts/ -empty
 # 3. Baixar tudo
 python3 -u scripts/download/download_all.py > /dev/null 2>&1 &
 
-# 4. Normalizar nomes das pastas descompactadas
+# 4. Descompactar (sempre com unar)
+python3 scripts/utils/unzip.py
+
+# 5. Normalizar nomes das pastas descompactadas
 python3 scripts/utils/fix_unzip_names.py --apply
 
-# 5. Buscar capas faltantes
+# 6. Buscar capas faltantes
 python3 scripts/covers/fetch_covers.py
 python3 scripts/covers/fetch_covers2.py
 ```
