@@ -30,8 +30,8 @@ python3 scripts/scrape/scrape_posts.py --sitemap
 python3 -u scripts/download/download_all.py
 
 # 3. Descompactar e normalizar nomes de pasta
-node script/unzip.js
-node script/normalize-folders.js   # ou python3 script/normalize-folders.py
+bun script/unzip.js
+bun script/normalize-folders.js   # ou python3 script/normalize-folders.py
 
 # 4. Gerar catálogo de álbuns a partir dos MP3s
 cd script/generate-albums
@@ -43,10 +43,10 @@ cd script/generate-albums
   --base-url "https://uqt.xn--2dk.xyz/indie"
 
 # 5. Sincronizar áudio para o bucket S3
-ARCHIVE_DIR=/Volumes/EXTRA/hominiscanidae/unzips node tocador/script/sync-to-bucket.js
+ARCHIVE_DIR=/Volumes/EXTRA/hominiscanidae/unzips bun tocador/script/sync-to-bucket.js
 
 # 6. Redimensionar e fazer upload das capas (200px)
-ARCHIVE_DIR=/Volumes/EXTRA/hominiscanidae/unzips node tocador/script/resize-cover-images.js
+ARCHIVE_DIR=/Volumes/EXTRA/hominiscanidae/unzips bun tocador/script/resize-cover-images.js
 
 # 7. Classificar gêneros com ML (Essentia + TensorFlow)
 ARCHIVE_DIR=/Volumes/EXTRA/hominiscanidae/unzips \
@@ -59,7 +59,7 @@ python3 tocador/script/extract-genres.py --model discogs400
 - **Dados**: `js/homi-albums.json.gz` — catálogo gzipado (~860 KB), carregado assincronamente e descomprimido via `DecompressionStream` nativa do browser
 - **Gêneros**: `genres.json` — classificação por faixa via ML (Essentia + discogs400, 400 estilos)
 - **Capas e áudio**: Servidos pelo proxy em `https://uqt.xn--2dk.xyz/indie/…`
-- **Proxy**: Node.js + S3 SDK — acessa o armazenamento privado; os arquivos nunca expostos diretamente
+- **Proxy**: Bun + `Bun.S3Client` nativo — acessa o armazenamento privado; os arquivos nunca expostos diretamente
 - **Deployment**: GitHub Pages (player) + Haloy + Docker (proxy)
 
 ## Scripts
