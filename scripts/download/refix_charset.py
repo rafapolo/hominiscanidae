@@ -221,7 +221,7 @@ def get_gap_albums():
 
 # ── mega proxy rotation ───────────────────────────────────────────────────────
 
-MEGA_PROXY_HOSTS = [None, "finland", "livre", "tor"]
+MEGA_PROXY_HOSTS = [None, "livre", "finland", "tor"]
 MEGA_PROXY_PORT  = 1080
 MEGA_TOR_PORT    = 9050
 

@@ -13,6 +13,13 @@ Usage:
 """
 
 import json, os, re, sys, unicodedata
+from pathlib import Path
+
+try:
+    from mutagen.id3 import ID3 as MutagenID3
+    HAS_MUTAGEN = True
+except ImportError:
+    HAS_MUTAGEN = False
 
 POSTS_JSON = '/Users/polux/Projetos/hominiscanidae/posts.json'
 POSTS_DIR  = '/Users/polux/Projetos/hominiscanidae/posts/'
@@ -330,21 +337,67 @@ def find_post_by_content(needle):
             pass
     return None, None
 
+def id3_meta(folder_path):
+    """Read year, artist, album from the first MP3 in folder_path via ID3 tags.
+    Returns (year_int_or_None, artist_or_None, album_or_None).
+    """
+    if not HAS_MUTAGEN:
+        return None, None, None
+    mp3s = sorted(Path(folder_path).glob('*.mp3'))
+    if not mp3s:
+        return None, None, None
+    try:
+        tags = MutagenID3(mp3s[0])
+        year = None
+        for frame in ('TDRC', 'TYER'):
+            if frame in tags:
+                raw = str(tags[frame]).strip()[:4]
+                if raw.isdigit() and 1950 <= int(raw) <= 2030:
+                    year = int(raw)
+                    break
+        artist = str(tags['TPE1']).strip() if 'TPE1' in tags else None
+        album  = str(tags['TALB']).strip() if 'TALB' in tags else None
+        return year, artist, album
+    except Exception:
+        return None, None, None
+
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
-YEAR_RE = re.compile(r'^\d{4}\s*[-–]')
-SLUG_RE = re.compile(r'^[a-z0-9][a-z0-9-]+$')
-SKIP    = {'.DS_Store', 'Artist - Album'}
+YEAR_RE      = re.compile(r'^\d{4}\s*[-–]')
+YEAR_PAREN   = re.compile(r'\((\d{4})\)')  # also catches "Artist - Album (YYYY)"
+SLUG_RE      = re.compile(r'^[a-z0-9][a-z0-9-]+$')
+SKIP         = {'.DS_Store', 'Artist - Album', 'to_fix', 'acervo.json'}
 
-folders = sorted(os.listdir(UNZIP_DIR))
-todo    = [f for f in folders if not YEAR_RE.match(f) and f not in SKIP]
+# Collect folders from top-level unzips/ and from unzips/to_fix/
+def _scan_dir(base, prefix=''):
+    result = []
+    try:
+        for name in sorted(os.listdir(base)):
+            if name in SKIP or name.startswith('.') or name.startswith('_'):
+                continue
+            path = os.path.join(base, name)
+            if os.path.isdir(path):
+                result.append((prefix + name, path))
+    except Exception:
+        pass
+    return result
 
-renames   = []   # (old, new, confident)
-uncertain = []   # (old, reason)
+top_level = _scan_dir(UNZIP_DIR)
+to_fix    = _scan_dir(os.path.join(UNZIP_DIR, 'to_fix'), prefix='to_fix/')
+all_folders = top_level + to_fix
 
-for folder in todo:
+todo = [(rel, path) for rel, path in all_folders
+        if not YEAR_RE.match(os.path.basename(rel))
+        and not YEAR_PAREN.search(os.path.basename(rel))]
+
+renames   = []   # (rel_path, folder_path, new_basename, confident)
+uncertain = []   # (rel_path, reason)
+
+for rel, folder_path in todo:
+    folder = os.path.basename(rel)   # just the directory name, no prefix
+    subfolder = rel != folder        # True if inside to_fix/
 
     # --- Slug-like ---
     if SLUG_RE.match(folder):
@@ -357,27 +410,36 @@ for folder in todo:
                 if slug.startswith(folder + '-'):
                     post_slug_key = slug
                     break
-        if not post_slug_key:
-            uncertain.append((folder, 'slug-like but no matching post'))
-            continue
-        post  = slug_to_post[post_slug_key]
-        year  = post['year']
-        md    = load_md(post_slug_key)
-        use_year, artist, album = name_for_slug_folder(post_slug_key, year, md)
 
-        if artist and album:
-            new = safe_folder(f'{use_year} - {artist} - {album}')
-            renames.append((folder, new, True))
-        elif album:
-            # No artist split; year + download filename as album
-            new = safe_folder(f'{use_year} - {album}')
-            renames.append((folder, new, False))
-            uncertain.append((folder, f'no artist split → {new}'))
+        if post_slug_key:
+            post  = slug_to_post[post_slug_key]
+            year  = post['year']
+            md    = load_md(post_slug_key)
+            use_year, artist, album = name_for_slug_folder(post_slug_key, year, md)
+
+            if artist and album:
+                new = safe_folder(f'{use_year} - {artist} - {album}')
+                renames.append((rel, folder_path, new, True))
+            elif album:
+                new = safe_folder(f'{use_year} - {album}')
+                renames.append((rel, folder_path, new, False))
+                uncertain.append((rel, f'no artist split → {new}'))
+            else:
+                new = safe_folder(f'{use_year} - {title_from_slug(folder)}')
+                renames.append((rel, folder_path, new, False))
+                uncertain.append((rel, f'no info → {new}'))
         else:
-            # Total fallback
-            new = safe_folder(f'{use_year} - {title_from_slug(folder)}')
-            renames.append((folder, new, False))
-            uncertain.append((folder, f'no info → {new}'))
+            # No post found — try ID3 tags
+            id3_year, id3_artist, id3_album = id3_meta(folder_path)
+            if id3_year and id3_artist and id3_album:
+                new = safe_folder(f'{id3_year} - {id3_artist} - {id3_album}')
+                renames.append((rel, folder_path, new, True))
+            elif id3_year:
+                new = safe_folder(f'{id3_year} - {title_from_slug(folder)}')
+                renames.append((rel, folder_path, new, False))
+                uncertain.append((rel, f'id3 year only → {new}'))
+            else:
+                uncertain.append((rel, 'slug-like but no matching post and no ID3 year'))
         continue
 
     # --- Artist - Album or misc ---
@@ -388,9 +450,17 @@ for folder in todo:
             md   = load_md(post_slug)
             use_year, artist, album = name_for_artist_album_folder(folder, year, md)
             new  = safe_folder(f'{use_year} - {artist} - {album}')
-            renames.append((folder, new, True))
+            renames.append((rel, folder_path, new, True))
         else:
-            uncertain.append((folder, 'Artist-Album: could not find post'))
+            # No post found — try ID3 tags
+            id3_year, id3_artist, id3_album = id3_meta(folder_path)
+            if id3_year:
+                use_year, artist, album = name_for_artist_album_folder(folder, str(id3_year), None)
+                new = safe_folder(f'{use_year} - {artist} - {album}')
+                renames.append((rel, folder_path, new, False))
+                uncertain.append((rel, f'id3 year (no post) → {new}'))
+            else:
+                uncertain.append((rel, 'Artist-Album: could not find post and no ID3 year'))
     else:
         # Misc single-name
         post_slug, post = find_post_for_folder(folder)
@@ -415,50 +485,60 @@ for folder in todo:
                     new = safe_folder(f'{use_year} - {folder}')
             else:
                 new = safe_folder(f'{year} - {folder}')
-            renames.append((folder, new, True))
+            renames.append((rel, folder_path, new, True))
         else:
-            uncertain.append((folder, 'misc: no post found'))
+            # No post found — try ID3 tags
+            id3_year, id3_artist, id3_album = id3_meta(folder_path)
+            if id3_year and id3_artist and id3_album:
+                new = safe_folder(f'{id3_year} - {id3_artist} - {id3_album}')
+                renames.append((rel, folder_path, new, True))
+            elif id3_year:
+                new = safe_folder(f'{id3_year} - {folder}')
+                renames.append((rel, folder_path, new, False))
+                uncertain.append((rel, f'id3 year only → {new}'))
+            else:
+                uncertain.append((rel, 'misc: no post found and no ID3 year'))
 
 # ---------------------------------------------------------------------------
 # Output
 # ---------------------------------------------------------------------------
 
-confident   = [(o, n) for o, n, c in renames if c and o != n]
-approx      = [(o, n) for o, n, c in renames if not c and o != n]
-same        = sum(1 for o, n, _ in renames if o == n)
+confident   = [(r, p, n) for r, p, n, c in renames if c and os.path.basename(r) != n]
+approx      = [(r, p, n) for r, p, n, c in renames if not c and os.path.basename(r) != n]
+same        = sum(1 for r, p, n, _ in renames if os.path.basename(r) == n)
 
 if not UNCERTAIN:
     print(f'=== Confident renames ({len(confident)}) ===')
-    for old, new in confident:
-        print(f'  [{old}]\n   → [{new}]')
+    for rel, _, new in confident:
+        print(f'  [{rel}]\n   → [{new}]')
 
     print(f'\n=== Approximate renames (year only, no artist/album split) ({len(approx)}) ===')
-    for old, new in approx:
-        print(f'  [{old}]\n   → [{new}]')
+    for rel, _, new in approx:
+        print(f'  [{rel}]\n   → [{new}]')
 
     print(f'\n  ({same} already correct)')
 
 print(f'\n=== Uncertain / unmatched ({len(uncertain)}) ===')
-for folder, reason in uncertain:
-    print(f'  [{folder}]  — {reason}')
+for rel, reason in uncertain:
+    print(f'  [{rel}]  — {reason}')
 
 if APPLY:
     print('\n=== Applying renames ===')
     applied = errors = skipped = 0
-    for old, new, _ in renames:
-        if old == new:
+    for rel, folder_path, new, _ in renames:
+        if os.path.basename(rel) == new:
             continue
-        src = os.path.join(UNZIP_DIR, old)
-        dst = os.path.join(UNZIP_DIR, new)
+        dst = os.path.join(os.path.dirname(folder_path), new)
         if os.path.exists(dst):
-            print(f'  SKIP (exists): {old!r} → {new!r}')
+            print(f'  SKIP (exists): {rel!r} → {new!r}')
             skipped += 1
             continue
         try:
-            os.rename(src, dst)
+            os.rename(folder_path, dst)
             applied += 1
+            print(f'  OK  {rel} → {new}')
         except Exception as e:
-            print(f'  ERROR: {old!r}: {e}')
+            print(f'  ERROR: {rel!r}: {e}')
             errors += 1
     print(f'  Applied: {applied}, Skipped: {skipped}, Errors: {errors}')
 else:
