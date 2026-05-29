@@ -12,14 +12,19 @@ Full archival of hominiscanidae.org — a Brazilian independent music blog with 
 
 ## Generating album metadata
 
+The binary lives in the **parent tocador repo** (`/Users/polux/Projetos/tocador/script/generate-albums/`). The submodule at `tocador/script/generate-albums/` is a mirror — changes must be committed in both.
+
 ```bash
-cd tocador/script/generate-albums
+cd /Users/polux/Projetos/tocador/script/generate-albums
 cargo build --release
-./target/release/generate-albums          # writes js/homi-albums.json + .json.gz
-./target/release/generate-albums /path/to/out.json  # custom output path
+./target/release/generate-albums /Volumes/EXTRA/hominiscanidae/unzips \
+  /Users/polux/Projetos/hominiscanidae/js/homi-albums.json.gz \
+  --title "Hominiscanidae" \
+  --subtitle "Música Independente Brasileira" \
+  --base-url "https://cdn.tocador.cc/indie"
 ```
 
-Reads ID3 tags with the `id3` crate (parallel via rayon). Outputs both plain JSON and gzipped JSON.
+Reads ID3 tags with the `id3` crate (parallel via rayon). Only `.json.gz` matters — the player loads it via GitHub raw URL. The `js/homi-albums.json` plain file is a legacy artifact with a different schema; ignore it.
 
 ## Sitemap
 
@@ -94,10 +99,15 @@ tail -f refix_charset.log
 2. Check for empty `.md` files: `find posts/ -empty` — re-run scraper for those
 3. Re-enable mega after ~6h quota reset and restart downloader
 4. Posts with `status=null` and `download=null` are editorial (playlists, lists) — no file to download
+5. After any change to `unzips/`, regenerate `js/homi-albums.json.gz` (command above)
 
-## Current state (2026-05-22)
+## Albums with 1 track
+
+Not a bug. Many blog posts linked a single MP3 (not a ZIP with tracks). These appear in the player with 1 faixa — that's all there is on disk.
+
+## Current state (2026-05-29)
 
 - Total posts: 10,583 | With download link: ~10,526
-- Downloaded: ~4,687 (44.8%) | 283.93 GB
-- Dead: ~4,375 | Blocked (EBLOCKED mega): 228
+- Downloaded: ~6,937 | Dead: ~3,646 | Blocked (EBLOCKED mega): 228
+- Published to S3 + player: **6,909 álbuns**, noyear = 0
 - Mega quota resets ~6h after last use
