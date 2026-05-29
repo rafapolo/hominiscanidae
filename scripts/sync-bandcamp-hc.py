@@ -13,6 +13,7 @@ from mutagen.id3 import ID3, TIT2
 DOWNLOAD_DIR = Path('/tmp/hc-bandcamp-sync')
 S3_ENDPOINT  = 'https://hel1.your-objectstorage.com'
 S3_BUCKET    = 'indie'
+S3_PREFIX    = 'indie/'   # all objects must be under this prefix for the proxy
 S3_REGION    = 'hel1'
 ENV_FILE     = Path(__file__).parent.parent / '.env'
 
@@ -287,7 +288,7 @@ def upload_to_s3(local_dir: Path, s3_key: str, dry_run: bool = False) -> bool:
         'AWS_SECRET_ACCESS_KEY': os.environ.get('AWS_SECRET_ACCESS_KEY', ''),
     }
 
-    s3_key_nfc = unicodedata.normalize('NFC', s3_key)
+    s3_key_nfc = unicodedata.normalize('NFC', S3_PREFIX + s3_key)
     ok = True
 
     for f in sorted(local_dir.iterdir()):
