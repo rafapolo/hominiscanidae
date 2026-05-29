@@ -1,6 +1,6 @@
-# Genre model comparison: discogs400 vs discogs519
+# Comparação de modelos de gênero: discogs400 vs discogs519
 
-10 random tracks from the hominiscanidae archive.
+10 faixas aleatórias do acervo hominiscanidae.
 
 | Ano  | Álbum                                        | Faixa                                              | discogs400                  | discogs519                  |
 |------|----------------------------------------------|----------------------------------------------------|-----------------------------|-----------------------------|
@@ -15,26 +15,26 @@
 | 2018 | Kovtun, Umbilichaos - Belong to Nothing      | 03 Belong to Nothing No. 2 - the Lost Paradise.mp3 | Electronic---Experimental   | Rock---Post-Metal           |
 | 2024 | Fresno - Eu Nunca Fui Embora                 | 12 - Fresno, Filipe Catto - Diga Parte Final.mp3   | Rock---Alternative Rock     | Pop---Indie Pop             |
 
-## Observations
+## Observações
 
-- **Agree on parent genre**: 7/10 tracks
-- **Exact match**: 2/10 (Johnny Hooker - Ska; ZAVA - Alternative Rock)
-- **discogs519 more specific for BR music**: Laura Macedo → MPB instead of Tropical House
-- **discogs519 captures texture better**: Kovtun → Post-Metal vs Experimental; Fresno → Indie Pop vs Alternative Rock
-- **discogs400 is ~3× faster** (effnet vs MAEST pipeline)
+- **Concordam no gênero pai**: 7/10 faixas
+- **Match exato**: 2/10 (Johnny Hooker - Ska; ZAVA - Alternative Rock)
+- **discogs519 mais preciso para música BR**: Laura Macedo → MPB em vez de Tropical House
+- **discogs519 captura melhor a textura**: Kovtun → Post-Metal vs Experimental; Fresno → Indie Pop vs Alternative Rock
+- **discogs400 é ~3× mais rápido** (pipeline effnet vs MAEST)
 
-## Performance benchmark
+## Benchmark de performance
 
-Measured on the hominiscanidae archive (Apple Silicon, single process).
+Medido no acervo hominiscanidae (Apple Silicon, processo único).
 
-| Métrica      | discogs400              | discogs519             | ratio    |
-|--------------|-------------------------|------------------------|----------|
-| Sample       | 17,007 tracks (full run)| 50 tracks              |          |
-| Média        | 1.32 s/track            | 3.93 s/track           | 3.0×     |
-| Mediana      | 1.20 s/track            | 3.90 s/track           | 3.3×     |
-| p95          | 4.70 s/track            | 4.13 s/track           |          |
-| Mín          | 0.40 s/track            | 3.78 s/track           |          |
-| Máx          | 29.70 s/track           | 4.56 s/track           |          |
-| Total (6961 álbuns, ~23k tracks est.) | ~8.5h | ~25h          | 3×       |
+| Métrica       | discogs400                        | discogs519      | razão |
+|---------------|-----------------------------------|-----------------|-------|
+| Amostra       | 17.007 faixas (run completo)      | 50 faixas       |       |
+| Média         | 1,32 s/faixa                      | 3,93 s/faixa    | 3,0×  |
+| Mediana       | 1,20 s/faixa                      | 3,90 s/faixa    | 3,3×  |
+| p95           | 4,70 s/faixa                      | 4,13 s/faixa    |       |
+| Mín           | 0,40 s/faixa                      | 3,78 s/faixa    |       |
+| Máx           | 29,70 s/faixa                     | 4,56 s/faixa    |       |
+| Total estimado (6.961 álbuns, ~23k faixas) | ~8,5h | ~25h  | 3×    |
 
-discogs400 has higher variance (long tail from large albums); discogs519 is nearly constant at ~3.9s regardless of content — the MAEST pipeline clips all audio to 30s.
+O discogs400 tem maior variância (cauda longa em álbuns grandes); o discogs519 é praticamente constante em ~3,9s independente do conteúdo — o pipeline MAEST recorta todo áudio em 30s.
