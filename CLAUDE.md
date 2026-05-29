@@ -21,8 +21,11 @@ cargo build --release
   /Users/polux/Projetos/hominiscanidae/js/homi-albums.json.gz \
   --title "Hominiscanidae" \
   --subtitle "Música Independente Brasileira" \
-  --base-url "https://cdn.tocador.cc/indie"
+  --base-url "https://cdn.tocador.cc/indie" \
+  --sitemap-url "https://tocador.cc"
 ```
+
+`--sitemap-url` triggers automatic `sitemap.xml` generation alongside the `.json.gz`. URLs use `?album=...&artist=...` query params (form-encoded, spaces as `+`), `<lastmod>` = today, priority by decade.
 
 Reads ID3 tags with the `id3` crate (parallel via rayon). Only `.json.gz` matters — the player loads it via GitHub raw URL. The `js/homi-albums.json` plain file is a legacy artifact with a different schema; ignore it.
 
