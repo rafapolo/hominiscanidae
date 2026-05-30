@@ -39,7 +39,8 @@ def try_ytdlp(url, slug):
     out_tmpl = str(DEST / f"{slug}.%(ext)s")
     r = subprocess.run(
         ["yt-dlp", "--no-playlist", "--quiet", "--no-warnings",
-         "--socket-timeout", "30", "-o", out_tmpl, url],
+         "--socket-timeout", "30", "-x", "--audio-format", "mp3",
+         "--audio-quality", "0", "-o", out_tmpl, url],
         capture_output=True, text=True, timeout=120,
     )
     files = [f for f in DEST.glob(f"{slug}.*") if f.is_file() and f.stat().st_size > 0]
@@ -58,16 +59,11 @@ def main():
         if m:
             slug_to_idx[m.group(1)] = i
 
-    bc_dead = [
-        p for p in posts
-        if p.get("status") == "dead_link"
-        and p.get("download")
-        and "bandcamp" in p["download"]
-    ]
-    print(f"Bandcamp dead_link: {len(bc_dead)}")
+    dead = [p for p in posts if p.get("status") == "dead_link"]
+    print(f"dead_link total: {len(dead)}")
 
     targets = []
-    for p in bc_dead:
+    for p in dead:
         m = re.search(r"/([^/]+)\.html$", p["url"])
         if not m:
             continue
