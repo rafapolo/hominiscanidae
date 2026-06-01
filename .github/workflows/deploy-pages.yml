@@ -36,6 +36,7 @@ jobs:
           cp tocador/js/ui.js     _site/js/
           cp config.json          _site/
           cp data/homi-albums.json.gz _site/data/
+          cp data/homi-genres.json.gz _site/data/
 
       - uses: actions/configure-pages@v4
 
