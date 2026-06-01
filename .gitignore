@@ -42,3 +42,6 @@ script/generate-albums/target/
 
 # ML models (downloaded on first run)
 script/models/
+
+# Planning notes (local only)
+plan/
