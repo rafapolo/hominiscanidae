@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - 'js/**'
+      - 'data/**'
       - 'config.json'
       - 'tocador'
       - '.github/workflows/deploy-pages.yml'
@@ -29,13 +29,13 @@ jobs:
 
       - name: Assemble site
         run: |
-          mkdir -p _site/js _site/assets
+          mkdir -p _site/js _site/assets _site/data
           cp tocador/index.html   _site/
           cp tocador/3d.html      _site/
           cp tocador/assets/*     _site/assets/
           cp tocador/js/ui.js     _site/js/
           cp config.json          _site/
-          cp js/homi-albums.json.gz _site/js/
+          cp data/homi-albums.json.gz _site/data/
 
       - uses: actions/configure-pages@v4
 
