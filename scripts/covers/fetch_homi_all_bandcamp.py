@@ -13,7 +13,7 @@ from PIL import Image
 from io import BytesIO
 
 UNZIP_DIR   = '/Volumes/EXTRA/hominiscanidae/unzips/'
-ALBUMS_GZ   = '/Users/polux/Projetos/hominiscanidae/js/homi-albums.json.gz'
+ALBUMS_GZ   = '/Users/polux/Projetos/hominiscanidae/data/homi-albums.json.gz'
 BC_BASE     = 'https://hominiscanidae.bandcamp.com'
 WORKERS     = 6
 

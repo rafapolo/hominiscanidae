@@ -22,7 +22,7 @@ const s3 = new S3Client({
   forcePathStyle: true,
 });
 
-const db = JSON.parse(zlib.gunzipSync(fs.readFileSync(path.resolve(__dirname, '../js/homi-albums.json.gz'))));
+const db = JSON.parse(zlib.gunzipSync(fs.readFileSync(path.resolve(__dirname, '../data/homi-albums.json.gz'))));
 const ghosts = db.albums.filter(a => a.has_cover === true).map(a => a.path);
 
 async function listPrefix(prefix) {

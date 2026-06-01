@@ -13,7 +13,7 @@ from PIL import Image
 from io import BytesIO
 
 UNZIP_DIR = '/Volumes/EXTRA/hominiscanidae/unzips/'
-ALBUMS_JSON = '/Users/polux/Projetos/hominiscanidae/js/homi-albums.json'
+ALBUMS_JSON = '/Users/polux/Projetos/hominiscanidae/data/homi-albums.json'
 
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'}
 

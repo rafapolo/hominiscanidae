@@ -13,7 +13,7 @@ from PIL import Image
 from io import BytesIO
 
 UNZIP_DIR  = '/Volumes/EXTRA/hominiscanidae/unzips/'
-ALBUMS_JSON = '/Users/polux/Projetos/hominiscanidae/js/homi-albums.json'
+ALBUMS_JSON = '/Users/polux/Projetos/hominiscanidae/data/homi-albums.json'
 POSTS_DIR  = '/Users/polux/Projetos/hominiscanidae/posts/'
 POSTS_JSON = '/Users/polux/Projetos/hominiscanidae/posts.json'
 

@@ -28,10 +28,10 @@ unzips
 posts/
 
 # Uncompressed album JSON (use .json.gz)
-js/homi-albums.json
+data/homi-albums.json
 
 # Generated files (rebuilt by pipeline scripts)
-genres.json
+data/genres.json
 limpos.txt
 
 # Temp files
@@ -45,3 +45,6 @@ script/models/
 
 # Planning notes (local only)
 plan/
+
+# Runtime logs
+logs/

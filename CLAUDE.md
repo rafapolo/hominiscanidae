@@ -8,7 +8,7 @@ Full archival of hominiscanidae.org — a Brazilian independent music blog with 
 - `posts/<slug>.md` — local HTML→markdown cache of each post body (used offline for link extraction)
 - `scripts/download/download_all.py` — main downloader (multi-service dispatch, 16 workers)
 - `scripts/scrape/scrape_posts.py` — scraper: builds/updates posts.json and posts/*.md
-- `tocador/script/generate-albums/` — Rust binary that scans `unzips/` and writes `js/homi-albums.json` + `js/homi-albums.json.gz`
+- `tocador/script/generate-albums/` — Rust binary that scans `unzips/` and writes `data/homi-albums.json.gz`
 
 ## Generating album metadata
 
@@ -18,7 +18,7 @@ The binary lives in the **parent tocador repo** (`/Users/polux/Projetos/tocador/
 cd /Users/polux/Projetos/tocador/script/generate-albums
 cargo build --release
 ./target/release/generate-albums /Volumes/EXTRA/hominiscanidae/unzips \
-  /Users/polux/Projetos/hominiscanidae/js/homi-albums.json.gz \
+  /Users/polux/Projetos/hominiscanidae/data/homi-albums.json.gz \
   --title "Hominiscanidae" \
   --subtitle "Música Independente Brasileira" \
   --base-url "https://cdn.tocador.cc/indie" \
@@ -27,7 +27,7 @@ cargo build --release
 
 `--sitemap-url` triggers automatic `sitemap.xml` generation alongside the `.json.gz`. URLs use `?album=...&artist=...` query params (form-encoded, spaces as `+`), `<lastmod>` = today, priority by decade.
 
-Reads ID3 tags with the `id3` crate (parallel via rayon). Only `.json.gz` matters — the player loads it via GitHub raw URL. The `js/homi-albums.json` plain file is a legacy artifact with a different schema; ignore it.
+Reads ID3 tags with the `id3` crate (parallel via rayon). Only `.json.gz` matters — the player loads it via GitHub raw URL. The `data/homi-albums.json` plain file is a legacy artifact with a different schema; ignore it.
 
 ## Sitemap
 
@@ -102,7 +102,7 @@ tail -f refix_charset.log
 2. Check for empty `.md` files: `find posts/ -empty` — re-run scraper for those
 3. Re-enable mega after ~6h quota reset and restart downloader
 4. Posts with `status=null` and `download=null` are editorial (playlists, lists) — no file to download
-5. After any change to `unzips/`, regenerate `js/homi-albums.json.gz` (command above)
+5. After any change to `unzips/`, regenerate `data/homi-albums.json.gz` (command above)
 
 ## Albums with 1 track
 

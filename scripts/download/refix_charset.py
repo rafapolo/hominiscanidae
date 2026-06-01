@@ -19,7 +19,7 @@ from urllib.parse import urlparse, quote
 ROOT       = Path(__file__).resolve().parents[2]
 POSTS_JSON = ROOT / "posts.json"
 POSTS_DIR  = ROOT / "posts"
-ALBUMS_GZ  = ROOT / "js/homi-albums.json.gz"
+ALBUMS_GZ  = ROOT / "data/homi-albums.json.gz"
 UNZIPS     = Path("/Volumes/EXTRA/hominiscanidae/unzips")
 TO_FIX     = UNZIPS / "to_fix"
 DONE_FILE          = Path("/Volumes/EXTRA/hominiscanidae/_charset_done.txt")
