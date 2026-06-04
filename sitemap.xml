@@ -793,6 +793,12 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://tocador.cc/?album=Lugar+Algum+%282026%29-1&amp;artist=Lugar+Algum</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://tocador.cc/?album=Malu+Guedelha+-+Cada+Um+Com+Seus+Amores+%282026%29&amp;artist=Malu+Guedelha</loc>
     <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -41648,6 +41654,12 @@
   </url>
   <url>
     <loc>https://tocador.cc/?album=1960+-+Elza+Soares%2C+Oswaldo+Borba+-+Se+Acaso+Voc%C3%AA+Chegasse&amp;artist=Elza+Soares%2C+Oswaldo+Borba</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tocador.cc/?album=Vitor+Brauer+-+Tre%CC%81inquinumpa%CC%81ra+08_+Salvador+%282026%29-1&amp;artist=Vitor+Brauer</loc>
     <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
