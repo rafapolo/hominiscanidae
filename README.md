@@ -59,15 +59,14 @@ python3 scripts/scrape/scrape_posts.py --sitemap
 # 2. Download de todos os arquivos
 python3 -u scripts/download/download_all.py >> download.log 2>&1 &
 
-# 3. Descompactar com unar (charset PT-BR seguro)
+# 3. Descompactar com unar (charset PT-BR seguro) — converte WAV/FLAC→MP3 automaticamente
 python3 scripts/utils/unzip.py
 
 # 3b. Google Drive folders (links que o downloader não consegue baixar diretamente)
+#     Baixar com gdown, depois converter manualmente se vier WAV/FLAC:
 gdown --folder "https://drive.google.com/drive/folders/FOLDER_ID" \
   -O /Volumes/EXTRA/hominiscanidae/unzips/nome-do-album
-
-# 3c. Converter WAV/FLAC para MP3 (ex.: álbuns vindos de Drive ou links diretos)
-python3 scripts/utils/flac_to_mp3.py   # cobre .flac e .wav em unzips/
+python3 scripts/utils/flac_to_mp3.py
 
 # 4. Buscar capas faltantes (Bandcamp + Blogger CDN → capa-min.jpg)
 python3 scripts/covers/fetch_all_missing.py

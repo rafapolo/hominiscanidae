@@ -51,3 +51,8 @@ for archive in archives:
         failed += 1
 
 print(f"\nDone: {ok} extracted, {skipped} skipped, {failed} failed")
+
+if ok > 0:
+    print("\nConverting WAV/FLAC to MP3...")
+    conv = Path(__file__).parent / "flac_to_mp3.py"
+    subprocess.run([sys.executable, str(conv)], check=False)
