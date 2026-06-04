@@ -207,6 +207,14 @@ def main():
 
         # Determine destination folder
         dest_dir = UNZIPS / path_name
+
+        # Skip if already re-downloaded (more than 1 MP3 already there)
+        existing_mp3s = list(dest_dir.glob("*.mp3")) if dest_dir.exists() else []
+        if len(existing_mp3s) > 1:
+            log(f"  SKIP: already has {len(existing_mp3s)} tracks in {dest_dir.name}")
+            skipped += 1
+            continue
+
         dest_dir.mkdir(parents=True, exist_ok=True)
 
         # Remove existing single MP3 (rescue file)
