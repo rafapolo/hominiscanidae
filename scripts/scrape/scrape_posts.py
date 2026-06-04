@@ -91,7 +91,10 @@ def fetch_post(entry: dict, force: bool = False) -> dict:
                or soup.select_one(".entry-content")
                or soup.select_one(".post-body"))
     if content:
-        md_text = h.handle(str(content)).strip()
+        try:
+            md_text = h.handle(str(content)).strip()
+        except Exception:
+            md_text = content.get_text(separator="\n").strip()
         dest.write_text(md_text, encoding="utf-8")
         result["download"] = extract_download(md_text)
     else:
