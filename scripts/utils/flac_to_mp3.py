@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Convert all FLAC and WAV files in unzips/ and DEST root to MP3. Run before generate-albums."""
+"""Convert all FLAC, WAV and WMA files in unzips/ and DEST root to MP3. Run before generate-albums."""
 import subprocess, sys
 from pathlib import Path
 
@@ -22,10 +22,11 @@ def convert(src: Path):
 
 sources = (
     list(DEST.glob("*.flac")) + list(UNZIPS.rglob("*.flac")) +
-    list(DEST.glob("*.wav"))  + list(UNZIPS.rglob("*.wav"))
+    list(DEST.glob("*.wav"))  + list(UNZIPS.rglob("*.wav"))  +
+    list(DEST.glob("*.wma"))  + list(UNZIPS.rglob("*.wma"))
 )
 if not sources:
-    print("No FLAC or WAV files found.")
+    print("No FLAC, WAV or WMA files found.")
     sys.exit(0)
 
 print(f"Found {len(sources)} file(s) to convert")
