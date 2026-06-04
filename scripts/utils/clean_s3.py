@@ -22,7 +22,7 @@ import argparse, gzip, json, os, shutil, subprocess, sys, unicodedata
 from pathlib import Path
 
 ROOT       = Path(__file__).parent.parent.parent
-ENV_FILE   = ROOT / '.env'
+ENV_FILE   = ROOT / '.env' if (ROOT / '.env').exists() else ROOT.parent / 'tocador' / '.env'
 JSON_GZ    = ROOT / 'data' / 'homi-albums.json.gz'
 UNZIPS     = Path('/Volumes/EXTRA/hominiscanidae/unzips')
 S3_ENDPOINT = 'https://hel1.your-objectstorage.com'
