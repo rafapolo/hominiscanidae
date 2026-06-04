@@ -63,6 +63,8 @@ for (let i = 0; i < selected.length; i++) {
   const r = await checkTrack(selected[i]);
   if (r.ok) {
     pass++;
+  } else if (r.status === 429) {
+    // rate-limited by proxy — not a real failure, skip
   } else {
     fail++;
     failures.push(r);
