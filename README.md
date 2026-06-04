@@ -20,8 +20,14 @@ flowchart TD
     C -->|download links| D[download_all.py\n64 workers]
     D --> E[/Volumes/EXTRA/\nhominiscanidae/]
 
+    C -->|Google Drive folder| GD[gdown --folder\nwav → ffmpeg → mp3]
+    GD --> G
+
     E -->|.rar / .zip| F[unzip.py\nunar charset-safe]
     F --> G[unzips/]
+
+    E -->|.wav / .flac| W[flac_to_mp3.py\nffmpeg -q:a 2]
+    W --> G
 
     G -->|missing capa-min.jpg| H[fetch_all_missing.py\nBandcamp · Blogger CDN]
     C -->|og:image URLs| H
@@ -55,6 +61,13 @@ python3 -u scripts/download/download_all.py >> download.log 2>&1 &
 
 # 3. Descompactar com unar (charset PT-BR seguro)
 python3 scripts/utils/unzip.py
+
+# 3b. Google Drive folders (links que o downloader não consegue baixar diretamente)
+gdown --folder "https://drive.google.com/drive/folders/FOLDER_ID" \
+  -O /Volumes/EXTRA/hominiscanidae/unzips/nome-do-album
+
+# 3c. Converter WAV/FLAC para MP3 (ex.: álbuns vindos de Drive ou links diretos)
+python3 scripts/utils/flac_to_mp3.py   # cobre .flac e .wav em unzips/
 
 # 4. Buscar capas faltantes (Bandcamp + Blogger CDN → capa-min.jpg)
 python3 scripts/covers/fetch_all_missing.py

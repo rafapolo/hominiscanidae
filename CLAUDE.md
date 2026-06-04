@@ -73,6 +73,23 @@ python3 scripts/utils/unzip.py          # extract all archives in DEST → unzip
 python3 scripts/utils/unzip.py --force  # re-extract even if folder exists
 ```
 
+## Google Drive folders
+
+Some posts link to a Google Drive *folder* (not a direct file). `download_all.py` cannot handle these — use `gdown`:
+
+```bash
+gdown --folder "https://drive.google.com/drive/folders/FOLDER_ID" \
+  -O /Volumes/EXTRA/hominiscanidae/unzips/nome-do-album
+```
+
+The folder may contain WAV or FLAC files. Convert to MP3 after:
+
+```bash
+python3 scripts/utils/flac_to_mp3.py   # converts .flac and .wav in DEST + unzips/
+```
+
+Then mark the post as `downloaded` in `posts.json` and re-run `generate-albums`.
+
 ## Fixing charset gaps in existing albums
 
 1,805 albums in `unzips/` had missing tracks due to PT-BR charset. The fix:
