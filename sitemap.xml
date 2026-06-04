@@ -721,6 +721,12 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://tocador.cc/?album=Barba+Rala+-+Nos+Tempos+do+Egoritmo+%282026%29&amp;artist=Barba+Rala</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://tocador.cc/?album=Bel+Medula%2C+Luczan+e+Betamaxers+-+Matutatis+Matutandis+%282026%29&amp;artist=Bel+Medula%2C+Luczan+e+Betamaxers</loc>
     <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -41654,12 +41660,6 @@
   </url>
   <url>
     <loc>https://tocador.cc/?album=1960+-+Elza+Soares%2C+Oswaldo+Borba+-+Se+Acaso+Voc%C3%AA+Chegasse&amp;artist=Elza+Soares%2C+Oswaldo+Borba</loc>
-    <lastmod>2026-06-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://tocador.cc/?album=barba-rala-nos-tempos-do-egoritmo-2026</loc>
     <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
