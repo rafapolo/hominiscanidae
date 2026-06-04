@@ -9,6 +9,7 @@ Saves as capa-min.jpg (400x400 JPEG) inside each unzip folder.
 """
 
 import os, re, json, html, unicodedata, urllib.request
+from pathlib import Path
 from PIL import Image
 from io import BytesIO
 
@@ -190,6 +191,16 @@ for folder, sources in SOURCES.items():
     if not os.path.isdir(album_path):
         print(f'SKIP (no folder): {folder}')
         results[folder] = ('no_folder', '')
+        continue
+
+    AUDIO_EXT = {'.mp3','.flac','.ogg','.m4a','.aac','.wav','.opus','.wma'}
+    has_audio = any(
+        f.suffix.lower() in AUDIO_EXT
+        for f in Path(album_path).rglob('*') if f.is_file()
+    )
+    if not has_audio:
+        print(f'SKIP (no audio): {folder}')
+        results[folder] = ('no_audio', '')
         continue
 
     if not sources:

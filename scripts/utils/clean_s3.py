@@ -23,7 +23,7 @@ from pathlib import Path
 
 ROOT       = Path(__file__).parent.parent.parent
 ENV_FILE   = ROOT / '.env'
-JSON_GZ    = ROOT / 'js' / 'homi-albums.json.gz'
+JSON_GZ    = ROOT / 'data' / 'homi-albums.json.gz'
 UNZIPS     = Path('/Volumes/EXTRA/hominiscanidae/unzips')
 S3_ENDPOINT = 'https://hel1.your-objectstorage.com'
 S3_BUCKET   = 'indie'
