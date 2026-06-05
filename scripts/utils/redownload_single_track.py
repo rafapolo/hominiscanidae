@@ -49,6 +49,7 @@ def _overlap(a: str, b: str) -> float:
 
 def find_candidates(albums: list, slug_to_post: dict) -> list[dict]:
     candidates = []
+    seen = set()  # deduplicate by (bandcamp_url, album_path)
     for album in albums:
         if len(album["tracks"]) != 1:
             continue
@@ -67,6 +68,10 @@ def find_candidates(albums: list, slug_to_post: dict) -> list[dict]:
         if not bc_m:
             continue
         bc_url = bc_m.group(0).rstrip("/") + "/"
+        key = (bc_url, album["path"])
+        if key in seen:
+            continue
+        seen.add(key)
         candidates.append({
             "album": album,
             "post": post,
@@ -97,9 +102,9 @@ def find_bandcamp_match(bc_url: str, target_title: str, album_path: str, target_
     """Find matching Bandcamp album by listing page + direct URL tries."""
     bc_base = bc_url.rstrip("/")
 
-    # 1. Try constructed URL from album title
+    # 1. Try constructed URL from album title (including generic slugs like "ep", "st")
     title_slug = _bc_album_slug(target_title)
-    if title_slug and title_slug not in ("ep", "lp", "demo", "st"):
+    if title_slug:
         result = _try_bc_url(f"{bc_base}/album/{title_slug}")
         if result:
             log(f"  direct URL hit: {title_slug}")
