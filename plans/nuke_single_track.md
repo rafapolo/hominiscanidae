@@ -120,127 +120,127 @@ These were downloaded as single MP3 files (not ZIPs), named by the blog post slu
 The generate-albums binary reads ID3 `TPE1` for artist — if the MP3 was shared
 without tags, nothing is there.
 
-### Full list (118 albums)
+### Full list (118 albums, alphabetical)
 
 ```
-2009 - Bootleg Cidadao Instigado Uhuuu Ao Vivo
-2010 - Supra Vida Secular Ritmada Eloquencia
-2011 - Gryner Jardim Sementes Musicais Para Um
-2012 - ahellofaday
-2012 - Bufalo Centavo Fraturas Tinha Vontade
-2012 - Jair Naves Ao Vivo Estudio Show Livre
-2012 - Ricto Mafia
-2012 - Santa Rosas Family Tree I Like To Smell
-2012 - Umbilichaos Entrails Ii
+2015 - Abstrações de Você
 2013 - Aldan Voce Ja Roubou Hoje
+2020 - Ana Frango Eletrico Ao Vivo No
+2017 - Arayui Cerca Trova
+2009 - Bootleg Cidadao Instigado Uhuuu Ao Vivo
+2012 - Bufalo Centavo Fraturas Tinha Vontade
+2020 - Cadu Tenorio Isekai
 2013 - Caim Celebracoes Insurgentes
-2013 - Catarro Pena De Morte
-2013 - Champu Demo Ep
-2013 - Coyote Indigo Horning
-2013 - Droid On Elemental
-2013 - Eu Voce E Manga Musica Desenhada Ep
-2013 - Gustavo Jobim Leandro Theo Free
-2013 - Intensos Animais Imperceptíveis.zip
-2013 - Mahmed Dominio Das Aguas E Dos Ceus
-2013 - Obasquiat Experimentos Com Arco Ep
-2013 - Ordinaria Hit E Rodrigo Montoya
-2013 - Os Trouxas Relembrando Os Trouxas Uma
-2013 - Projeto Caixa Preta Mundo Cao
-2013 - Ricardo Eletrico Ricardo Eletrico Ep
-2013 - Ricardo Herz Trio Aqui E O Meu La
-2013 - Stream.zip
-2013 - Treli Feli Repifarmacopeia Split De
-2013 - Victor Cardoso Contraste
+2018 - Camaral E Bruno T 10082018
 2014 - Castelan Recycle
+2013 - Catarro Pena De Morte
 2014 - Cattleys Gardener Cinza
+2015 - Ceticencias Deus Sabe
+2015 - Ceus De Abril Ultimo Adeus
+2013 - Champu Demo Ep
+2016 - Chant Of Goddess Demo
 2014 - Chapa Mamba St
+2020 - Chicocorrea Sequencers 001
+2015 - Cidadao Instigado Fortaleza
+2017 - Clan Dos Mortos Cicatriz 2
 2014 - Clem Snide Ao Vivo No Mercury Lounge
 2014 - Cloud Whale Sleeplessummer
 2014 - Coletanea Diarios Emocionais Vl 2
 2014 - Coletanea Fall From Stars
 2014 - Coletanea Gran Noise Family
-2014 - Diaz Nuances Bizarras Sobre Condicoes
-2014 - Droid On Metadistonia
-2014 - Evil Matchers Pre Release Ep
-2014 - Farmacopeia Suicidio
-2014 - Img1111 In Girus Imus Nocte Et
-2014 - Jpe Baleia Groove
-2014 - Kapitalistik Deth St
-2014 - Muvi Ao Vivo Live In Acapulco
-2014 - Primeiro Ato
-2014 - Pumu Ainda Nao Esta Claro
-2014 - Ratos De Porao Seculo Sinistro
-2014 - Suíte Super Luxo
-2014 - Vida De Cacador Ep
-2015 - Abstrações de Você
-2015 - Ceticencias Deus Sabe
-2015 - Ceus De Abril Ultimo Adeus
-2015 - Cidadao Instigado Fortaleza
-2015 - D Selvagi Bandamono Ep
-2015 - Fabio Cardelli Palavra Dos Olhos
-2015 - Formafluida Fim Da Infancia Pt 1
-2015 - Hugo Medeiros Henrique Vaz Marcelo
-2015 - Inputoutput Eu Contenho Todos Os Meus
-2015 - Les Adieux Cadaverico
-2015 - Moliere Vida E Muito Curta Pro Cafe Da
-2015 - Nosso Querido Figueiredo Nos Tambem Nao
-2015 - Paulo Dantas Cidade Arquipelago
-2015 - Plumarino Random Access Ep
-2015 - Pork Suicidal 21615 Ep
-2015 - Ruido De Maquina Curiosa Heranca
-2015 - Sunn O Ao Vivo Em Londres
-2015 - Zeca Viana Estancia
-2015 - Zenicola Miazzo Spit
-2016 - Chant Of Goddess Demo
-2016 - Farol Cego Do Desespero Eu Fiz
-2016 - Garfo Espamos
-2016 - Her Os Azuis Que Escorrem Dos Predios
-2016 - Luisa E Os Alquimistas Cobra Coral
-2016 - Max Henrique Traco
-2016 - Munoz Smokestack
-2016 - O Mar Cobrindo O Sol Nao O Suficiente
-2016 - Phantom Pain
-2016 - Pormenores Coisas Nao Ditas
-2016 - Puta B​.​O​.​C​.​A. Santa
-2016 - Verjaut Geographic Misanthropy
-2017 - Arayui Cerca Trova
-2017 - Clan Dos Mortos Cicatriz 2
-2017 - Herzegovina 5am
-2017 - In Venus Ruina
-2017 - Jonatas Onofre Aparicion
-2017 - Muep Etmo Circumstances Dilimite Ones
-2017 - Sila Crvs Aoa
-2017 - That Gum U Like Black Lodge
-2018 - Camaral E Bruno T 10082018
+2020 - Combinado Ep
+2013 - Coyote Indigo Horning
 2018 - Cubus Flores Mortais Ep
-2018 - Nao Nao Eu Remix
-2018 - Wagner Almeida Crescimentodesistencia
+2015 - D Selvagi Bandamono Ep
+2014 - Diaz Nuances Bizarras Sobre Condicoes
+2021 - Dramon Aspero
 2019 - Dramon Equilibrio Utopia
+2013 - Droid On Elemental
+2014 - Droid On Metadistonia
 2019 - Echoing Nightmare When I Grew Two
+2013 - Eu Voce E Manga Musica Desenhada Ep
+2014 - Evil Matchers Pre Release Ep
+2015 - Fabio Cardelli Palavra Dos Olhos
+2016 - Farol Cego Do Desespero Eu Fiz
+2014 - Farmacopeia Suicidio
 2019 - Ferias Da Desgraca Episodio 01
 2019 - Ferias Da Desgraca Episodio 02 Joao
 2019 - Ferias Da Desgraca Episodio 02 Natal Rn
-2019 - Quantico Romance Azul Na Escuridao Ep
-2019 - Quartabe Licao 2 Dorival
-2019 - Realidade Encoberta Nao Vivamos Mais
-2019 - Sila Crvs Aoa Bardo Ep
-2020 - Ana Frango Eletrico Ao Vivo No
-2020 - Cadu Tenorio Isekai
-2020 - Chicocorrea Sequencers 001
-2020 - Combinado Ep
 2020 - Ferias Da Desgraca Episodio 04 Recife Pe
 2020 - Ferias Da Desgraca Episodio 05 Maceio Al
 2020 - Ferias Da Desgraca Episodio 06 Sao
+2015 - Formafluida Fim Da Infancia Pt 1
+2016 - Garfo Espamos
 2020 - Giovani Cidreira Mahal Pita Manomago
-2020 - Institution Ruptura Do Visivel
-2020 - Luquimia Degradacao
-2020 - Ninguem Balanco Oculto Vol I
-2021 - Dramon Aspero
-2021 - Grupo Porco Karaoke De Bebado
-2021 - Rakta Deafkids Sessoes Selo Sesc
 2022 - Gringos Da Semana Mais Um Passeio Pelo
+2021 - Grupo Porco Karaoke De Bebado
+2011 - Gryner Jardim Sementes Musicais Para Um
+2013 - Gustavo Jobim Leandro Theo Free
 2022 - Hc Entrevista Dante Augusto Rn Fala
+2016 - Her Os Azuis Que Escorrem Dos Predios
+2017 - Herzegovina 5am
+2015 - Hugo Medeiros Henrique Vaz Marcelo
+2014 - Img1111 In Girus Imus Nocte Et
+2017 - In Venus Ruina
+2015 - Inputoutput Eu Contenho Todos Os Meus
+2013 - Intensos Animais Imperceptíveis.zip
+2012 - Jair Naves Ao Vivo Estudio Show Livre
+2017 - Jonatas Onofre Aparicion
+2014 - Jpe Baleia Groove
 2022 - Kalamaha No Samsara
+2014 - Kapitalistik Deth St
+2015 - Les Adieux Cadaverico
+2016 - Luisa E Os Alquimistas Cobra Coral
+2020 - Luquimia Degradacao
+2013 - Mahmed Dominio Das Aguas E Dos Ceus
+2016 - Max Henrique Traco
+2015 - Moliere Vida E Muito Curta Pro Cafe Da
+2017 - Muep Etmo Circumstances Dilimite Ones
+2016 - Munoz Smokestack
+2014 - Muvi Ao Vivo Live In Acapulco
+2018 - Nao Nao Eu Remix
+2020 - Ninguem Balanco Oculto Vol I
+2015 - Nosso Querido Figueiredo Nos Tambem Nao
+2016 - O Mar Cobrindo O Sol Nao O Suficiente
+2013 - Obasquiat Experimentos Com Arco Ep
+2013 - Ordinaria Hit E Rodrigo Montoya
+2013 - Os Trouxas Relembrando Os Trouxas Uma
+2015 - Paulo Dantas Cidade Arquipelago
+2016 - Phantom Pain
+2014 - Primeiro Ato
+2015 - Plumarino Random Access Ep
+2015 - Pork Suicidal 21615 Ep
+2016 - Pormenores Coisas Nao Ditas
+2013 - Projeto Caixa Preta Mundo Cao
+2016 - Puta B​.​O​.​C​.​A. Santa
+2014 - Pumu Ainda Nao Esta Claro
+2019 - Quantico Romance Azul Na Escuridao Ep
+2019 - Quartabe Licao 2 Dorival
+2021 - Rakta Deafkids Sessoes Selo Sesc
+2014 - Ratos De Porao Seculo Sinistro
+2019 - Realidade Encoberta Nao Vivamos Mais
+2013 - Ricardo Eletrico Ricardo Eletrico Ep
+2013 - Ricardo Herz Trio Aqui E O Meu La
+2012 - Ricto Mafia
+2015 - Ruido De Maquina Curiosa Heranca
+2012 - Santa Rosas Family Tree I Like To Smell
+2017 - Sila Crvs Aoa
+2019 - Sila Crvs Aoa Bardo Ep
+2013 - Stream.zip
+2015 - Suíte Super Luxo
+2014 - Suíte Super Luxo
+2015 - Sunn O Ao Vivo Em Londres
+2010 - Supra Vida Secular Ritmada Eloquencia
+2017 - That Gum U Like Black Lodge
+2013 - Treli Feli Repifarmacopeia Split De
+2012 - Umbilichaos Entrails Ii
+2016 - Verjaut Geographic Misanthropy
+2013 - Victor Cardoso Contraste
+2014 - Vida De Cacador Ep
+2018 - Wagner Almeida Crescimentodesistencia
+2015 - Zeca Viana Estancia
+2015 - Zenicola Miazzo Spit
+2012 - ahellofaday
 ```
 
 ---
