@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://tocador.cc/</loc>
-    <lastmod>2026-06-23</lastmod>
+    <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -1207,16 +1207,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?album=Bel+Medula%2C+Luczan+e+Betamaxers+-+Matutatis+Matutandis+%282026%29-1&amp;artista=Bel+Medula%00Luczan%00Betamaxers</loc>
-    <lastmod>2026-01-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://cdn.tocador.cc/indie/Bel%20Medula%2C%20Luczan%20e%20Betamaxers%20-%20Matutatis%20Matutandis%20%282026%29-1/capa-min.jpg</image:loc>
-      <image:title>Bel Medula, Luczan e Betamaxers - Matutatis Matutandis (2026)-1 — Bel Medula Luczan Betamaxers (2026)</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://tocador.cc/?album=Bruna+Lucchesi+-+Bandoleira+%282026%29&amp;artista=Bruna+Lucchesi</loc>
     <lastmod>2026-01-01</lastmod>
     <changefreq>yearly</changefreq>
@@ -1244,16 +1234,6 @@
     <image:image>
       <image:loc>https://cdn.tocador.cc/indie/Choro%20da%20Quitanda%20-%20O%20Dono%20da%20Bola%20%282026%29/capa-min.jpg</image:loc>
       <image:title>O Dono da Bola — Choro da Quitanda (2026)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tocador.cc/?album=Choro+da+Quitanda+-+O+Dono+da+Bola+%282026%29-1&amp;artista=Choro+da+Quitanda</loc>
-    <lastmod>2026-01-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://cdn.tocador.cc/indie/Choro%20da%20Quitanda%20-%20O%20Dono%20da%20Bola%20%282026%29-1/capa-min.jpg</image:loc>
-      <image:title>Choro da Quitanda - O Dono da Bola (2026)-1 — Choro da Quitanda (2026)</image:title>
     </image:image>
   </url>
   <url>
@@ -1323,12 +1303,6 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://tocador.cc/?album=Hominis+Canidae+%23192+-+Maio+%282026%29-1&amp;artista=Jo%C3%A3o+Jardel</loc>
-    <lastmod>2026-01-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://tocador.cc/?album=Jefferson+Placido+-+Underground+%282026%29&amp;artista=Jefferson+Placido</loc>
     <lastmod>2026-01-01</lastmod>
     <changefreq>yearly</changefreq>
@@ -1379,16 +1353,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?album=Kartas+-+LADO+H+%282026%29-1&amp;artista=Kartas</loc>
-    <lastmod>2026-01-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://cdn.tocador.cc/indie/Kartas%20-%20LADO%20H%20%282026%29-1/capa-min.jpg</image:loc>
-      <image:title>Kartas - LADO H (2026)-1 — Kartas (2026)</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://tocador.cc/?album=Lauiz+-+comece+por+aqui+%282026%29&amp;artista=Lauiz</loc>
     <lastmod>2026-01-01</lastmod>
     <changefreq>yearly</changefreq>
@@ -1406,16 +1370,6 @@
     <image:image>
       <image:loc>https://cdn.tocador.cc/indie/Lelo%20Bezerra%20-%20Mat%C3%A9ria%20%26%20Mem%C3%B3ria%20%282026%29/capa-min.jpg</image:loc>
       <image:title>Matéria &amp; Memória — Lelo Bezerra (2026)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tocador.cc/?album=Lelo+Bezerra+-+Mat%C3%A9ria+%26+Mem%C3%B3ria+%282026%29-1&amp;artista=Lelo+Bezerra</loc>
-    <lastmod>2026-01-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://cdn.tocador.cc/indie/Lelo%20Bezerra%20-%20Mat%C3%A9ria%20%26%20Mem%C3%B3ria%20%282026%29-1/capa-min.jpg</image:loc>
-      <image:title>Lelo Bezerra - Matéria &amp; Memória (2026)-1 — Lelo Bezerra (2026)</image:title>
     </image:image>
   </url>
   <url>
@@ -1446,16 +1400,6 @@
     <image:image>
       <image:loc>https://cdn.tocador.cc/indie/Lugar%20Algum%20%282026%29/capa-min.jpg</image:loc>
       <image:title>Lugar Algum — Lugar Algum (2026)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tocador.cc/?album=Lugar+Algum+%282026%29-1&amp;artista=Lugar+Algum</loc>
-    <lastmod>2026-01-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://cdn.tocador.cc/indie/Lugar%20Algum%20%282026%29-1/capa-min.jpg</image:loc>
-      <image:title>Lugar Algum (2026)-1 — Lugar Algum (2026)</image:title>
     </image:image>
   </url>
   <url>
@@ -6486,16 +6430,6 @@
     <image:image>
       <image:loc>https://cdn.tocador.cc/indie/Filhos%20-%20Vol.%202%20%282025%29/capa-min.jpg</image:loc>
       <image:title>Vol. 2 — Filhos (2025)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tocador.cc/?album=Filhos+-+Vol.+2+%282025%29-1&amp;artista=Filhos</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://cdn.tocador.cc/indie/Filhos%20-%20Vol.%202%20%282025%29-1/capa-min.jpg</image:loc>
-      <image:title>Filhos - Vol. 2 (2025)-1 — Filhos (2025)</image:title>
     </image:image>
   </url>
   <url>
@@ -65215,183 +65149,13 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?album=Al%C3%AA+Balbo+-+Organic+Mantras+in+the+Chaos+%282026%29-1&amp;artista=Al%C3%AA+Balbo</loc>
-    <lastmod>2026-06-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-    <image:image>
-      <image:loc>https://cdn.tocador.cc/indie/Al%C3%AA%20Balbo%20-%20Organic%20Mantras%20in%20the%20Chaos%20%282026%29-1/capa-min.jpg</image:loc>
-      <image:title>Alê Balbo - Organic Mantras in the Chaos (2026)-1 — Alê Balbo (0)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tocador.cc/?album=Bruna+Lucchesi+-+Bandoleira+%282026%29-1&amp;artista=Bruna+Lucchesi</loc>
-    <lastmod>2026-06-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-    <image:image>
-      <image:loc>https://cdn.tocador.cc/indie/Bruna%20Lucchesi%20-%20Bandoleira%20%282026%29-1/capa-min.jpg</image:loc>
-      <image:title>Bruna Lucchesi - Bandoleira (2026)-1 — Bruna Lucchesi (0)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tocador.cc/?album=Buhr+-+Feixe+de+Fogo+%282026%29-1&amp;artista=Buhr</loc>
-    <lastmod>2026-06-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-    <image:image>
-      <image:loc>https://cdn.tocador.cc/indie/Buhr%20-%20Feixe%20de%20Fogo%20%282026%29-1/capa-min.jpg</image:loc>
-      <image:title>Buhr - Feixe de Fogo (2026)-1 — Buhr (0)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tocador.cc/?album=Eva+-+Ritual+%282026%29-1&amp;artista=Eva</loc>
-    <lastmod>2026-06-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-    <image:image>
-      <image:loc>https://cdn.tocador.cc/indie/Eva%20-%20Ritual%20%282026%29-1/capa-min.jpg</image:loc>
-      <image:title>Eva - Ritual (2026)-1 — Eva (0)</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://tocador.cc/?album=farol-cego-do-desespero-eu-fiz&amp;artista=Farol+Cego</loc>
-    <lastmod>2026-06-23</lastmod>
+    <lastmod>2026-06-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://cdn.tocador.cc/indie/farol-cego-do-desespero-eu-fiz/capa-min.jpg</image:loc>
       <image:title>farol-cego-do-desespero-eu-fiz — Farol Cego (0)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tocador.cc/?album=Jurema+Juice+%282026%29-1&amp;artista=Jurema+Juice</loc>
-    <lastmod>2026-06-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-    <image:image>
-      <image:loc>https://cdn.tocador.cc/indie/Jurema%20Juice%20%282026%29-1/capa-min.jpg</image:loc>
-      <image:title>Jurema Juice (2026)-1 — Jurema Juice (0)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tocador.cc/?album=Lauiz+-+comece+por+aqui+%282026%29-1&amp;artista=Lauiz</loc>
-    <lastmod>2026-06-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-    <image:image>
-      <image:loc>https://cdn.tocador.cc/indie/Lauiz%20-%20comece%20por%20aqui%20%282026%29-1/capa-min.jpg</image:loc>
-      <image:title>Lauiz - comece por aqui (2026)-1 — Lauiz (0)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tocador.cc/?album=Lucas+Filmes+-+Quanto+Amor+_+Pai+%282026%29-1&amp;artista=Lucas+Filmes</loc>
-    <lastmod>2026-06-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-    <image:image>
-      <image:loc>https://cdn.tocador.cc/indie/Lucas%20Filmes%20-%20Quanto%20Amor%20_%20Pai%20%282026%29-1/capa-min.jpg</image:loc>
-      <image:title>Lucas Filmes - Quanto Amor _ Pai (2026)-1 — Lucas Filmes (0)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tocador.cc/?album=Malu+Guedelha+-+Cada+Um+Com+Seus+Amores+%282026%29-1&amp;artista=Malu+Guedelha</loc>
-    <lastmod>2026-06-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-    <image:image>
-      <image:loc>https://cdn.tocador.cc/indie/Malu%20Guedelha%20-%20Cada%20Um%20Com%20Seus%20Amores%20%282026%29-1/capa-min.jpg</image:loc>
-      <image:title>Malu Guedelha - Cada Um Com Seus Amores (2026)-1 — Malu Guedelha (0)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tocador.cc/?album=O+Fabuloso+Coro+Dos+Descontentes+-+Coice+de+Mula+%282026%29-1&amp;artista=O+Fabuloso+Coro+Dos+Descontentes</loc>
-    <lastmod>2026-06-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-    <image:image>
-      <image:loc>https://cdn.tocador.cc/indie/O%20Fabuloso%20Coro%20Dos%20Descontentes%20-%20Coice%20de%20Mula%20%282026%29-1/capa-min.jpg</image:loc>
-      <image:title>O Fabuloso Coro Dos Descontentes - Coice de Mula (2026)-1 — O Fabuloso Coro Dos Descontentes (0)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tocador.cc/?album=O+Grande+Ogro+EP+%282026%29-1&amp;artista=O+Grande+Ogro</loc>
-    <lastmod>2026-06-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-    <image:image>
-      <image:loc>https://cdn.tocador.cc/indie/O%20Grande%20Ogro%20EP%20%282026%29-1/capa-min.jpg</image:loc>
-      <image:title>O Grande Ogro EP (2026)-1 — O Grande Ogro (0)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tocador.cc/?album=Pedro+Faissal+%26+o+Meiofree+-+Intermares+%282026%29-1&amp;artista=Pedro+Faissal+%26+o+Meiofree</loc>
-    <lastmod>2026-06-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-    <image:image>
-      <image:loc>https://cdn.tocador.cc/indie/Pedro%20Faissal%20%26%20o%20Meiofree%20-%20Intermares%20%282026%29-1/capa-min.jpg</image:loc>
-      <image:title>Pedro Faissal &amp; o Meiofree - Intermares (2026)-1 — Pedro Faissal &amp; o Meiofree (0)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tocador.cc/?album=Raidol+-+Todas+as+Mensagens+Que+Nunca+Te+Enviei+%282026%29-1&amp;artista=Raidol</loc>
-    <lastmod>2026-06-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-    <image:image>
-      <image:loc>https://cdn.tocador.cc/indie/Raidol%20-%20Todas%20as%20Mensagens%20Que%20Nunca%20Te%20Enviei%20%282026%29-1/capa-min.jpg</image:loc>
-      <image:title>Raidol - Todas as Mensagens Que Nunca Te Enviei (2026)-1 — Raidol (0)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tocador.cc/?album=Sommelier+-+X%C3%ADcara+de+Ch%C3%A1+%282026%29-1&amp;artista=Sommelier</loc>
-    <lastmod>2026-06-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-    <image:image>
-      <image:loc>https://cdn.tocador.cc/indie/Sommelier%20-%20X%C3%ADcara%20de%20Ch%C3%A1%20%282026%29-1/capa-min.jpg</image:loc>
-      <image:title>Sommelier - Xícara de Chá (2026)-1 — Sommelier (0)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tocador.cc/?album=Vitor+Ara%C3%BAjo%2C+Metropole+Orkest%2C+Jacomo+Bairos+-+TOR%C3%93+%282026%29-1&amp;artista=Vitor+Ara%C3%BAjo</loc>
-    <lastmod>2026-06-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-    <image:image>
-      <image:loc>https://cdn.tocador.cc/indie/Vitor%20Ara%C3%BAjo%2C%20Metropole%20Orkest%2C%20Jacomo%20Bairos%20-%20TOR%C3%93%20%282026%29-1/capa-min.jpg</image:loc>
-      <image:title>Vitor Araújo, Metropole Orkest, Jacomo Bairos - TORÓ (2026)-1 — Vitor Araújo (0)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tocador.cc/?album=Vitor+Brauer+-+Tr%C3%A9inquinump%C3%A1ra+08_+Salvador+%282026%29-1&amp;artista=Vitor+Brauer</loc>
-    <lastmod>2026-06-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-    <image:image>
-      <image:loc>https://cdn.tocador.cc/indie/Vitor%20Brauer%20-%20Tr%C3%A9inquinump%C3%A1ra%2008_%20Salvador%20%282026%29-1/capa-min.jpg</image:loc>
-      <image:title>Vitor Brauer - Tréinquinumpára 08_ Salvador (2026)-1 — Vitor Brauer (0)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tocador.cc/?album=Wills+Tevs+-+Infinitas___Lacunas+%282026%29-1&amp;artista=Wills+Tevs</loc>
-    <lastmod>2026-06-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-    <image:image>
-      <image:loc>https://cdn.tocador.cc/indie/Wills%20Tevs%20-%20Infinitas___Lacunas%20%282026%29-1/capa-min.jpg</image:loc>
-      <image:title>Wills Tevs - Infinitas___Lacunas (2026)-1 — Wills Tevs (0)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tocador.cc/?album=Wilza+-+Wilza+%282026%29-1&amp;artista=Wilza</loc>
-    <lastmod>2026-06-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-    <image:image>
-      <image:loc>https://cdn.tocador.cc/indie/Wilza%20-%20Wilza%20%282026%29-1/capa-min.jpg</image:loc>
-      <image:title>Wilza - Wilza (2026)-1 — Wilza (0)</image:title>
     </image:image>
   </url>
 </urlset>
