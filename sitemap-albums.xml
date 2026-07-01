@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://tocador.cc/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -59439,16 +59439,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tocador.cc/?album=2013+-+pl-sessions-pl-sessions-1-2013</loc>
-    <lastmod>2013-01-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://cdn.tocador.cc/indie/2013%20-%20pl-sessions-pl-sessions-1-2013/capa-min.jpg</image:loc>
-      <image:title>sessions-pl-sessions-1-2013 — pl (2013)</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://tocador.cc/?album=2013+-+Plastico+Tangerina+-+Barbarismo+%28Eu+me+derreto+em+Plastico%29</loc>
     <lastmod>2013-01-01</lastmod>
     <changefreq>yearly</changefreq>
@@ -65150,7 +65140,7 @@
   </url>
   <url>
     <loc>https://tocador.cc/?album=farol-cego-do-desespero-eu-fiz</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
