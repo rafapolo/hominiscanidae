@@ -147,23 +147,26 @@ def run_aria2c(url, slug, ext=None):
         ext = ext_from_url(url)
     out_name = f"{slug}{ext}"
     safe_url = _encode_url(url)
-    result = subprocess.run(
-        [
-            "aria2c",
-            "-x", "16", "-s", "16",
-            "--auto-file-renaming=false",
-            "--allow-overwrite=false",
-            "--quiet=true",
-            "--connect-timeout=15",
-            "--timeout=60",
-            "--max-tries=2",
-            "--retry-wait=3",
-            "-d", str(DEST),
-            "-o", out_name,
-            safe_url,
-        ],
-        capture_output=True, text=True, timeout=300,
-    )
+    try:
+        result = subprocess.run(
+            [
+                "aria2c",
+                "-x", "16", "-s", "16",
+                "--auto-file-renaming=false",
+                "--allow-overwrite=false",
+                "--quiet=true",
+                "--connect-timeout=15",
+                "--timeout=60",
+                "--max-tries=2",
+                "--retry-wait=3",
+                "-d", str(DEST),
+                "-o", out_name,
+                safe_url,
+            ],
+            capture_output=True, text=True, timeout=300,
+        )
+    except subprocess.TimeoutExpired:
+        return None, "aria2c:hardcap-timeout"
     dest = DEST / out_name
     if dest.exists() and dest.stat().st_size > 0:
         return dest, None
@@ -257,7 +260,7 @@ def dl_mega(url, slug):
             cmd += [f"--proxy=socks5h://127.0.0.1:{MEGA_PROXY_PORT}"]
             dl_timeout = 120
         else:
-            dl_timeout = 120
+            dl_timeout = 900
         cmd += [url]
         r = subprocess.run(
             cmd,
@@ -567,6 +570,10 @@ def dl_scrape_blog(post_url, slug, exclude_url=None):
             domain = urlparse(href).netloc.lstrip("www.")
             if not any(h in domain for h in DOWNLOAD_HOSTS):
                 continue
+            # Skip the blog's own boilerplate sidebar link — it appears on every
+            # post and points at the label's root page, not a per-post album.
+            if domain == "hominiscanidae.bandcamp.com" and "/album/" not in href and "/track/" not in href:
+                continue
             if href in seen:
                 continue
             seen.add(href)
@@ -847,7 +854,12 @@ def main():
     with ThreadPoolExecutor(max_workers=WORKERS) as pool:
         futures = {pool.submit(download_post, p): p for p in to_process}
         for future in as_completed(futures):
-            result = future.result()
+            try:
+                result = future.result()
+            except Exception as e:
+                p = futures[future]
+                log(f"ERROR [{p.get('url','?')}] unhandled: {e}")
+                result = "error"
             _progress["done"] += 1
             counts[result] = counts.get(result, 0) + 1
             if _progress["done"] % 50 == 0:
