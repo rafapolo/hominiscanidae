@@ -48,3 +48,9 @@ plan/
 
 # Runtime logs
 logs/
+
+# Python
+__pycache__/
+
+# Run logs
+*.log

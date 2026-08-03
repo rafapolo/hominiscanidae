@@ -1,0 +1,2914 @@
+[
+ {
+  "folder": "2002 - granola-granola-2002",
+  "slug": "granola-granola-2002.mp3",
+  "n_rest": 16,
+  "verdict": "distinct",
+  "ber": 0.4378,
+  "matched": "02 - Granola - Hotline.mp3"
+ },
+ {
+  "folder": "2005 - national-ela-2005",
+  "slug": "national-ela-2005.mp3",
+  "n_rest": 10,
+  "verdict": "distinct",
+  "ber": 0.4469,
+  "matched": "09 - National - A luz que me atravessa.mp3"
+ },
+ {
+  "folder": "2009 - bruno-nobru-deixe-o-som-ir-2009",
+  "slug": "bruno-nobru-deixe-o-som-ir-2009.mp3",
+  "n_rest": 20,
+  "verdict": "distinct",
+  "ber": 0.3584,
+  "matched": "14 - bruno nobru - macas e laranjas (2006).mp3"
+ },
+ {
+  "folder": "2009 - perito-moreno-2009",
+  "slug": "perito-moreno-2009.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4492,
+  "matched": "02 - Moira-Diesel Orchestra - estate all'italiana.mp3"
+ },
+ {
+  "folder": "2010 - egregora-tao-ep-2010",
+  "slug": "egregora-tao-ep-2010.mp3",
+  "n_rest": 8,
+  "verdict": "distinct",
+  "ber": 0.4558,
+  "matched": "07 - EGRÉGORA - Vida simples.mp3"
+ },
+ {
+  "folder": "2011 - mario-alencar-songs-for-crap-2011",
+  "slug": "mario-alencar-songs-for-crap-2011.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.4627,
+  "matched": "02 - mario the alencar - The White Days Arrive.mp3"
+ },
+ {
+  "folder": "2011 - porno-de-bolso-ot-2011",
+  "slug": "porno-de-bolso-ot-2011.mp3",
+  "n_rest": 9,
+  "verdict": "distinct",
+  "ber": 0.4288,
+  "matched": "03 - Pornô de Bolso - Concha.mp3"
+ },
+ {
+  "folder": "2011 - rawfire-keep-in-garage-2011",
+  "slug": "rawfire-keep-in-garage-2011.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.45,
+  "matched": "04 - Rawfire - For What I've Done (I Told You So).mp3"
+ },
+ {
+  "folder": "2011 - strobo-strobo-2011",
+  "slug": "strobo-strobo-2011.mp3",
+  "n_rest": 10,
+  "verdict": "distinct",
+  "ber": 0.4417,
+  "matched": "08 - STROBO - Like Alien (Com Shio-Z).mp3"
+ },
+ {
+  "folder": "2011 - the-concept-reconstruction-2011",
+  "slug": "the-concept-reconstruction-2011.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4564,
+  "matched": "04 - The Concept - The Today Are Passing By.mp3"
+ },
+ {
+  "folder": "2011 - tuna-o-mudo-mundo-com-nossa-voz-2011",
+  "slug": "tuna-o-mudo-mundo-com-nossa-voz-2011.mp3",
+  "n_rest": 7,
+  "verdict": "distinct",
+  "ber": 0.4314,
+  "matched": "01 - tuna - tuna - Ismael no Ampliliquidificador.mp3"
+ },
+ {
+  "folder": "2011 - yokofive-rockers-ep-2011",
+  "slug": "yokofive-rockers-ep-2011.mp3",
+  "n_rest": 3,
+  "verdict": "distinct",
+  "ber": 0.4598,
+  "matched": "02 - Yokofive - Teste.mp3"
+ },
+ {
+  "folder": "2012 - Betterman Betterman Ep",
+  "slug": "betterman-betterman-ep-2012.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.4345,
+  "matched": "01 - Betterman - I think, therefore I suffer.mp3"
+ },
+ {
+  "folder": "2012 - Emicaeli Sadsbrolignsons",
+  "slug": "emicaeli-sadsbrolignsons-2011.mp3",
+  "n_rest": 8,
+  "verdict": "distinct",
+  "ber": 0.4456,
+  "matched": "03 - Emicaeli - DK.mp3"
+ },
+ {
+  "folder": "2012 - Eric Taylor Big City Lights Ep",
+  "slug": "eric-taylor-big-city-lights-ep-2012.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4412,
+  "matched": "01 - Eric Taylor Escudero - Fountains Of Blood.mp3"
+ },
+ {
+  "folder": "2012 - Necronomicon Queen Of Death",
+  "slug": "necronomicon-queen-of-death-2012.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.4609,
+  "matched": "06 - Necro - The Queen of Death.mp3"
+ },
+ {
+  "folder": "2012 - Onagra Claudique Hora E Vez De Onagra",
+  "slug": "onagra-claudique-hora-e-vez-de-onagra.mp3",
+  "n_rest": 3,
+  "verdict": "distinct",
+  "ber": 0.3544,
+  "matched": "01 - Onagra Claudique - Umwelt.mp3"
+ },
+ {
+  "folder": "2012 - Thrills Chase - Introducing Thrills (And The Chase)",
+  "slug": "thrills-chase-introducing-thrills-and.mp3",
+  "n_rest": 7,
+  "verdict": "distinct",
+  "ber": 0.4586,
+  "matched": "03 - Thrills & The Chase - One For The Road.mp3"
+ },
+ {
+  "folder": "2012 - Trompa - Trompa Apresenta: André Zinelli",
+  "slug": "trompa-trompa-apresenta-andre-zinelli.mp3",
+  "n_rest": 10,
+  "verdict": "distinct",
+  "ber": 0.4303,
+  "matched": "10 - trompa - (radek).mp3"
+ },
+ {
+  "folder": "2012 - alce-garoto-garoto-alce-2012",
+  "slug": "alce-garoto-garoto-alce-2012.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.3962,
+  "matched": "03 - Alce Garoto - Vapor.mp3"
+ },
+ {
+  "folder": "2012 - barulhista-ssegue-2012",
+  "slug": "barulhista-ssegue-2012.mp3",
+  "n_rest": 8,
+  "verdict": "distinct",
+  "ber": 0.453,
+  "matched": "04 - Barulhista - Hemisfério.mp3"
+ },
+ {
+  "folder": "2012 - bemonio-serenata-2012",
+  "slug": "bemonio-serenata-2012.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.4567,
+  "matched": "02 - Bemônio - Mastema.mp3"
+ },
+ {
+  "folder": "2012 - bemonio-vulgatam-clementinam-2012",
+  "slug": "bemonio-vulgatam-clementinam-2012.mp3",
+  "n_rest": 8,
+  "verdict": "distinct",
+  "ber": 0.4627,
+  "matched": "07 - BEMÔNIO - Eucaristia.mp3"
+ },
+ {
+  "folder": "2012 - bratislava-carne-2012",
+  "slug": "bratislava-carne-2012.mp3",
+  "n_rest": 13,
+  "verdict": "distinct",
+  "ber": 0.357,
+  "matched": "07 - Bratislava - Carne.mp3"
+ },
+ {
+  "folder": "2012 - dpsmkr-dpsmkr-2012",
+  "slug": "dpsmkr-dpsmkr-2012.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4606,
+  "matched": "02 - dpsmkr - mud.mp3"
+ },
+ {
+  "folder": "2012 - estragonoff-melhor-do-que-parece-2012",
+  "slug": "estragonoff-melhor-do-que-parece-2012.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4073,
+  "matched": "02 - Estragonoff - Há Alguém.mp3"
+ },
+ {
+  "folder": "2012 - gruta-grito-ep-2012",
+  "slug": "gruta-grito-ep-2012.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4156,
+  "matched": "04 - Gruta - Ctite.mp3"
+ },
+ {
+  "folder": "2012 - harafh-harafh-ep-2012",
+  "slug": "harafh-harafh-ep-2012.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4409,
+  "matched": "05 - Harafh - Quando Te Vi.mp3"
+ },
+ {
+  "folder": "2012 - holodomor-holodomor-2012",
+  "slug": "holodomor-holodomor-2012.mp3",
+  "n_rest": 11,
+  "verdict": "distinct",
+  "ber": 0.4422,
+  "matched": "10 - HOLODOMOR - Errado Parecer Certo.mp3"
+ },
+ {
+  "folder": "2012 - inverness-ivana-2012",
+  "slug": "inverness-ivana-2012.mp3",
+  "n_rest": 9,
+  "verdict": "distinct",
+  "ber": 0.4555,
+  "matched": "05 - Inverness - Nestling Deep (In The Soul Of Kindness).mp3"
+ },
+ {
+  "folder": "2012 - lisabi-senseless-ep-2012",
+  "slug": "lisabi-senseless-ep-2012.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4453,
+  "matched": "03 - Lisabi - Dialética.mp3"
+ },
+ {
+  "folder": "2012 - maias-os-ultimos-dias-do-inverno-2012",
+  "slug": "maias-os-ultimos-dias-do-inverno-2012.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4527,
+  "matched": "03 - Maias - F19.mp3"
+ },
+ {
+  "folder": "2012 - national-maison-minima-2012",
+  "slug": "national-maison-minima-2012.mp3",
+  "n_rest": 2,
+  "verdict": "distinct",
+  "ber": 0.4728,
+  "matched": "01 - National - Part I.mp3"
+ },
+ {
+  "folder": "2012 - parte-cinza-151212-2012",
+  "slug": "parte-cinza-151212-2012.mp3",
+  "n_rest": 3,
+  "verdict": "distinct",
+  "ber": 0.4795,
+  "matched": "03 - Parte Cinza - A minhas.mp3"
+ },
+ {
+  "folder": "2012 - piano-bateria-piano-bateria-2012",
+  "slug": "piano-bateria-piano-bateria-2012.mp3",
+  "n_rest": 22,
+  "verdict": "distinct",
+  "ber": 0.4048,
+  "matched": "03 - Piano & Bateria - Piano e Bateria #3.mp3"
+ },
+ {
+  "folder": "2012 - porcaria-demo-2012",
+  "slug": "porcaria-demo-2012.mp3",
+  "n_rest": 2,
+  "verdict": "distinct",
+  "ber": 0.4353,
+  "matched": "02 - Porcria - La Internetê.mp3"
+ },
+ {
+  "folder": "2012 - sax-e-bateria-dia-2012",
+  "slug": "sax-e-bateria-dia-2012.mp3",
+  "n_rest": 7,
+  "verdict": "distinct",
+  "ber": 0.4248,
+  "matched": "05 - Sax e Bateria - SAX e BATERIA - DIA - #5.mp3"
+ },
+ {
+  "folder": "2012 - school-spirit-ep-school-spirit-2012",
+  "slug": "school-spirit-ep-school-spirit-2012.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4694,
+  "matched": "02 - School Spirit - Reverse Mirror.mp3"
+ },
+ {
+  "folder": "2012 - sedna-sublime-end-2012",
+  "slug": "sedna-sublime-end-2012.mp3",
+  "n_rest": 13,
+  "verdict": "distinct",
+  "ber": 0.4228,
+  "matched": "12 - SEDNA - Overcoming The Worthless.mp3"
+ },
+ {
+  "folder": "2012 - ultravespa-ultravespa-ep-2012",
+  "slug": "ultravespa-ultravespa-ep-2012.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4412,
+  "matched": "02 - Ultravespa - Amigos e Perigos.mp3"
+ },
+ {
+  "folder": "2012 - veenstra-journey-to-sea-2012",
+  "slug": "veenstra-journey-to-sea-2012.mp3",
+  "n_rest": 10,
+  "verdict": "distinct",
+  "ber": 0.3892,
+  "matched": "01 - Veenstra - A Door.mp3"
+ },
+ {
+  "folder": "2013 - Adega Ensemble - black van in a small square",
+  "slug": "adega-ensemble-black-van-in-small.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4633,
+  "matched": "02 - Adega Ensemble - Second Session.mp3"
+ },
+ {
+  "folder": "2013 - April Seven - Small collection of songs about love and destruction",
+  "slug": "april-seven-small-collection-of-songs.mp3",
+  "n_rest": 7,
+  "verdict": "distinct",
+  "ber": 0.4448,
+  "matched": "04 - April Seven - This is Love.mp3"
+ },
+ {
+  "folder": "2013 - Cristo Bomba - A Diferença Entre Linces e Lobos",
+  "slug": "cristo-bomba-diferenca-entre-linces-e.mp3",
+  "n_rest": 9,
+  "verdict": "distinct",
+  "ber": 0.4381,
+  "matched": "03 - Cristo Bomba - Poucas Idéias.mp3"
+ },
+ {
+  "folder": "2013 - Interphone - A Devoradora Máquina do Tempo",
+  "slug": "interphone-devoradora-maquina-do-tempo.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4452,
+  "matched": "03 - Interphone - Monte Carlo (tratado de paz).mp3"
+ },
+ {
+  "folder": "2013 - Josh Making Songs - Josh Making Songs EP",
+  "slug": "josh-making-songs-josh-making-songs-ep.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4631,
+  "matched": "02 - Josh Making Songs - You look better without your heart.mp3"
+ },
+ {
+  "folder": "2013 - Leonardo Perantoni Self",
+  "slug": "leonardo-perantoni-self-2013.mp3",
+  "n_rest": 3,
+  "verdict": "distinct",
+  "ber": 0.4556,
+  "matched": "02 - Leonardo Perantoni - Self (Part 2).mp3"
+ },
+ {
+  "folder": "2013 - Mankeulv - Without sympathy, without struggle",
+  "slug": "mankeulv-without-sympathy-without.mp3",
+  "n_rest": 9,
+  "verdict": "distinct",
+  "ber": 0.4553,
+  "matched": "07 - Mankeulv - Bare breasts, dirty hands, ropes.mp3"
+ },
+ {
+  "folder": "2013 - Monstro Neotico Monstro - Monstro Neótico Monstro",
+  "slug": "monstro-neotico-monstro-monstro-neotico.mp3",
+  "n_rest": 7,
+  "verdict": "distinct",
+  "ber": 0.453,
+  "matched": "04 - Monstro Neótico Monstro - El Mar Se Abre.mp3"
+ },
+ {
+  "folder": "2013 - Muep Etmo - You Can't Make Sense Out Of It",
+  "slug": "muep-etmo-you-cant-make-sense-out-of-it.mp3",
+  "n_rest": 17,
+  "verdict": "distinct",
+  "ber": 0.4147,
+  "matched": "04 - Muep Etmo - ]__never shit a shiter__[.mp3"
+ },
+ {
+  "folder": "2013 - My Name Is Mary My Name Is Mary Ep",
+  "slug": "my-name-is-mary-my-name-is-mary-ep-2013.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4411,
+  "matched": "05 - My Name Is Mary - Alone On The Floor.mp3"
+ },
+ {
+  "folder": "2013 - Paralyzed Blind Boy - There's no place for Eve",
+  "slug": "paralyzed-blind-boy-theres-no-place-for.mp3",
+  "n_rest": 7,
+  "verdict": "distinct",
+  "ber": 0.4445,
+  "matched": "03 - Paralyzed Blind Boy - There's No Place for Eve.mp3"
+ },
+ {
+  "folder": "2013 - Picnic No Front - E daí se o mundo acabou?",
+  "slug": "picnic-no-front-e-dai-se-o-mundo-acabou.mp3",
+  "n_rest": 3,
+  "verdict": "distinct",
+  "ber": 0.4791,
+  "matched": "03 - Picnic no Front - E daí se o mundo acabou？.mp3"
+ },
+ {
+  "folder": "2013 - Repine Into Abyss",
+  "slug": "repine-into-abyss-2013.mp3",
+  "n_rest": 9,
+  "verdict": "distinct",
+  "ber": 0.3563,
+  "matched": "03 - Repine - Hopelessness (Pt. II).mp3"
+ },
+ {
+  "folder": "2013 - Sentidor Doismiletreze",
+  "slug": "sentidor-doismiletreze-2013.mp3",
+  "n_rest": 7,
+  "verdict": "distinct",
+  "ber": 0.4166,
+  "matched": "03 - Sentidor - Caraça.mp3"
+ },
+ {
+  "folder": "2013 - The Renegades Of Punk - Coração Metrônomo",
+  "slug": "the-renegades-of-punk-coracao-metronomo.mp3",
+  "n_rest": 12,
+  "verdict": "distinct",
+  "ber": 0.4052,
+  "matched": "12 - the renegades of punk - Vida real.mp3"
+ },
+ {
+  "folder": "2013 - Tuna Dupla Face",
+  "slug": "tuna-dupla-face-2013.mp3",
+  "n_rest": 8,
+  "verdict": "distinct",
+  "ber": 0.4612,
+  "matched": "07 - TuNa Punk Rock - Le grand tour.mp3"
+ },
+ {
+  "folder": "2013 - afro-hooligans-tiny-2013",
+  "slug": "afro-hooligans-tiny-2013.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4288,
+  "matched": "03 - Afro Hooligans - Cigarettes.mp3"
+ },
+ {
+  "folder": "2013 - agorero-tairo-pandita-mariri-2013",
+  "slug": "agorero-tairo-pandita-mariri-2013.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.3798,
+  "matched": "02 - Agorero - Ṭairō Paṇḍita.mp3"
+ },
+ {
+  "folder": "2013 - albanian-rough-demos-2013",
+  "slug": "albanian-rough-demos-2013.mp3",
+  "n_rest": 3,
+  "verdict": "distinct",
+  "ber": 0.475,
+  "matched": "03 - albanian - três.mp3"
+ },
+ {
+  "folder": "2013 - algido-algido-2013",
+  "slug": "algido-algido-2013.mp3",
+  "n_rest": 2,
+  "verdict": "distinct",
+  "ber": 0.4908,
+  "matched": "02 - algido - II.mp3"
+ },
+ {
+  "folder": "2013 - boddah-swimmer-ep-2013",
+  "slug": "boddah-swimmer-ep-2013.mp3",
+  "n_rest": 3,
+  "verdict": "distinct",
+  "ber": 0.4498,
+  "matched": "01 - Boddah - Here Down.mp3"
+ },
+ {
+  "folder": "2013 - camarilo-camarilo-ep-2013",
+  "slug": "camarilo-camarilo-ep-2013.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4184,
+  "matched": "04 - Camarilo - Maçã.mp3"
+ },
+ {
+  "folder": "2013 - camarilo-souvenir-2013",
+  "slug": "camarilo-souvenir-2013.mp3",
+  "n_rest": 3,
+  "verdict": "distinct",
+  "ber": 0.4639,
+  "matched": "02 - Camarilo - Ivan.mp3"
+ },
+ {
+  "folder": "2013 - cellardoor-random-alarms-ep-2013",
+  "slug": "cellardoor-random-alarms-ep-2013.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4288,
+  "matched": "02 - cellardoor - Dystopia.mp3"
+ },
+ {
+  "folder": "2013 - chacal-ep-2013",
+  "slug": "chacal-ep-2013.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.5016,
+  "matched": "01 - Chacal Noir - Are You Listening？.mp3"
+ },
+ {
+  "folder": "2013 - chacon-chaka-nights-2013",
+  "slug": "chacon-chaka-nights-2013.mp3",
+  "n_rest": 8,
+  "verdict": "distinct",
+  "ber": 0.4159,
+  "matched": "06 - Chacon - Só Meu Eu Amigo.mp3"
+ },
+ {
+  "folder": "2013 - cia-de-pasteis-okinawa-2013",
+  "slug": "cia-de-pasteis-okinawa-2013.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4614,
+  "matched": "03 - Cia de Pastéis Okinawa - 花嫁 ⓀⒺⓇ⍥⍥ⒶⒸⒾⒹⓊ.mp3"
+ },
+ {
+  "folder": "2013 - days-of-sunday-days-of-sunday-2013",
+  "slug": "days-of-sunday-days-of-sunday-2013.mp3",
+  "n_rest": 8,
+  "verdict": "distinct",
+  "ber": 0.4414,
+  "matched": "07 - Days Of Sunday - Ingratidão.mp3"
+ },
+ {
+  "folder": "2013 - dead-in-dump-nomed-2013",
+  "slug": "dead-in-dump-nomed-2013.mp3",
+  "n_rest": 9,
+  "verdict": "distinct",
+  "ber": 0.3094,
+  "matched": "02 - Dead in DUMP - Cross To Cross.mp3"
+ },
+ {
+  "folder": "2013 - dunas-dunas-ep-2013",
+  "slug": "dunas-dunas-ep-2013.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4656,
+  "matched": "03 - Dunas - Tempestades.mp3"
+ },
+ {
+  "folder": "2013 - evan-heinrich-garden-of-scars-2013",
+  "slug": "evan-heinrich-garden-of-scars-2013.mp3",
+  "n_rest": 1,
+  "verdict": "distinct",
+  "ber": 0.4481,
+  "matched": "09 - Evan Heinrich - Evan Heinrich - Garden of the Scars.mp3"
+ },
+ {
+  "folder": "2013 - fear-of-unknown-fear-of-unknown-ep-2013",
+  "slug": "fear-of-unknown-fear-of-unknown-ep-2013.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4044,
+  "matched": "01 - Resonating Echoes - Soma.mp3"
+ },
+ {
+  "folder": "2013 - felipe-neiva-come-on-now-take-bow-2013",
+  "slug": "felipe-neiva-come-on-now-take-bow-2013.mp3",
+  "n_rest": 7,
+  "verdict": "distinct",
+  "ber": 0.4372,
+  "matched": "06 - Felipe Neiva - To Know.mp3"
+ },
+ {
+  "folder": "2013 - formafluida-wunderlust-ep-2013",
+  "slug": "formafluida-wunderlust-ep-2013.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4342,
+  "matched": "05 - Formafluida - Takitslo.mp3"
+ },
+ {
+  "folder": "2013 - foz-monte-mario-ep-2013",
+  "slug": "foz-monte-mario-ep-2013.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4558,
+  "matched": "03 - foz - formigueiro sagaz.mp3"
+ },
+ {
+  "folder": "2013 - fragor-de-olhos-fechados-ep-2013",
+  "slug": "fragor-de-olhos-fechados-ep-2013.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4809,
+  "matched": "04 - Fragor - Arma Descarregada.mp3"
+ },
+ {
+  "folder": "2013 - god-demise-st-2013",
+  "slug": "god-demise-st-2013.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.4666,
+  "matched": "02 - God Demise - Slumbering.mp3"
+ },
+ {
+  "folder": "2013 - godasadog-casulo-ep-2013",
+  "slug": "godasadog-casulo-ep-2013.mp3",
+  "n_rest": 2,
+  "verdict": "distinct",
+  "ber": 0.4636,
+  "matched": "02 - Godasadog - Outras Virtudes.mp3"
+ },
+ {
+  "folder": "2013 - godsdog-hoje-2013",
+  "slug": "godsdog-hoje-2013.mp3",
+  "n_rest": 8,
+  "verdict": "distinct",
+  "ber": 0.4361,
+  "matched": "05 - Godasadog - Sufoco.mp3"
+ },
+ {
+  "folder": "2013 - la-casa-cannibale-la-casa-cannibale-2013",
+  "slug": "la-casa-cannibale-la-casa-cannibale-2013.mp3",
+  "n_rest": 8,
+  "verdict": "distinct",
+  "ber": 0.4831,
+  "matched": "07 - La Casa Cannibale - La Casa 3.mp3"
+ },
+ {
+  "folder": "2013 - lagar-lagar-ep-2013",
+  "slug": "lagar-lagar-ep-2013.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4617,
+  "matched": "04 - Lagar - Meu Caminho.mp3"
+ },
+ {
+  "folder": "2013 - lingering-last-drops-no-2013",
+  "slug": "lingering-last-drops-no-2013.mp3",
+  "n_rest": 7,
+  "verdict": "distinct",
+  "ber": 0.4091,
+  "matched": "07 - Lingering Last Drops - musidora.mp3"
+ },
+ {
+  "folder": "2013 - los-prego-los-prego-2013",
+  "slug": "los-prego-los-prego-2013.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4525,
+  "matched": "02 - Los Prego - Nunca Esquecerei Daquele Cruzeiro com o Rei.mp3"
+ },
+ {
+  "folder": "2013 - m-hornek-gravity-2013",
+  "slug": "m-hornek-gravity-2013.mp3",
+  "n_rest": 8,
+  "verdict": "distinct",
+  "ber": 0.4331,
+  "matched": "04 - M. Hornek - Cookin'.mp3"
+ },
+ {
+  "folder": "2013 - muhammad-ateu-velhas-vontades-2013",
+  "slug": "muhammad-ateu-velhas-vontades-2013.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.315,
+  "matched": "01 - Muhammad Ateu - Velhas Vontades.mp3"
+ },
+ {
+  "folder": "2013 - nees-ees-nees-ees-2013",
+  "slug": "nees-ees-nees-ees-2013.mp3",
+  "n_rest": 52,
+  "verdict": "distinct",
+  "ber": 0.4317,
+  "matched": "42 - Various - Kevin Devine - Me And My Friends.mp3"
+ },
+ {
+  "folder": "2013 - nuvens-invisiveis-nuvens-invisiveis-2013",
+  "slug": "nuvens-invisiveis-nuvens-invisiveis-2013.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4583,
+  "matched": "04 - Nuvens Invisíveis - Priya's Journey.mp3"
+ },
+ {
+  "folder": "2013 - obasquiat-obasquiat-ep-2013",
+  "slug": "obasquiat-obasquiat-ep-2013.mp3",
+  "n_rest": 2,
+  "verdict": "distinct",
+  "ber": 0.4405,
+  "matched": "01 - Obasquiat - RADIO_ROCK_GTO_ESPECIAL_OBASQUIAT (part1).mp3"
+ },
+ {
+  "folder": "2013 - pollux-e-castor-pollux-e-castor-ep-2013",
+  "slug": "pollux-e-castor-pollux-e-castor-ep-2013.mp3",
+  "n_rest": 3,
+  "verdict": "distinct",
+  "ber": 0.4666,
+  "matched": "01 - Pollux e Castor - Climbing Stars.mp3"
+ },
+ {
+  "folder": "2013 - pombo-pombo-2013",
+  "slug": "pombo-pombo-2013.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4503,
+  "matched": "04 - Pombo - Zero.mp3"
+ },
+ {
+  "folder": "2013 - projeto-zurdo-zurdo-ep-2013",
+  "slug": "projeto-zurdo-zurdo-ep-2013.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4611,
+  "matched": "04 - Zurdo - Duas metades separadas.mp3"
+ },
+ {
+  "folder": "2013 - quatro-paredes-ep-1-2013",
+  "slug": "quatro-paredes-ep-1-2013.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.4434,
+  "matched": "02 - Quatro Paredes - Insalubre.mp3"
+ },
+ {
+  "folder": "2013 - rodrigo-novo-cova-triste-2013",
+  "slug": "rodrigo-novo-cova-triste-2013.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4623,
+  "matched": "03 - Rodrigo Novo - Um Pouco De Humor Pra Relaxar.mp3"
+ },
+ {
+  "folder": "2013 - ronca-ronca-ep-2013",
+  "slug": "ronca-ronca-ep-2013.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4655,
+  "matched": "04 - Ronca - Tudo Errado.mp3"
+ },
+ {
+  "folder": "2013 - sentidor-janelas-2013",
+  "slug": "sentidor-janelas-2013.mp3",
+  "n_rest": 9,
+  "verdict": "distinct",
+  "ber": 0.4537,
+  "matched": "09 - Sentidor - O por do sol dos nossos olhos (Sunflower Sutra).mp3"
+ },
+ {
+  "folder": "2013 - shotgun-wives-hail-to-lizard-king-2013",
+  "slug": "shotgun-wives-hail-to-lizard-king-2013.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4202,
+  "matched": "04 - Shotgun Wives - Left Hand.mp3"
+ },
+ {
+  "folder": "2013 - standing-point-work-consume-die-2013",
+  "slug": "standing-point-work-consume-die-2013.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4714,
+  "matched": "02 - Standing Point - (Un Mar de Fueguitos).mp3"
+ },
+ {
+  "folder": "2013 - stereotroia-stereotroia-2013",
+  "slug": "stereotroia-stereotroia-2013.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.3836,
+  "matched": "02 - stereotroia - Chuva & Ruína.mp3"
+ },
+ {
+  "folder": "2013 - subversilvas-ep-2013",
+  "slug": "subversilvas-ep-2013.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4503,
+  "matched": "05 - Subversilvas - Extrospection.mp3"
+ },
+ {
+  "folder": "2013 - super-brava-award-it-embrace-it-2013",
+  "slug": "super-brava-award-it-embrace-it-2013.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4608,
+  "matched": "03 - Super Brava - undesired situation.mp3"
+ },
+ {
+  "folder": "2013 - teddy-bear-brutal-2013",
+  "slug": "teddy-bear-brutal-2013.mp3",
+  "n_rest": 8,
+  "verdict": "distinct",
+  "ber": 0.4534,
+  "matched": "05 - Teddy The Bear - Cara, Você Acha Que É Bonito Ter Alargador No Septo？ (Rxstlxss Song).mp3"
+ },
+ {
+  "folder": "2013 - tequilla-bomb-bomb-style-2013",
+  "slug": "tequilla-bomb-bomb-style-2013.mp3",
+  "n_rest": 1,
+  "verdict": "distinct",
+  "ber": 0.4561,
+  "matched": "04 - Tequilla Bomb - Tequilla Bomb - Bomb Style (FurmigaDub Remix).mp3"
+ },
+ {
+  "folder": "2013 - the-floors-ep-2013",
+  "slug": "the-floors-ep-2013.mp3",
+  "n_rest": 11,
+  "verdict": "distinct",
+  "ber": 0.4423,
+  "matched": "01 - The Floors (Ireland) - Someday.mp3"
+ },
+ {
+  "folder": "2013 - the-original-wallies-band-vintage-i-2013",
+  "slug": "the-original-wallies-band-vintage-i-2013.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.4494,
+  "matched": "05 - The Original Wallies Band - Five Foot Two, Eyes of Blue (Has Anybody Seen My Girl？).mp3"
+ },
+ {
+  "folder": "2013 - tomba-orquestra-tomba-orquestra-2013",
+  "slug": "tomba-orquestra-tomba-orquestra-2013.mp3",
+  "n_rest": 15,
+  "verdict": "distinct",
+  "ber": 0.4348,
+  "matched": "10 - Tomba Orquestra - Fado Italiano.mp3"
+ },
+ {
+  "folder": "2013 - traummaterial-traummaterial-2013",
+  "slug": "traummaterial-traummaterial-2013.mp3",
+  "n_rest": 8,
+  "verdict": "distinct",
+  "ber": 0.4537,
+  "matched": "02 - Traummaterial - The way between the top of the bridge and the water.mp3"
+ },
+ {
+  "folder": "2013 - under-bad-eyes-demo-2013-2013",
+  "slug": "under-bad-eyes-demo-2013-2013.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.4484,
+  "matched": "04 - Under Bad Eyes - This is about you spinning arms.mp3"
+ },
+ {
+  "folder": "2013 - victim-lar-2013",
+  "slug": "victim-lar-2013.mp3",
+  "n_rest": 2,
+  "verdict": "distinct",
+  "ber": 0.4797,
+  "matched": "02 - VICTIM! - Janela.mp3"
+ },
+ {
+  "folder": "2013 - vidaxlivre-mais-que-livres-2013",
+  "slug": "vidaxlivre-mais-que-livres-2013.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4417,
+  "matched": "03 - VidaxLivre - I'm Jack's Broken Heart.mp3"
+ },
+ {
+  "folder": "2013 - worthless-demo-1-2013",
+  "slug": "worthless-demo-1-2013.mp3",
+  "n_rest": 2,
+  "verdict": "distinct",
+  "ber": 0.4475,
+  "matched": "01 - Worthless - The God To Be Overthrown.mp3"
+ },
+ {
+  "folder": "2013 - young-lights-early-winter-2013",
+  "slug": "young-lights-early-winter-2013.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.4234,
+  "matched": "06 - Young Lights - Alaska (Exitlude).mp3"
+ },
+ {
+  "folder": "2014 - Cadaver Em Transe Lp",
+  "slug": "cadaver-em-transe-lp-2014.mp3",
+  "n_rest": 11,
+  "verdict": "distinct",
+  "ber": 0.4577,
+  "matched": "07 - CADAVER EM TRANSE - Take A Look.mp3"
+ },
+ {
+  "folder": "2014 - Comando Circulo Avesso - História Invisível",
+  "slug": "comando-circulo-avesso-historia.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4648,
+  "matched": "06 - Comando Círculo Avesso - O abismo que desejávamos atenuar se amplia pelas lentes dos microscópios eletrônicos e pelas redes de comunicação..mp3"
+ },
+ {
+  "folder": "2014 - Deafkids Upper Hand",
+  "slug": "deafkids-upper-hand-2013.mp3",
+  "n_rest": 8,
+  "verdict": "distinct",
+  "ber": 0.3133,
+  "matched": "08 - DEAFKIDS - Broken.mp3"
+ },
+ {
+  "folder": "2014 - Nosso Querido Figueiredo - A Banda Solitária do Inspetor Figueiredo",
+  "slug": "nosso-querido-figueiredo-banda.mp3",
+  "n_rest": 16,
+  "verdict": "distinct",
+  "ber": 0.4153,
+  "matched": "13 - Nosso Querido Figueiredo - Choque.mp3"
+ },
+ {
+  "folder": "2014 - Verjault Inner Void Violence",
+  "slug": "verjault-inner-void-violence-2013.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.3589,
+  "matched": "01 - Verjault - No Fuck.mp3"
+ },
+ {
+  "folder": "2014 - Verjault Killerself",
+  "slug": "verjault-killerself-2014.mp3",
+  "n_rest": 2,
+  "verdict": "distinct",
+  "ber": 0.3997,
+  "matched": "02 - Verjault - Side B.mp3"
+ },
+ {
+  "folder": "2014 - Victim Pupila",
+  "slug": "victim-pupila-2014.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.482,
+  "matched": "03 - VICTIM! - Prece.mp3"
+ },
+ {
+  "folder": "2014 - adeus-pai-2014",
+  "slug": "adeus-pai-2014.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4606,
+  "matched": "02 - aDeus - Zarko.mp3"
+ },
+ {
+  "folder": "2014 - assopro-assopro-ep-2014",
+  "slug": "assopro-assopro-ep-2014.mp3",
+  "n_rest": 7,
+  "verdict": "distinct",
+  "ber": 0.4084,
+  "matched": "01 - Assopro - Atlântico Sul.mp3"
+ },
+ {
+  "folder": "2014 - atire-em-meu-peito-tiempo-lejano-2014",
+  "slug": "atire-em-meu-peito-tiempo-lejano-2014.mp3",
+  "n_rest": 3,
+  "verdict": "distinct",
+  "ber": 0.4714,
+  "matched": "03 - Atire em meu peito - Encontros, despedidas e coisas para fazer agora.mp3"
+ },
+ {
+  "folder": "2014 - black-manhattan-ep-2014",
+  "slug": "black-manhattan-ep-2014.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4242,
+  "matched": "02 - Black Manhattan - Diga-se.mp3"
+ },
+ {
+  "folder": "2014 - cais-virado-com-lirio-nos-olhos-2014",
+  "slug": "cais-virado-com-lirio-nos-olhos-2014.mp3",
+  "n_rest": 2,
+  "verdict": "distinct",
+  "ber": 0.4547,
+  "matched": "01 - Cais Virado - Com Lirio nos Olhos.mp3"
+ },
+ {
+  "folder": "2014 - chademolusco-obasquiat-jam-sessions-2014",
+  "slug": "chademolusco-obasquiat-jam-sessions-2014.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.4322,
+  "matched": "02 - Chademolusco + Obasquiat - Enfumaçado (Obasquiat).mp3"
+ },
+ {
+  "folder": "2014 - chinese-cookie-poets-2014",
+  "slug": "chinese-cookie-poets-2014.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.4147,
+  "matched": "06 - Chinese Cookie Poets - Live at Audio Rebel 27-07-10.mp3"
+ },
+ {
+  "folder": "2014 - constrict-demo-2014",
+  "slug": "constrict-demo-2014.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4517,
+  "matched": "01 - CONSTRICTOR - Burn Out.mp3"
+ },
+ {
+  "folder": "2014 - dark-haze-dark-haze-ep-2014",
+  "slug": "dark-haze-dark-haze-ep-2014.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4672,
+  "matched": "04 - Dark Haze - The Temple.mp3"
+ },
+ {
+  "folder": "2014 - dismembra-excerto-i-2014",
+  "slug": "dismembra-excerto-i-2014.mp3",
+  "n_rest": 2,
+  "verdict": "distinct",
+  "ber": 0.4547,
+  "matched": "01 - Dismembra - 190814.9_23.mp3"
+ },
+ {
+  "folder": "2014 - dupladinamica1-sei-la-2014",
+  "slug": "dupladinamica1-sei-la-2014.mp3",
+  "n_rest": 9,
+  "verdict": "distinct",
+  "ber": 0.4397,
+  "matched": "01 - dupladinamica1 - Intro 1.mp3"
+ },
+ {
+  "folder": "2014 - esmectatons-farting-2014",
+  "slug": "esmectatons-farting-2014.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.3917,
+  "matched": "02 - Esmectatons - Futa Futa Toddlercon.mp3"
+ },
+ {
+  "folder": "2014 - formafluida-multitude-ep-2014",
+  "slug": "formafluida-multitude-ep-2014.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4412,
+  "matched": "05 - Formafluida - We've Never Been Awake.mp3"
+ },
+ {
+  "folder": "2014 - h-variatio-2014",
+  "slug": "h-variatio-2014.mp3",
+  "n_rest": 10,
+  "verdict": "distinct",
+  "ber": 0.4055,
+  "matched": "06 - Christopher H. M. Jacques - Sycamore 11 (that thought won't extinguish itself).mp3"
+ },
+ {
+  "folder": "2014 - helga-helga-2014",
+  "slug": "helga-helga-2014.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.4469,
+  "matched": "04 - Helga - Eu Me Anulei.mp3"
+ },
+ {
+  "folder": "2014 - i-am-nihil-iii-rest-2014",
+  "slug": "i-am-nihil-iii-rest-2014.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4408,
+  "matched": "01 - I Am Nihil - I.mp3"
+ },
+ {
+  "folder": "2014 - ideia-de-antes-ideia-de-antes-2014",
+  "slug": "ideia-de-antes-ideia-de-antes-2014.mp3",
+  "n_rest": 9,
+  "verdict": "distinct",
+  "ber": 0.4133,
+  "matched": "04 - Ideia de Antes - Canção e Dança.mp3"
+ },
+ {
+  "folder": "2014 - igapo-de-almas-2014",
+  "slug": "igapo-de-almas-2014.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4602,
+  "matched": "01 - NA PONTA DA AGULHA - NA PONTA DA AGULHA #131 - Parte 1.mp3"
+ },
+ {
+  "folder": "2014 - imperio-de-la-saudades-de-beber-2014",
+  "slug": "imperio-de-la-saudades-de-beber-2014.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4536,
+  "matched": "04 - Império da Lã - Cheio de Dentes.mp3"
+ },
+ {
+  "folder": "2014 - lingering-last-drops-north-2014",
+  "slug": "lingering-last-drops-north-2014.mp3",
+  "n_rest": 3,
+  "verdict": "distinct",
+  "ber": 0.4428,
+  "matched": "02 - Lingering Last Drops - Invisibility.mp3"
+ },
+ {
+  "folder": "2014 - lupe-de-lupe-quarup-2014",
+  "slug": "lupe-de-lupe-quarup-2014.mp3",
+  "n_rest": 21,
+  "verdict": "distinct",
+  "ber": 0.4081,
+  "matched": "13 - Lupe de Lupe - Orquestra Pra Três.mp3"
+ },
+ {
+  "folder": "2014 - maquinas-maquinas-ep-2014",
+  "slug": "maquinas-maquinas-ep-2014.mp3",
+  "n_rest": 3,
+  "verdict": "distinct",
+  "ber": 0.4509,
+  "matched": "03 - maquinas - elevador.mp3"
+ },
+ {
+  "folder": "2014 - o-padre-dos-baloes-ep-ii-2014",
+  "slug": "o-padre-dos-baloes-ep-ii-2014.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4455,
+  "matched": "01 - O Padre dos Balões - Amava, Morreu.mp3"
+ },
+ {
+  "folder": "2014 - objeto-amarelo-ao-vivo-em-nova-york-2014",
+  "slug": "objeto-amarelo-ao-vivo-em-nova-york-2014.mp3",
+  "n_rest": 2,
+  "verdict": "distinct",
+  "ber": 0.4877,
+  "matched": "01 - Objeto Amarelo - Silent Barn, NYC. 28⧸10⧸2013.mp3"
+ },
+ {
+  "folder": "2014 - operaloki-infancya-sonhos-e-amores-2014",
+  "slug": "operaloki-infancya-sonhos-e-amores-2014.mp3",
+  "n_rest": 9,
+  "verdict": "distinct",
+  "ber": 0.4308,
+  "matched": "05 - ÓperaLóki - Ensaio sobre a solidão.mp3"
+ },
+ {
+  "folder": "2014 - persiano-persiano-2014",
+  "slug": "persiano-persiano-2014.mp3",
+  "n_rest": 10,
+  "verdict": "distinct",
+  "ber": 0.4378,
+  "matched": "10 - Persiano - Eu Não, Você.mp3"
+ },
+ {
+  "folder": "2014 - porraloka-sem-titulo-ep-2014",
+  "slug": "porraloka-sem-titulo-ep-2014.mp3",
+  "n_rest": 15,
+  "verdict": "distinct",
+  "ber": 0.4384,
+  "matched": "05 - Porräloka - Mais uma sem título.mp3"
+ },
+ {
+  "folder": "2014 - postal-2014",
+  "slug": "postal-2014.mp3",
+  "n_rest": 3,
+  "verdict": "distinct",
+  "ber": 0.4559,
+  "matched": "03 - Postal - Otantoquanto.mp3"
+ },
+ {
+  "folder": "2014 - rugas-do-mar-danse-serpentine-2014",
+  "slug": "rugas-do-mar-danse-serpentine-2014.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.4333,
+  "matched": "01 - Rugas do Mar - Au revoir tristesse.mp3"
+ },
+ {
+  "folder": "2014 - sanitario-sexy-metafora-2014",
+  "slug": "sanitario-sexy-metafora-2014.mp3",
+  "n_rest": 10,
+  "verdict": "distinct",
+  "ber": 0.4183,
+  "matched": "03 - Sanitário Sexy - Whisky.mp3"
+ },
+ {
+  "folder": "2014 - satvrnsatvrn-satvrnsatvrn-2014",
+  "slug": "satvrnsatvrn-satvrnsatvrn-2014.mp3",
+  "n_rest": 8,
+  "verdict": "distinct",
+  "ber": 0.402,
+  "matched": "08 - Satvrn Satvrn - Outro.mp3"
+ },
+ {
+  "folder": "2014 - sonora-scotch-capivara-2014",
+  "slug": "sonora-scotch-capivara-2014.mp3",
+  "n_rest": 8,
+  "verdict": "distinct",
+  "ber": 0.4489,
+  "matched": "01 - Sonora Scotch - Governador.mp3"
+ },
+ {
+  "folder": "2014 - stela-campos-monday-morning-ep-2014",
+  "slug": "stela-campos-monday-morning-ep-2014.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.4348,
+  "matched": "03 - Stela Campos - Unkind (demo).mp3"
+ },
+ {
+  "folder": "2014 - transparente-intenso-mar-2014",
+  "slug": "transparente-intenso-mar-2014.mp3",
+  "n_rest": 17,
+  "verdict": "distinct",
+  "ber": 0.4637,
+  "matched": "01 - Transparente Intenso - Tranquilidade.mp3"
+ },
+ {
+  "folder": "2014 - v-cidade-2014",
+  "slug": "v-cidade-2014.mp3",
+  "n_rest": 11,
+  "verdict": "distinct",
+  "ber": 0.4472,
+  "matched": "01 - v. - Metrô.mp3"
+ },
+ {
+  "folder": "2014 - yuri-costa-dissonia-2014",
+  "slug": "yuri-costa-dissonia-2014.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4545,
+  "matched": "02 - Yuri Costa - Torporoso.mp3"
+ },
+ {
+  "folder": "2014 - zonbizarro-brisa-2014",
+  "slug": "zonbizarro-brisa-2014.mp3",
+  "n_rest": 7,
+  "verdict": "distinct",
+  "ber": 0.4258,
+  "matched": "03 - Zonbizarro - Reação.mp3"
+ },
+ {
+  "folder": "2015 - Aurata Espuma",
+  "slug": "aurata-espuma-2015.mp3",
+  "n_rest": 8,
+  "verdict": "distinct",
+  "ber": 0.3903,
+  "matched": "03 - aurata - Intemperismo.mp3"
+ },
+ {
+  "folder": "2015 - Bardo Bardo Ep",
+  "slug": "bardo-bardo-ep-2015.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4197,
+  "matched": "05 - Bardo - Moody.mp3"
+ },
+ {
+  "folder": "2015 - Black Witch Aware",
+  "slug": "black-witch-aware-2015.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4716,
+  "matched": "01 - Black Witch - First Ritual.mp3"
+ },
+ {
+  "folder": "2015 - Cabaret Rock Demo",
+  "slug": "cabaret-rock-demo-2015.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4531,
+  "matched": "01 - Cabaret Rock - É Du Capitalista.mp3"
+ },
+ {
+  "folder": "2015 - Dutra Dutra Ep",
+  "slug": "dutra-dutra-ep-2015.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4389,
+  "matched": "04 - Dutra - Euforia.mp3"
+ },
+ {
+  "folder": "2015 - Felipe Neiva Chegou Fim De Festa",
+  "slug": "felipe-neiva-chegou-fim-de-festa-2015.mp3",
+  "n_rest": 10,
+  "verdict": "distinct",
+  "ber": 0.4225,
+  "matched": "01 - Felipe Neiva - Intro Instrumental.mp3"
+ },
+ {
+  "folder": "2015 - Floating Kid Left",
+  "slug": "floating-kid-left-2015.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4433,
+  "matched": "04 - Floating Kid - Left.mp3"
+ },
+ {
+  "folder": "2015 - Folest Folest Ii",
+  "slug": "folest-folest-ii-2015.mp3",
+  "n_rest": 12,
+  "verdict": "distinct",
+  "ber": 0.3684,
+  "matched": "04 - Folest - Mimosa.mp3"
+ },
+ {
+  "folder": "2015 - Gulag Demo",
+  "slug": "gulag-demo-2012.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4131,
+  "matched": "01 - Gulag - Jorge, o cowboy.mp3"
+ },
+ {
+  "folder": "2015 - Hierofante Purpura Boas Bestas Ep",
+  "slug": "hierofante-purpura-boas-bestas-ep-2015.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4458,
+  "matched": "04 - Hierofante Púrpura - Lânguida Luz.mp3"
+ },
+ {
+  "folder": "2015 - Lingering Last Drops - Walk; Don´t Run (live 23​-​08​-​2009)",
+  "slug": "lingering-last-drops-walk-dont-run-live.mp3",
+  "n_rest": 1,
+  "verdict": "distinct",
+  "ber": 0.4566,
+  "matched": "01 - Lingering Last Drops - Walk; Don´t Run.mp3"
+ },
+ {
+  "folder": "2015 - Outdeth Prediction",
+  "slug": "outdeth-prediction-2015.mp3",
+  "n_rest": 10,
+  "verdict": "distinct",
+  "ber": 0.4134,
+  "matched": "04 - Outdeth - Absence.mp3"
+ },
+ {
+  "folder": "2015 - Supercordas Terceira Terra",
+  "slug": "supercordas-terceira-terra-2015.mp3",
+  "n_rest": 11,
+  "verdict": "distinct",
+  "ber": 0.4441,
+  "matched": "09 - Supercordas - Espectralismo ou Barbárie？.mp3"
+ },
+ {
+  "folder": "2015 - Twelve Street Twelve Street",
+  "slug": "twelve-street-twelve-street-2013.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.4311,
+  "matched": "02 - Twelve Street - Goes On.mp3"
+ },
+ {
+  "folder": "2015 - Wallace Costa Vanished",
+  "slug": "wallace-costa-vanished-2015.mp3",
+  "n_rest": 12,
+  "verdict": "distinct",
+  "ber": 0.3734,
+  "matched": "07 - Wallace Costa - A Morning Wave Came To Fate.mp3"
+ },
+ {
+  "folder": "2015 - acho-melhor-nao-iii-2015",
+  "slug": "acho-melhor-nao-iii-2015.mp3",
+  "n_rest": 10,
+  "verdict": "distinct",
+  "ber": 0.3797,
+  "matched": "03 - acho melhor não - Tuim Reverb.mp3"
+ },
+ {
+  "folder": "2015 - agnosi-untitled-2015",
+  "slug": "agnosi-untitled-2015.mp3",
+  "n_rest": 2,
+  "verdict": "distinct",
+  "ber": 0.4642,
+  "matched": "01 - Agnosi - Untitled I.mp3"
+ },
+ {
+  "folder": "2015 - antonio-projeto-trois-flores-ep-2015",
+  "slug": "antonio-projeto-trois-flores-ep-2015.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4194,
+  "matched": "02 - Antônio & Projeto à Trois - Flores.mp3"
+ },
+ {
+  "folder": "2015 - borealis-borealis-2015",
+  "slug": "borealis-borealis-2015.mp3",
+  "n_rest": 10,
+  "verdict": "distinct",
+  "ber": 0.4666,
+  "matched": "06 - Borealis - Thru the Window.mp3"
+ },
+ {
+  "folder": "2015 - calvin-cafe-2015",
+  "slug": "calvin-cafe-2015.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4641,
+  "matched": "01 - CALVIN - Café.mp3"
+ },
+ {
+  "folder": "2015 - dianamita-aos-meus-inimigos-ep-2015",
+  "slug": "dianamita-aos-meus-inimigos-ep-2015.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4763,
+  "matched": "04 - Diamanita - Peça Pra Viver.mp3"
+ },
+ {
+  "folder": "2015 - dotoilage-racehouse-ep-2015",
+  "slug": "dotoilage-racehouse-ep-2015.mp3",
+  "n_rest": 7,
+  "verdict": "distinct",
+  "ber": 0.4458,
+  "matched": "07 - .oilage - Racehouse.mp3"
+ },
+ {
+  "folder": "2015 - endless-agony-ep-2015",
+  "slug": "endless-agony-ep-2015.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4727,
+  "matched": "02 - Endless Agony - Cárcere.mp3"
+ },
+ {
+  "folder": "2015 - eterno-eterno-2015",
+  "slug": "eterno-eterno-2015.mp3",
+  "n_rest": 9,
+  "verdict": "distinct",
+  "ber": 0.4662,
+  "matched": "03 - eterno - Hey.mp3"
+ },
+ {
+  "folder": "2015 - insonia-demo-2015",
+  "slug": "insonia-demo-2015.mp3",
+  "n_rest": 9,
+  "verdict": "distinct",
+  "ber": 0.4433,
+  "matched": "02 - Insônia - 50 tons de tentar disfarçar relacionamentos abusivos e estupro de literatura BDSM.mp3"
+ },
+ {
+  "folder": "2015 - isso-isso-ep-2015",
+  "slug": "isso-isso-ep-2015.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.4347,
+  "matched": "04 - ISSO - Parestesia.mp3"
+ },
+ {
+  "folder": "2015 - krokodil-krokodil-2015",
+  "slug": "krokodil-krokodil-2015.mp3",
+  "n_rest": 9,
+  "verdict": "distinct",
+  "ber": 0.4516,
+  "matched": "01 - Krokodil - Always the same.mp3"
+ },
+ {
+  "folder": "2015 - lillian-lessa-expresso-ep-2015",
+  "slug": "lillian-lessa-expresso-ep-2015.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.4453,
+  "matched": "06 - Lillian Lessa - Enleio Fatal.mp3"
+ },
+ {
+  "folder": "2015 - lindberg-hotel-cotton-chains-2015",
+  "slug": "lindberg-hotel-cotton-chains-2015.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4367,
+  "matched": "04 - Lindberg Hotel - Emulating Brian Eno In C Major.mp3"
+ },
+ {
+  "folder": "2015 - lo-fi-ultra-cosmic-blues-2015",
+  "slug": "lo-fi-ultra-cosmic-blues-2015.mp3",
+  "n_rest": 10,
+  "verdict": "distinct",
+  "ber": 0.2716,
+  "matched": "01 - Lo-Fi - Purple Sage⧸Blessed Wolf⧸Silver and Gold.mp3"
+ },
+ {
+  "folder": "2015 - malafaia-all-over-you-2015",
+  "slug": "malafaia-all-over-you-2015.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.452,
+  "matched": "01 - Malafaia - In Your Soul.mp3"
+ },
+ {
+  "folder": "2015 - moses-moses-2015",
+  "slug": "moses-moses-2015.mp3",
+  "n_rest": 20,
+  "verdict": "distinct",
+  "ber": 0.4305,
+  "matched": "18 - moses - m.u.l.g..mp3"
+ },
+ {
+  "folder": "2015 - notadeum-nenhum-valor-2015",
+  "slug": "notadeum-nenhum-valor-2015.mp3",
+  "n_rest": 7,
+  "verdict": "distinct",
+  "ber": 0.3627,
+  "matched": "05 - notadeum - Falei.mp3"
+ },
+ {
+  "folder": "2015 - nuvem-dia-chuvoso-violeta-2015",
+  "slug": "nuvem-dia-chuvoso-violeta-2015.mp3",
+  "n_rest": 2,
+  "verdict": "distinct",
+  "ber": 0.4711,
+  "matched": "01 - Nuvem - Dia Chuvoso.mp3"
+ },
+ {
+  "folder": "2015 - o-no-ep1-2015",
+  "slug": "o-no-ep1-2015.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4553,
+  "matched": "05 - O Nó - Escuro Sem Fim (Quasar).mp3"
+ },
+ {
+  "folder": "2015 - radiotape-enquanto-os-outros-dormem-2015",
+  "slug": "radiotape-enquanto-os-outros-dormem-2015.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4338,
+  "matched": "01 - radiotape - Enquanto os outros dormem.mp3"
+ },
+ {
+  "folder": "2015 - refutare-o-mapa-2015",
+  "slug": "refutare-o-mapa-2015.mp3",
+  "n_rest": 3,
+  "verdict": "distinct",
+  "ber": 0.4303,
+  "matched": "03 - Refutare - Para onde vão os mortos？.mp3"
+ },
+ {
+  "folder": "2015 - ronco-ep-2015",
+  "slug": "ronco-ep-2015.mp3",
+  "n_rest": 3,
+  "verdict": "distinct",
+  "ber": 0.452,
+  "matched": "02 - RONCO - El Siniestro.mp3"
+ },
+ {
+  "folder": "2015 - tomodachi-nada-2015",
+  "slug": "tomodachi-nada-2015.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4459,
+  "matched": "01 - Tomodachi - Kiki (Let it go).mp3"
+ },
+ {
+  "folder": "2015 - tomodachi-segundo-ep-2015",
+  "slug": "tomodachi-segundo-ep-2015.mp3",
+  "n_rest": 10,
+  "verdict": "distinct",
+  "ber": 0.4475,
+  "matched": "08 - Tomodachi - Noturno.mp3"
+ },
+ {
+  "folder": "2015 - verjault-brainflesh-2015",
+  "slug": "verjault-brainflesh-2015.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.4239,
+  "matched": "01 - Verjault - Simone.mp3"
+ },
+ {
+  "folder": "2015 - western-folks-western-folks-ep-2015",
+  "slug": "western-folks-western-folks-ep-2015.mp3",
+  "n_rest": 7,
+  "verdict": "distinct",
+  "ber": 0.4173,
+  "matched": "07 - Western Folks - Red Army.mp3"
+ },
+ {
+  "folder": "2016 - Cubus Suma Morra Nao Volte Jamais",
+  "slug": "cubus-suma-morra-nao-volte-jamais-2016.mp3",
+  "n_rest": 2,
+  "verdict": "distinct",
+  "ber": 0.4355,
+  "matched": "02. Cubüs - Post-Pink.mp3"
+ },
+ {
+  "folder": "2016 - Dunas Descortinar Dos Seres",
+  "slug": "dunas-descortinar-dos-seres-2016.mp3",
+  "n_rest": 3,
+  "verdict": "distinct",
+  "ber": 0.4645,
+  "matched": "03 - Dunas - Ad Anima.mp3"
+ },
+ {
+  "folder": "2016 - Gruta Rito",
+  "slug": "gruta-rito-2016.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.3684,
+  "matched": "03. Gruta - III.mp3"
+ },
+ {
+  "folder": "2016 - Guizadorbital Guizadorbital",
+  "slug": "guizadorbital-guizadorbital-2016.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.4506,
+  "matched": "05 - Guizado - Júpiter.mp3"
+ },
+ {
+  "folder": "2016 - Jonathan Tadeu Queda Livre",
+  "slug": "jonathan-tadeu-queda-livre-2016.mp3",
+  "n_rest": 10,
+  "verdict": "distinct",
+  "ber": 0.4294,
+  "matched": "08 - Jonathan Tadeu - Amour.mp3"
+ },
+ {
+  "folder": "2016 - Jp Cardoso Submarine Dreams",
+  "slug": "jp-cardoso-submarine-dreams-2016.mp3",
+  "n_rest": 10,
+  "verdict": "distinct",
+  "ber": 0.4447,
+  "matched": "05 - JP - We Don't Have to Grow Up.mp3"
+ },
+ {
+  "folder": "2016 - Krokodil - PRINCÍPIOS DO AUTOCONHECIMENTO OBSTRUÍDO",
+  "slug": "krokodil-principios-do-autoconhecimento.mp3",
+  "n_rest": 2,
+  "verdict": "distinct",
+  "ber": 0.4402,
+  "matched": "01 - KROKODIL - A - Aion.mp3"
+ },
+ {
+  "folder": "2016 - Mente Podre - Minha Existência Foi Destruída",
+  "slug": "mente-podre-minha-existencia-foi.mp3",
+  "n_rest": 1,
+  "verdict": "distinct",
+  "ber": 0.463,
+  "matched": "06 - Mente Podre - MINHA EXISTÊNCIA FOI DESTRUIDA.mp3"
+ },
+ {
+  "folder": "2016 - Navesharris Immaculate Sinners Sleep",
+  "slug": "navesharris-immaculate-sinners-sleep.mp3",
+  "n_rest": 3,
+  "verdict": "distinct",
+  "ber": 0.45,
+  "matched": "03 - NavesHarris - Immaculate Sinners (Baespflug Remix).mp3"
+ },
+ {
+  "folder": "2016 - Obasquiat Future Is Black Past And",
+  "slug": "obasquiat-future-is-black-past-and.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.4258,
+  "matched": "03 - Obasquiat - Schiele.mp3"
+ },
+ {
+  "folder": "2016 - Omar Ermo",
+  "slug": "omar-ermo-2016.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.2722,
+  "matched": "01 - Omar - sala de recordações.mp3"
+ },
+ {
+  "folder": "2016 - Omsa - Orelhas de Macaco em Solução Aquosa",
+  "slug": "omsa-orelhas-de-macaco-em-solucao.mp3",
+  "n_rest": 9,
+  "verdict": "distinct",
+  "ber": 0.3772,
+  "matched": "05 - OMSA - Rasante sobre as águas da Mirim.mp3"
+ },
+ {
+  "folder": "2016 - Pelos Paraiso Perdido Nos Bolsos",
+  "slug": "pelos-paraiso-perdido-nos-bolsos-2016.mp3",
+  "n_rest": 10,
+  "verdict": "distinct",
+  "ber": 0.4153,
+  "matched": "09 - Pelos - Eu Neon.mp3"
+ },
+ {
+  "folder": "2016 - Torres De Mello Quem Sabe",
+  "slug": "torres-de-mello-quem-sabe-2016.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.43,
+  "matched": "03 - Torres de Mello - Olhos de Mel.mp3"
+ },
+ {
+  "folder": "2016 - Trompa - Trompa Se Apresenta: Trompístas Vão Ao Banco",
+  "slug": "trompa-trompa-se-apresenta-trompistas.mp3",
+  "n_rest": 7,
+  "verdict": "distinct",
+  "ber": 0.4319,
+  "matched": "02 - trompa - kent, 22.02.2006.mp3"
+ },
+ {
+  "folder": "2016 - Whypatterns Ao Vivo Ccta",
+  "slug": "whypatterns-ao-vivo-ccta-2015.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4208,
+  "matched": "04 - whypatterns_ - whypatterns_ pt. 2.mp3"
+ },
+ {
+  "folder": "2016 - aurata-verano-2016",
+  "slug": "aurata-verano-2016.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.4537,
+  "matched": "06 - aurata - Rei lião [bside1].mp3"
+ },
+ {
+  "folder": "2016 - azul-celeste-sopro-2016",
+  "slug": "azul-celeste-sopro-2016.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4244,
+  "matched": "02 - Azul Celeste - Canto para Waly.mp3"
+ },
+ {
+  "folder": "2016 - blear-blear-2016",
+  "slug": "blear-blear-2016.mp3",
+  "n_rest": 9,
+  "verdict": "distinct",
+  "ber": 0.4314,
+  "matched": "01 - Blear - Broken Mirror.mp3"
+ },
+ {
+  "folder": "2016 - ce-nu-2016",
+  "slug": "ce-nu-2016.mp3",
+  "n_rest": 3,
+  "verdict": "distinct",
+  "ber": 0.4569,
+  "matched": "02 - aNA mEL + jEROnA RUyCE + mARiA LUz - qUE mÚSicA.mp3"
+ },
+ {
+  "folder": "2016 - chinese-cookie-poets-area-sismica-2016",
+  "slug": "chinese-cookie-poets-area-sismica-2016.mp3",
+  "n_rest": 2,
+  "verdict": "distinct",
+  "ber": 0.4814,
+  "matched": "02 - Chinese Cookie Poets - part 2.mp3"
+ },
+ {
+  "folder": "2016 - confeitaria-enero-2016",
+  "slug": "confeitaria-enero-2016.mp3",
+  "n_rest": 3,
+  "verdict": "distinct",
+  "ber": 0.3937,
+  "matched": "02 - Confeitaria - Enero.mp3"
+ },
+ {
+  "folder": "2016 - constantina-mexido-2016",
+  "slug": "constantina-mexido-2016.mp3",
+  "n_rest": 7,
+  "verdict": "distinct",
+  "ber": 0.3325,
+  "matched": "04 - Constantina - Pequenas Embarcações - Tchilli Rodriguez remix.mp3"
+ },
+ {
+  "folder": "2016 - dead-parrot-dead-parrot-ep-2016",
+  "slug": "dead-parrot-dead-parrot-ep-2016.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4352,
+  "matched": "02 - Dead Parrot - Man is Wolf to Man.mp3"
+ },
+ {
+  "folder": "2016 - dronedeus-dronedeus-2016",
+  "slug": "dronedeus-dronedeus-2016.mp3",
+  "n_rest": 3,
+  "verdict": "distinct",
+  "ber": 0.4689,
+  "matched": "02 - dronedeus - eco ao fundo da canção mórbida.mp3"
+ },
+ {
+  "folder": "2016 - faded-waterfall-baby-blue-ep-2016",
+  "slug": "faded-waterfall-baby-blue-ep-2016.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.3959,
+  "matched": "04 - Faded Waterfall - Baby Blue.mp3"
+ },
+ {
+  "folder": "2016 - garfo-we-could-end-world-together-2016",
+  "slug": "garfo-we-could-end-world-together-2016.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4159,
+  "matched": "05 - garfo - atmosphere.mp3"
+ },
+ {
+  "folder": "2016 - grena-azul-2016",
+  "slug": "grena-azul-2016.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4252,
+  "matched": "04 - Grená - Sabe Lá.mp3"
+ },
+ {
+  "folder": "2016 - hanging-freud-motherland-2016",
+  "slug": "hanging-freud-motherland-2016.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.4619,
+  "matched": "03 - Hanging Freud - Motherland.mp3"
+ },
+ {
+  "folder": "2016 - hugo-dos-santos-hugo-dos-santos-2016",
+  "slug": "hugo-dos-santos-hugo-dos-santos-2016.mp3",
+  "n_rest": 10,
+  "verdict": "distinct",
+  "ber": 0.45,
+  "matched": "04 - Hugo dos Santos - Há de chegar.mp3"
+ },
+ {
+  "folder": "2016 - inputoutput-2016-2017",
+  "slug": "inputoutput-2016-2017.mp3",
+  "n_rest": 8,
+  "verdict": "distinct",
+  "ber": 0.3759,
+  "matched": "06 - input_output - Cartas-castelo.mp3"
+ },
+ {
+  "folder": "2016 - joao-2016",
+  "slug": "joao-2016.mp3",
+  "n_rest": 7,
+  "verdict": "distinct",
+  "ber": 0.4486,
+  "matched": "06 - Joao Lobo, Luis Vicente, John Dikeman, Giovanni Di Domenico, Peter Jacquemyn - track 6.mp3"
+ },
+ {
+  "folder": "2016 - joao-mais-uma-historia-de-amor-2016",
+  "slug": "joao-mais-uma-historia-de-amor-2016.mp3",
+  "n_rest": 8,
+  "verdict": "distinct",
+  "ber": 0.4611,
+  "matched": "03 - João - Nove dias.mp3"
+ },
+ {
+  "folder": "2016 - jonatas-onofre-ermo-2016",
+  "slug": "jonatas-onofre-ermo-2016.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4433,
+  "matched": "05 - Jonatas Onofre - minervina.mp3"
+ },
+ {
+  "folder": "2016 - jonatas-onofre-tzu-2016",
+  "slug": "jonatas-onofre-tzu-2016.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4778,
+  "matched": "05 - Jonatas Onofre - libre.mp3"
+ },
+ {
+  "folder": "2016 - kiitos-obrigado-2016",
+  "slug": "kiitos-obrigado-2016.mp3",
+  "n_rest": 7,
+  "verdict": "distinct",
+  "ber": 0.4169,
+  "matched": "02 - kiitos - Right-left confusion.mp3"
+ },
+ {
+  "folder": "2016 - los-volks-luna-2016",
+  "slug": "los-volks-luna-2016.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.4156,
+  "matched": "03 - Los Volks - Fire.mp3"
+ },
+ {
+  "folder": "2016 - monophonia-monophonia-2016",
+  "slug": "monophonia-monophonia-2016.mp3",
+  "n_rest": 10,
+  "verdict": "distinct",
+  "ber": 0.4144,
+  "matched": "08 - Monophonia - 08.mp3"
+ },
+ {
+  "folder": "2016 - os-torto-trombeta-2016",
+  "slug": "os-torto-trombeta-2016.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4147,
+  "matched": "03 - Os Torto - Eu amei vocês.mp3"
+ },
+ {
+  "folder": "2016 - pollux-castor-efemeride-2016",
+  "slug": "pollux-castor-efemeride-2016.mp3",
+  "n_rest": 3,
+  "verdict": "distinct",
+  "ber": 0.4511,
+  "matched": "02 - Pollux & Castor - Centopeia.mp3"
+ },
+ {
+  "folder": "2016 - preto-organismo-2016",
+  "slug": "preto-organismo-2016.mp3",
+  "n_rest": 3,
+  "verdict": "distinct",
+  "ber": 0.4642,
+  "matched": "03 - Preto - Alegria, Ilusão.mp3"
+ },
+ {
+  "folder": "2016 - reiner-filho-da-nuvem-2016",
+  "slug": "reiner-filho-da-nuvem-2016.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.4498,
+  "matched": "05 - Reiner - Os Mistérios da Ida.mp3"
+ },
+ {
+  "folder": "2016 - rios-voadores-rios-voadores-2016",
+  "slug": "rios-voadores-rios-voadores-2016.mp3",
+  "n_rest": 11,
+  "verdict": "distinct",
+  "ber": 0.4484,
+  "matched": "04 - Rios Voadores - Praça Central.mp3"
+ },
+ {
+  "folder": "2016 - sertao-sangrento-vidas-secas-ep-2016",
+  "slug": "sertao-sangrento-vidas-secas-ep-2016.mp3",
+  "n_rest": 1,
+  "verdict": "distinct",
+  "ber": 0.4342,
+  "matched": "12 - velho rabugento distro e zine - 12. Sertão Sangrento - Vidas Secas.mp3"
+ },
+ {
+  "folder": "2016 - tokyo-savannah-straight-to-heavy-2016",
+  "slug": "tokyo-savannah-straight-to-heavy-2016.mp3",
+  "n_rest": 1,
+  "verdict": "distinct",
+  "ber": 0.2533,
+  "matched": "07 - Tokyo Savannah - Straight to Heavy.mp3"
+ },
+ {
+  "folder": "2016 - umno-o-cais-2016",
+  "slug": "umno-o-cais-2016.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.4214,
+  "matched": "04 - UMNÓ - Janela.mp3"
+ },
+ {
+  "folder": "2016 - ze-bigode-ze-bigode-ep-2016",
+  "slug": "ze-bigode-ze-bigode-ep-2016.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4639,
+  "matched": "02 - Zé Bigode Orquestra - É Quente (ft Pedro Selector).mp3"
+ },
+ {
+  "folder": "2016 - zeitgeist-z-e-i-t-g-e-i-s-t-2016",
+  "slug": "zeitgeist-z-e-i-t-g-e-i-s-t-2016.mp3",
+  "n_rest": 11,
+  "verdict": "distinct",
+  "ber": 0.4283,
+  "matched": "02 - Zeitgeist - Homem de Bem.mp3"
+ },
+ {
+  "folder": "2017 - Arthur Melo Agosto",
+  "slug": "arthur-melo-agosto-2017.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.4417,
+  "matched": "06 - Arthur Melo - Vila Velha.mp3"
+ },
+ {
+  "folder": "2017 - Bruno Real Cidade Dentro",
+  "slug": "bruno-real-cidade-dentro-2016.mp3",
+  "n_rest": 8,
+  "verdict": "distinct",
+  "ber": 0.3328,
+  "matched": "04 - Bruno Real - Utópico.mp3"
+ },
+ {
+  "folder": "2017 - Giallos Blaxxxploitation",
+  "slug": "giallos-blaxxxploitation-2017.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.418,
+  "matched": "02 - Giallos - Máquina de Lavar.mp3"
+ },
+ {
+  "folder": "2017 - Jonatas Onofre Qui Tolis Vulnere",
+  "slug": "jonatas-onofre-qui-tolis-vulnere-2017.mp3",
+  "n_rest": 13,
+  "verdict": "distinct",
+  "ber": 0.4212,
+  "matched": "04 - Jonatas Onofre - cicatriz nº1.mp3"
+ },
+ {
+  "folder": "2017 - Lingering Last Drops Atavismo",
+  "slug": "lingering-last-drops-atavismo-2017.mp3",
+  "n_rest": 7,
+  "verdict": "distinct",
+  "ber": 0.4169,
+  "matched": "02 - Lingering Last Drops - Atavismo.mp3"
+ },
+ {
+  "folder": "2017 - Marcela Lucatelli Gestus Kanto Glytkh",
+  "slug": "marcela-lucatelli-gestus-kanto-glytkh.mp3",
+  "n_rest": 9,
+  "verdict": "distinct",
+  "ber": 0.4377,
+  "matched": "07 - Marcela Lucatelli - #FE201E0010F171.mp3"
+ },
+ {
+  "folder": "2017 - Muep Etmo",
+  "slug": "muep-etmo-2017.mp3",
+  "n_rest": 11,
+  "verdict": "distinct",
+  "ber": 0.4145,
+  "matched": "03 - Muep Etmo - []this is way over the top ! [].mp3"
+ },
+ {
+  "folder": "2017 - Pequeno Céu - Praia Vermelha",
+  "slug": "pequeno-ceu-praia-vermelha-2017.mp3",
+  "n_rest": 14,
+  "verdict": "distinct",
+  "ber": 0.4536,
+  "matched": "07. Thalía vs DJ MixXxuruca - Thalía vs DJ MixXxuruca - Solo Parecía Amor (Funkuduro Mix).mp3"
+ },
+ {
+  "folder": "2017 - Ph E P H",
+  "slug": "ph-e-p-h-2017.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4439,
+  "matched": "02. Phe Romero - Late Nights Drafts.mp3"
+ },
+ {
+  "folder": "2017 - Sentidor - 2017 - Sentidor - sentidor-doismiletreze-2013",
+  "slug": "sentidor-doismiletreze-2013.mp3",
+  "n_rest": 7,
+  "verdict": "distinct",
+  "ber": 0.3758,
+  "matched": "07 - Sentidor - O fim das ondas (Junho).mp3"
+ },
+ {
+  "folder": "2017 - Stereomotive Truques Velhos Para",
+  "slug": "stereomotive-truques-velhos-para.mp3",
+  "n_rest": 19,
+  "verdict": "distinct",
+  "ber": 0.4414,
+  "matched": "01 - Stereomotive - Doze de novembro.mp3"
+ },
+ {
+  "folder": "2017 - Travesseiro Azul - Canções de Beira de Cama",
+  "slug": "travesseiro-azul-cancoes-de-beira-de.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4439,
+  "matched": "03 - Travesseiro azul - O homem invisível.mp3"
+ },
+ {
+  "folder": "2017 - Trompa - trompa se apresenta #6: trompa vaga pela noite e é consumida pelo fogo (ao vivo minor house)",
+  "slug": "trompa-trompa-se-apresenta-6-trompa.mp3",
+  "n_rest": 14,
+  "verdict": "distinct",
+  "ber": 0.4053,
+  "matched": "05 - trompa - (amor desperdiçado em uma carícia desesperada).mp3"
+ },
+ {
+  "folder": "2017 - acucar-mascavo-acucar-mascavo-ep-2017",
+  "slug": "acucar-mascavo-acucar-mascavo-ep-2017.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4666,
+  "matched": "04 - Açúcar Mascavo - Luz Del Fuego.mp3"
+ },
+ {
+  "folder": "2017 - ank-ank-ep-2017",
+  "slug": "ank-ank-ep-2017.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4477,
+  "matched": "03 - Ank - The Queen of England's Speech.mp3"
+ },
+ {
+  "folder": "2017 - armandos-subverso-invisivel-2017",
+  "slug": "armandos-subverso-invisivel-2017.mp3",
+  "n_rest": 10,
+  "verdict": "distinct",
+  "ber": 0.3,
+  "matched": "01 - Armandos - Lugar Qualquer.mp3"
+ },
+ {
+  "folder": "2017 - automnymous-juice-metal-2017",
+  "slug": "automnymous-juice-metal-2017.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4533,
+  "matched": "05 - Automnymous - Spear of Venus (Beherit Cover).mp3"
+ },
+ {
+  "folder": "2017 - ayin-art-of-death-2017",
+  "slug": "ayin-art-of-death-2017.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.4606,
+  "matched": "06 - AYIN - Sunrise.mp3"
+ },
+ {
+  "folder": "2017 - batismo-trilha-prum-possivel-curta-2017",
+  "slug": "batismo-trilha-prum-possivel-curta-2017.mp3",
+  "n_rest": 3,
+  "verdict": "distinct",
+  "ber": 0.4298,
+  "matched": "02 - Batismo - Cena 2.mp3"
+ },
+ {
+  "folder": "2017 - clo-and-sounds-clo-and-sounds-ep-2017",
+  "slug": "clo-and-sounds-clo-and-sounds-ep-2017.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4498,
+  "matched": "02 - Clo and the Sounds - Last Forever.mp3"
+ },
+ {
+  "folder": "2017 - cv-noir-2017",
+  "slug": "cv-noir-2017.mp3",
+  "n_rest": 9,
+  "verdict": "distinct",
+  "ber": 0.4591,
+  "matched": "03 - cv - 3.mp3"
+ },
+ {
+  "folder": "2017 - dogma-3-mulambo-2017",
+  "slug": "dogma-3-mulambo-2017.mp3",
+  "n_rest": 1,
+  "verdict": "distinct",
+  "ber": 0.4872,
+  "matched": "01 - Dogma - 26-03-17 ou ＂fez-se presença＂.mp3"
+ },
+ {
+  "folder": "2017 - drapeiseasy-ep-2017",
+  "slug": "drapeiseasy-ep-2017.mp3",
+  "n_rest": 3,
+  "verdict": "distinct",
+  "ber": 0.4327,
+  "matched": "02 - Drapeiseasy - Pó.mp3"
+ },
+ {
+  "folder": "2017 - eletrique-zamba-vol-1-2017",
+  "slug": "eletrique-zamba-vol-1-2017.mp3",
+  "n_rest": 15,
+  "verdict": "distinct",
+  "ber": 0.4431,
+  "matched": "04 - Eletrique Zamba - E aí! Dig aí!.mp3"
+ },
+ {
+  "folder": "2017 - fidell-fidell-ep-2017-2017",
+  "slug": "fidell-fidell-ep-2017-2017.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4439,
+  "matched": "01 - fidelimas - O que tinha pra ser.mp3"
+ },
+ {
+  "folder": "2017 - gato-feio-gato-feio-2017",
+  "slug": "gato-feio-gato-feio-2017.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4481,
+  "matched": "03 - Gato Feio - Normal Demais.mp3"
+ },
+ {
+  "folder": "2017 - god-pussy-degenerate-landscape-2017",
+  "slug": "god-pussy-degenerate-landscape-2017.mp3",
+  "n_rest": 3,
+  "verdict": "distinct",
+  "ber": 0.4292,
+  "matched": "02 - God Pussy - degenerate landscape.mp3"
+ },
+ {
+  "folder": "2017 - home-slow-2017",
+  "slug": "home-slow-2017.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4519,
+  "matched": "02 - home - slow.mp3"
+ },
+ {
+  "folder": "2017 - invisivel-distracoes-2017",
+  "slug": "invisivel-distracoes-2017.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.4344,
+  "matched": "01 - Invisível - Distração 1.mp3"
+ },
+ {
+  "folder": "2017 - leonardo-vasquez-eyes-to-sky-2017",
+  "slug": "leonardo-vasquez-eyes-to-sky-2017.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4569,
+  "matched": "04 - Leonardo Vasques - Wide Open.mp3"
+ },
+ {
+  "folder": "2017 - luiza-lian-oya-tempo-2017",
+  "slug": "luiza-lian-oya-tempo-2017.mp3",
+  "n_rest": 8,
+  "verdict": "distinct",
+  "ber": 0.4222,
+  "matched": "06 - Luiza Lian (produced by Charles Tixier) - Pó de Ouro.mp3"
+ },
+ {
+  "folder": "2017 - mau-sangue-mau-sangue-2017",
+  "slug": "mau-sangue-mau-sangue-2017.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4634,
+  "matched": "01 - Mau Sangue - Intro + Existimos, Resistimos.mp3"
+ },
+ {
+  "folder": "2017 - miazzo-01-75-2017",
+  "slug": "miazzo-01-75-2017.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.4717,
+  "matched": "02 - miazzo - 22-41.mp3"
+ },
+ {
+  "folder": "2017 - pallidum-strict-2017",
+  "slug": "pallidum-strict-2017.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.2273,
+  "matched": "04 - Pallidum - A4.mp3"
+ },
+ {
+  "folder": "2017 - pedro-oliveira-roda-viva-ep-2017",
+  "slug": "pedro-oliveira-roda-viva-ep-2017.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4416,
+  "matched": "05 - João Botelho - florr⧸a.mp3"
+ },
+ {
+  "folder": "2017 - plano-plano-ep-2017",
+  "slug": "plano-plano-ep-2017.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.422,
+  "matched": "03 - Plano - Plano C.mp3"
+ },
+ {
+  "folder": "2017 - plipp-ephemeral-2017",
+  "slug": "plipp-ephemeral-2017.mp3",
+  "n_rest": 13,
+  "verdict": "distinct",
+  "ber": 0.4478,
+  "matched": "06 - PLIPP - Tape This Glass.mp3"
+ },
+ {
+  "folder": "2017 - sentidor-terracorponuvem-2017",
+  "slug": "sentidor-terracorponuvem-2017.mp3",
+  "n_rest": 11,
+  "verdict": "distinct",
+  "ber": 0.4367,
+  "matched": "06 - Sentidor - O Rio Que Se Vê de Fora (Abridouro).mp3"
+ },
+ {
+  "folder": "2017 - vacilant-vacilant-2017",
+  "slug": "vacilant-vacilant-2017.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4517,
+  "matched": "03 - Vacilant - Anamnese.mp3"
+ },
+ {
+  "folder": "2017 - vdiasz-forgiveness-rock-2017",
+  "slug": "vdiasz-forgiveness-rock-2017.mp3",
+  "n_rest": 3,
+  "verdict": "distinct",
+  "ber": 0.4366,
+  "matched": "01 - V.​Diasz - Saturado.mp3"
+ },
+ {
+  "folder": "2018 - Amaro Freitas Rasif",
+  "slug": "amaro-freitas-rasif-2018.mp3",
+  "n_rest": 9,
+  "verdict": "distinct",
+  "ber": 0.4119,
+  "matched": "01 - Amaro Freitas - Dona Eni.mp3"
+ },
+ {
+  "folder": "2018 - Daniel Dante Garbage Noise Fuck",
+  "slug": "daniel-dante-garbage-noise-fuck-2018.mp3",
+  "n_rest": 7,
+  "verdict": "distinct",
+  "ber": 0.4294,
+  "matched": "04 - Daniel Dante - Neon Knights.mp3"
+ },
+ {
+  "folder": "2018 - Dunas - 2018 - Dunas - dunas-descortinar-dos-seres-2016",
+  "slug": "dunas-descortinar-dos-seres-2016.mp3",
+  "n_rest": 1,
+  "verdict": "distinct",
+  "ber": 0.473,
+  "matched": "01 - Dunas - Primeiro mantra.mp3"
+ },
+ {
+  "folder": "2018 - Expedidor Solo",
+  "slug": "expedidor-solo-2018.mp3",
+  "n_rest": 3,
+  "verdict": "distinct",
+  "ber": 0.4366,
+  "matched": "01 - expedidor - core drive confusion.mp3"
+ },
+ {
+  "folder": "2018 - Fabio Emece Preto Velho",
+  "slug": "fabio-emece-preto-velho-2018.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4311,
+  "matched": "04 - Fabio Emecê - Último Beijo.mp3"
+ },
+ {
+  "folder": "2018 - Jovelli Moon",
+  "slug": "jovelli-moon-2018.mp3",
+  "n_rest": 8,
+  "verdict": "distinct",
+  "ber": 0.4045,
+  "matched": "04 - Jovelli - Unconscious.mp3"
+ },
+ {
+  "folder": "2018 - Maria Beraldo Cavala",
+  "slug": "maria-beraldo-cavala-2018.mp3",
+  "n_rest": 10,
+  "verdict": "distinct",
+  "ber": 0.4172,
+  "matched": "04 - Maria Beraldo - Maria.mp3"
+ },
+ {
+  "folder": "2018 - Melvin Os Inoxidaveis Melvin Os",
+  "slug": "melvin-os-inoxidaveis-melvin-os.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4453,
+  "matched": "01 - Melvin & os Inoxidáveis - Mil Vezes Mais.mp3"
+ },
+ {
+  "folder": "2018 - Obasquiat Strugatsky",
+  "slug": "obasquiat-strugatsky-2018.mp3",
+  "n_rest": 10,
+  "verdict": "distinct",
+  "ber": 0.443,
+  "matched": "02 - Obasquiat - Thalassophobia.mp3"
+ },
+ {
+  "folder": "2018 - Tale Twist Coordinates To Nowhere",
+  "slug": "tale-twist-coordinates-to-nowhere-2017.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4572,
+  "matched": "03 - Tale Twist - 23 57 52.8 N - 143 00 36.8 W.mp3"
+ },
+ {
+  "folder": "2018 - Televisia - Solidão e Coisas Que Me Fazem Pensar",
+  "slug": "televisia-solidao-e-coisas-que-me-fazem.mp3",
+  "n_rest": 8,
+  "verdict": "distinct",
+  "ber": 0.4434,
+  "matched": "03 - Televisia - C de Secretaria.mp3"
+ },
+ {
+  "folder": "2018 - Vaulted Ceiling Leakage - Our Lives Are One Another's",
+  "slug": "vaulted-ceiling-leakage-our-lives-are.mp3",
+  "n_rest": 10,
+  "verdict": "distinct",
+  "ber": 0.4459,
+  "matched": "10 - Vaulted Ceiling Leakage - Swimming Home ⧸ forgo (dec, 2017).mp3"
+ },
+ {
+  "folder": "2018 - Verjault Violet",
+  "slug": "verjault-violet-2017.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.3731,
+  "matched": "04 - Verjault - Fiat Lux [Einstürzende Neubauten].mp3"
+ },
+ {
+  "folder": "2018 - Warmest Winter - The World Is a Terrible Place Yet I'm Terrified of Dying",
+  "slug": "warmest-winter-world-is-terrible-place.mp3",
+  "n_rest": 8,
+  "verdict": "distinct",
+  "ber": 0.4661,
+  "matched": "01 - Warmest Winter - Inferno Multicor.mp3"
+ },
+ {
+  "folder": "2018 - arados-arados-ii-2018",
+  "slug": "arados-arados-ii-2018.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4445,
+  "matched": "03 - Arados - O Corvo.mp3"
+ },
+ {
+  "folder": "2018 - chcl-crise-ep-2018",
+  "slug": "chcl-crise-ep-2018.mp3",
+  "n_rest": 2,
+  "verdict": "distinct",
+  "ber": 0.4586,
+  "matched": "01 - CHCL - Contramão.mp3"
+ },
+ {
+  "folder": "2018 - gabriel-freitas-flutuar-ep-2018",
+  "slug": "gabriel-freitas-flutuar-ep-2018.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.3441,
+  "matched": "04 - Gabriel Freitas - Transbordar.mp3"
+ },
+ {
+  "folder": "2018 - grupo-porto-enza-ep-2018",
+  "slug": "grupo-porto-enza-ep-2018.mp3",
+  "n_rest": 3,
+  "verdict": "distinct",
+  "ber": 0.4683,
+  "matched": "01 - Grupo Porco - Bad vibe real feat. Gus Lanzetta.mp3"
+ },
+ {
+  "folder": "2018 - humbra-14-para-as-horas-2018",
+  "slug": "humbra-14-para-as-horas-2018.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4567,
+  "matched": "03 - Humbra - O Tempo Aqui.mp3"
+ },
+ {
+  "folder": "2018 - insurgentes-insurgentes-x-2018",
+  "slug": "insurgentes-insurgentes-x-2018.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.4417,
+  "matched": "06 - Insurgentes - Karen (Psicometria).mp3"
+ },
+ {
+  "folder": "2018 - jviktor-psalm-420-2018",
+  "slug": "jviktor-psalm-420-2018.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.4561,
+  "matched": "06 - JViktor - ﻿ｎｏ ｓｌｅｅｐ.mp3"
+ },
+ {
+  "folder": "2018 - labirintite-labirintite-ep-2018",
+  "slug": "labirintite-labirintite-ep-2018.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4572,
+  "matched": "04 - Labirintite - Tudo que é sólido dissolve-se no ar.mp3"
+ },
+ {
+  "folder": "2018 - latexxx-latexxx-2018",
+  "slug": "latexxx-latexxx-2018.mp3",
+  "n_rest": 8,
+  "verdict": "distinct",
+  "ber": 0.4478,
+  "matched": "07 - Latexxx - O Vinho dos Amantes.mp3"
+ },
+ {
+  "folder": "2018 - miazzo-evil-noise-2-2018",
+  "slug": "miazzo-evil-noise-2-2018.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4034,
+  "matched": "02 - miazzo - evil.mp3"
+ },
+ {
+  "folder": "2018 - miazzo-evil-noise-2018",
+  "slug": "miazzo-evil-noise-2018.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.4295,
+  "matched": "06 - miazzo - evil metal.mp3"
+ },
+ {
+  "folder": "2018 - moon-pics-motion-2018",
+  "slug": "moon-pics-motion-2018.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4492,
+  "matched": "04 - Moon Pics - Fault.mp3"
+ },
+ {
+  "folder": "2018 - neon-pigs-neon-pigs-ep-2018",
+  "slug": "neon-pigs-neon-pigs-ep-2018.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4603,
+  "matched": "01 - Neon Pigs - Goodbye Baby.mp3"
+ },
+ {
+  "folder": "2018 - o-homem-que-virou-suco-ep-2018",
+  "slug": "o-homem-que-virou-suco-ep-2018.mp3",
+  "n_rest": 1,
+  "verdict": "distinct",
+  "ber": 0.4106,
+  "matched": "03 - Finis Hominis - O Homem que Virou Suco.mp3"
+ },
+ {
+  "folder": "2018 - objeto-amarelo-lugar-perto-em-volta-2018",
+  "slug": "objeto-amarelo-lugar-perto-em-volta-2018.mp3",
+  "n_rest": 3,
+  "verdict": "distinct",
+  "ber": 0.45,
+  "matched": "01 - Objeto Amarelo - Lugar Perto Em Volta.mp3"
+ },
+ {
+  "folder": "2018 - oral-oral-ep-2018",
+  "slug": "oral-oral-ep-2018.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4575,
+  "matched": "03 - Oral - Lust.mp3"
+ },
+ {
+  "folder": "2018 - pisa-peste-urbana-2018",
+  "slug": "pisa-peste-urbana-2018.mp3",
+  "n_rest": 8,
+  "verdict": "distinct",
+  "ber": 0.3939,
+  "matched": "04 - PISA - Terra do Galo Morto.mp3"
+ },
+ {
+  "folder": "2018 - surt-surt-2018",
+  "slug": "surt-surt-2018.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.4398,
+  "matched": "01 - Surt - Danger.mp3"
+ },
+ {
+  "folder": "2018 - vctrh-sobretudo-nao-se-mate-2018",
+  "slug": "vctrh-sobretudo-nao-se-mate-2018.mp3",
+  "n_rest": 8,
+  "verdict": "distinct",
+  "ber": 0.4434,
+  "matched": "03 - vctrh - ah! minha Dinamite!.mp3"
+ },
+ {
+  "folder": "2018 - ypu-ypu-ep-2018",
+  "slug": "ypu-ypu-ep-2018.mp3",
+  "n_rest": 3,
+  "verdict": "distinct",
+  "ber": 0.4739,
+  "matched": "01 - YPU - Nightflight.mp3"
+ },
+ {
+  "folder": "2019 - Airplanemusic Architecture For",
+  "slug": "airplanemusic-architecture-for.mp3",
+  "n_rest": 14,
+  "verdict": "distinct",
+  "ber": 0.4069,
+  "matched": "07 - Airplanemusic - Geometric Science.mp3"
+ },
+ {
+  "folder": "2019 - Bonifrate Mundo Encoberto",
+  "slug": "bonifrate-mundo-encoberto-2019.mp3",
+  "n_rest": 8,
+  "verdict": "distinct",
+  "ber": 0.4372,
+  "matched": "08 - Bonifrate - Conclusam.mp3"
+ },
+ {
+  "folder": "2019 - Cambriana Manaus Vidaloka",
+  "slug": "cambriana-manaus-vidaloka-2018.mp3",
+  "n_rest": 11,
+  "verdict": "distinct",
+  "ber": 0.4266,
+  "matched": "06 - Cambriana - Trouble Every Day.mp3"
+ },
+ {
+  "folder": "2019 - Ema Stoned Phenomena",
+  "slug": "ema-stoned-phenomena-2019.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.3986,
+  "matched": "01 - Ema Stoned - I.mp3"
+ },
+ {
+  "folder": "2019 - Ivan Conti Poison Fruit",
+  "slug": "ivan-conti-poison-fruit-2019.mp3",
+  "n_rest": 16,
+  "verdict": "distinct",
+  "ber": 0.4573,
+  "matched": "15 - Ivan 'Mamão' Conti - Encontro (aka Azul) Max Graef Remix.mp3"
+ },
+ {
+  "folder": "2019 - Ivan Timbo Remix Album",
+  "slug": "ivan-timbo-remix-album-2019.mp3",
+  "n_rest": 10,
+  "verdict": "distinct",
+  "ber": 0.4245,
+  "matched": "05 - PAPAI NO BEAT - PAPAI NO BEAT - Café no Egito rmx.mp3"
+ },
+ {
+  "folder": "2019 - Wagner Almeida Domingos Noite",
+  "slug": "wagner-almeida-domingos-noite-2019.mp3",
+  "n_rest": 8,
+  "verdict": "distinct",
+  "ber": 0.4242,
+  "matched": "01 - Wagner Almeida - Silêncio⧸Distância (part. Sentidor).mp3"
+ },
+ {
+  "folder": "2019 - airplanemusic-solara-2019",
+  "slug": "airplanemusic-solara-2019.mp3",
+  "n_rest": 9,
+  "verdict": "distinct",
+  "ber": 0.4114,
+  "matched": "08 - Airplanemusic - Station.mp3"
+ },
+ {
+  "folder": "2019 - born-to-freedom-time-to-change-2019",
+  "slug": "born-to-freedom-time-to-change-2019.mp3",
+  "n_rest": 10,
+  "verdict": "distinct",
+  "ber": 0.4634,
+  "matched": "07 - Born to Freedom - Permanência part. Ítalo Nonato (Pense).mp3"
+ },
+ {
+  "folder": "2019 - emerson-faria-centena-2019",
+  "slug": "emerson-faria-centena-2019.mp3",
+  "n_rest": 8,
+  "verdict": "distinct",
+  "ber": 0.4758,
+  "matched": "05 - Emerson Faria - Cosmo (Instrumental).mp3"
+ },
+ {
+  "folder": "2019 - jorg-coisas-pequenas-2019",
+  "slug": "jorg-coisas-pequenas-2019.mp3",
+  "n_rest": 10,
+  "verdict": "distinct",
+  "ber": 0.4002,
+  "matched": "01 - Jorg. - Fratura Exposta.mp3"
+ },
+ {
+  "folder": "2019 - pablo-meijueiro-mae-de-tudo-voly-2019",
+  "slug": "pablo-meijueiro-mae-de-tudo-voly-2019.mp3",
+  "n_rest": 8,
+  "verdict": "distinct",
+  "ber": 0.445,
+  "matched": "02 - Pablo Meijueiro - Pataxoca.mp3"
+ },
+ {
+  "folder": "2019 - venus-in-fuzz-live-in-kaos-2019",
+  "slug": "venus-in-fuzz-live-in-kaos-2019.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.3755,
+  "matched": "02 - Vênus In Fuzz - Corpos Explodem na Somália.mp3"
+ },
+ {
+  "folder": "2019 - vinau-correnteza-2019",
+  "slug": "vinau-correnteza-2019.mp3",
+  "n_rest": 2,
+  "verdict": "distinct",
+  "ber": 0.4753,
+  "matched": "02 - vinnau - delta Δ.mp3"
+ },
+ {
+  "folder": "2020 - Acruz Sesper Trio Days Go By Like",
+  "slug": "acruz-sesper-trio-days-go-by-like.mp3",
+  "n_rest": 10,
+  "verdict": "distinct",
+  "ber": 0.4444,
+  "matched": "09 - ACruz Sesper - It's Bargain Time.mp3"
+ },
+ {
+  "folder": "2020 - Boogarins Fefel2020",
+  "slug": "boogarins-fefel2020-2020.mp3",
+  "n_rest": 2,
+  "verdict": "distinct",
+  "ber": 0.4523,
+  "matched": "01 - Boogarins - Tanta Coragem.mp3"
+ },
+ {
+  "folder": "2020 - Cadu Tenorio Room Memoirs",
+  "slug": "cadu-tenorio-room-memoirs-2020.mp3",
+  "n_rest": 5,
+  "verdict": "distinct",
+  "ber": 0.3544,
+  "matched": "02 - Cadu Tenório - Sun.mp3"
+ },
+ {
+  "folder": "2020 - Gods Punks And Celestial Ascension",
+  "slug": "gods-punks-and-celestial-ascension-2019.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.4467,
+  "matched": "03 - Gods & Punks - Infinite Hourglass.mp3"
+ },
+ {
+  "folder": "2020 - Hoovaranas Isolamento",
+  "slug": "hoovaranas-isolamento-2020.mp3",
+  "n_rest": 8,
+  "verdict": "distinct",
+  "ber": 0.4689,
+  "matched": "01 - hoovaranas - CONVITE-19.mp3"
+ },
+ {
+  "folder": "2020 - Ousel Ousel",
+  "slug": "ousel-ousel-2020.mp3",
+  "n_rest": 8,
+  "verdict": "distinct",
+  "ber": 0.4014,
+  "matched": "02 - Ousel - Choices.mp3"
+ },
+ {
+  "folder": "2020 - Spiral Guru Void",
+  "slug": "spiral-guru-void-2019.mp3",
+  "n_rest": 9,
+  "verdict": "distinct",
+  "ber": 0.3936,
+  "matched": "04 - Spiral Guru - Mindfulness.mp3"
+ },
+ {
+  "folder": "2020 - Unknelson De Lhe Gaita",
+  "slug": "unknelson-de-lhe-gaita-2020.mp3",
+  "n_rest": 9,
+  "verdict": "distinct",
+  "ber": 0.4175,
+  "matched": "05 - Unknelson - Sete Partes.mp3"
+ },
+ {
+  "folder": "2020 - Verjault St",
+  "slug": "verjault-st-2020.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4469,
+  "matched": "03. Verjault - III - Cortejo.mp3"
+ },
+ {
+  "folder": "2020 - Wicca Surf Ultramar",
+  "slug": "wicca-surf-ultramar-2020.mp3",
+  "n_rest": 4,
+  "verdict": "distinct",
+  "ber": 0.4367,
+  "matched": "03 - Wicca Surf - Mística.mp3"
+ },
+ {
+  "folder": "2020 - Zonbizarro Redentor",
+  "slug": "zonbizarro-redentor-2020.mp3",
+  "n_rest": 3,
+  "verdict": "distinct",
+  "ber": 0.4636,
+  "matched": "03 - Zonbizarro - Ao Arder.mp3"
+ },
+ {
+  "folder": "2020 - fffluxus-praticas-subterraneas-2020",
+  "slug": "fffluxus-praticas-subterraneas-2020.mp3",
+  "n_rest": 3,
+  "verdict": "distinct",
+  "ber": 0.4411,
+  "matched": "03 - fffluxus - cárstico.mp3"
+ },
+ {
+  "folder": "2020 - suave-brasil-um-sonho-intenso-2020",
+  "slug": "suave-brasil-um-sonho-intenso-2020.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.4234,
+  "matched": "05 - suave - eterno agora.mp3"
+ },
+ {
+  "folder": "2021 - Jadsa Olho De Vidro",
+  "slug": "jadsa-olho-de-vidro-2021.mp3",
+  "n_rest": 14,
+  "verdict": "distinct",
+  "ber": 0.4392,
+  "matched": "12 - Jadsa - Nada.mp3"
+ },
+ {
+  "folder": "2021 - Sophia Chablau E Uma Enorme Perda De",
+  "slug": "sophia-chablau-e-uma-enorme-perda-de.mp3",
+  "n_rest": 14,
+  "verdict": "distinct",
+  "ber": 0.4522,
+  "matched": "12. Sophia Chablau e Uma Enorme Perda de Tempo - Baby míssil.mp3"
+ },
+ {
+  "folder": "2021 - a casa mais estranha não tem número - vetusta",
+  "slug": "a-casa-mais-estranha-nao-tem-numero.mp3",
+  "n_rest": 14,
+  "verdict": "distinct",
+  "ber": 0.4319,
+  "matched": "13. a casa mais estranha não tem número - aventura.mp3"
+ },
+ {
+  "folder": "2021 - prefeitura-do-rio-prefeitura-2021",
+  "slug": "prefeitura-do-rio-prefeitura-2021.mp3",
+  "n_rest": 15,
+  "verdict": "distinct",
+  "ber": 0.4367,
+  "matched": "13 - O sorveteiro filho da puta.mp3"
+ },
+ {
+  "folder": "2022 - Gringos Da Semana",
+  "slug": "gringos-da-semana-os-sons-que-fizeram.mp3",
+  "n_rest": 10,
+  "verdict": "distinct",
+  "ber": 0.4364,
+  "matched": "04. Mr. Roswell's Neighborhood - Your Broke Authority.mp3"
+ },
+ {
+  "folder": "2022 - Gringos Da Semana Aquela Compilacao De",
+  "slug": "gringos-da-semana-aquela-compilacao-de.mp3",
+  "n_rest": 3,
+  "verdict": "distinct",
+  "ber": 0.4706,
+  "matched": "02. QS - Fragments.mp3"
+ },
+ {
+  "folder": "2022 - Gringos Da Semana Destaques Sonoros De",
+  "slug": "gringos-da-semana-destaques-sonoros-de.mp3",
+  "n_rest": 7,
+  "verdict": "distinct",
+  "ber": 0.4661,
+  "matched": "07. Antarctic Wastelands & Norvik - Sideways.mp3"
+ },
+ {
+  "folder": "2022 - Gringos Da Semana Ou Seria Tercagringa",
+  "slug": "gringos-da-semana-ou-seria-tercagringa.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.4717,
+  "matched": "05. Esse Ran - Rêve étrange (Interlude).mp3"
+ },
+ {
+  "folder": "2022 - Gringos Da Semana Poucos Destaques E",
+  "slug": "gringos-da-semana-poucos-destaques-e.mp3",
+  "n_rest": 6,
+  "verdict": "distinct",
+  "ber": 0.4006,
+  "matched": "04. drosophila - IV.mp3"
+ },
+ {
+  "folder": "2022 - Gringos Da Semana Uma Viagem Pelo Mundo",
+  "slug": "gringos-da-semana-uma-viagem-pelo-mundo.mp3",
+  "n_rest": 9,
+  "verdict": "distinct",
+  "ber": 0.3987,
+  "matched": "08 - Tvivler - Livsform på tvangsauktion.mp3"
+ },
+ {
+  "folder": "2022 - Gringos Da Semana Uns Beats Loks Uns",
+  "slug": "gringos-da-semana-uns-beats-loks-uns.mp3",
+  "n_rest": 12,
+  "verdict": "distinct",
+  "ber": 0.3991,
+  "matched": "03. Izanah Jones - Shine Your Light.mp3"
+ },
+ {
+  "folder": "2022 - Gringos Da Semana Vem Conhecer Novos",
+  "slug": "gringos-da-semana-vem-conhecer-novos.mp3",
+  "n_rest": 11,
+  "verdict": "distinct",
+  "ber": 0.4631,
+  "matched": "07. Kind & Kinky Zoo - True Trout.mp3"
+ },
+ {
+  "folder": "2022 - Luiza Brina Toada Vem E Pelo Vento",
+  "slug": "luiza-brina-toada-vem-e-pelo-vento.mp3",
+  "n_rest": 8,
+  "verdict": "distinct",
+  "ber": 0.4598,
+  "matched": "03 - Luiza Brina - Catamarã.mp3"
+ },
+ {
+  "folder": "2023 - Gringos Da Semana Nosso Post Gringo De",
+  "slug": "gringos-da-semana-nosso-post-gringo-de.mp3",
+  "n_rest": 12,
+  "verdict": "distinct",
+  "ber": 0.435,
+  "matched": "05. Matthieu Mantanus - Nocturnes électroniques： Chute (Tableaux III, IV, V et VI).mp3"
+ },
+ {
+  "folder": "2023 - Satanique Samba Trio Cursed Brazilian",
+  "slug": "satanique-samba-trio-cursed-brazilian.mp3",
+  "n_rest": 3,
+  "verdict": "distinct",
+  "ber": 0.4478,
+  "matched": "04. Satanique Samba Trio - Brazilian Modulok.mp3"
+ },
+ {
+  "folder": "2024 - o-no-era-normal-2024",
+  "slug": "o-no-era-normal-2024.mp3",
+  "n_rest": 8,
+  "verdict": "distinct",
+  "ber": 0.4587,
+  "matched": "05 - O Nó - Tangerina.mp3"
+ },
+ {
+  "folder": "2025 - Pelos - 2025 - Pelos - pelos-paraiso-perdido-nos-bolsos-2016",
+  "slug": "pelos-paraiso-perdido-nos-bolsos-2016.mp3",
+  "n_rest": 9,
+  "verdict": "distinct",
+  "ber": 0.4383,
+  "matched": "04 - Pelos - Down The River.mp3"
+ }
+]

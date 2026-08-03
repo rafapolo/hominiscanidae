@@ -106,6 +106,33 @@ folder, `generate-albums` never sees them — they are downloaded and then invis
 (keyed on both `downloaded_as` and its stem, so `foo.mp3` and `foo.m4a` share one folder).
 This had stranded **76 files**.
 
+## Bandcamp: never assume a `/download?` token is expired
+
+`dl_bandcamp` used to short-circuit any `bandcamp.com/download?` URL to
+`dead:expired-token` **without making the request**. Most of those tokens are still live —
+the page returns 200 with a `data-blob` offering `mp3-320`. Every one of them was instead
+routed to the `dl_ytdlp` fallback.
+
+That fallback then compounded the damage. `--no-playlist` does **not** protect an album URL:
+Bandcamp's is a playlist extractor, so the flag is a no-op. With `-o "<slug>.%(ext)s"` all
+tracks resumed into one file, appending each track's raw bytes behind the first track's MP4
+container. `ffprobe` sees only what the `moov` atom describes — track 1 — so `flac_to_mp3.py`
+transcoded 2:37 out of an 88-minute album and then **deleted the source**.
+
+The tell is a folder with 1 track whose `posts.json` `file_size` is several times the mp3 on
+disk. Reproduced byte-for-byte: a 27,836,491-byte `.m4a` holding 1 `moov`/`mdat` plus ID3
+headers and 262 MPEG frame syncs after it. **13 albums** lost this way, all recovered:
+
+```bash
+python3 scripts/download/refix_bandcamp_albums.py --list     # show damaged albums
+python3 scripts/download/refix_bandcamp_albums.py            # re-fetch and swap in
+```
+
+`dl_ytdlp` now writes `%(playlist_index|0)02d - %(title)s.%(ext)s` into a per-slug folder and
+returns that folder when a playlist yields more than one track. `unzip.py`'s `fold_dirs()`
+moves such folders from `DEST` root into `unzips/<post title>/` — without it they would be
+as invisible as the loose singles above.
+
 ## Everything must be MP3
 
 `generate-albums` reads ID3 tags with the Rust `id3` crate and `sync-to-bucket.js` skips any
@@ -209,14 +236,71 @@ Other notes:
 
 ## Albums with 1 track
 
-Not a bug. Many blog posts linked a single MP3 (not a ZIP with tracks). These appear in the player with 1 faixa — that's all there is on disk.
+Usually not a bug: many posts linked a single MP3 rather than a ZIP, and 1 faixa is all
+there is on disk. But audit them before believing that — 17 of 96 were a bug.
 
-## Current state (2026-08-01)
+`generate-albums` drops a **slug-tail** (a kebab-case `artist-album-year.mp3`) whenever the
+other files in the folder carry track numbers, assuming it is the same music arriving twice.
+Beside a *properly extracted album* that holds. Beside a **single** numbered track it does
+not: that pairing comes from a rescue that recovered one track, so the slug file is a
+different recording, and dropping it deletes the only copy from the catalog. Eleven albums
+were hiding a second recording that way, including whole releases masked by one stray
+compilation track (`evan-heinrich-garden-of-scars`: 3:04 indexed, 47:04 dropped).
+
+The Rust side now requires **two or more** numbered tracks before it hides a slug-tail.
+Disk-level cleanup is a separate tool, because duration cannot tell a duplicate from a
+different song — a YouTube rescue of the same track routinely differs by 3-10s, and two
+different songs routinely match. Chromaprint can:
+
+```bash
+python3 scripts/utils/slug_tails.py --scan --only-index  # audit the 1-track albums
+python3 scripts/utils/slug_tails.py --scan               # audit all of unzips/
+python3 scripts/utils/slug_tails.py --apply              # trash dups, split misfiled
+```
+
+Redundant files go to `DEST/.slug-tail-trash`, never `unlink` — purge by hand after the
+rebuilt index looks right. Verdicts separate cleanly: duplicates score BER ≤ 0.04,
+different recordings ≥ 0.25.
+
+Archive-wide sweep done (2026-08-03): of 1,538 slug-tail folders, **1,171 were redundant**
+(963 duplicate a sibling track, 208 are the whole album in one file) and went to the trash
+folder — 13 GB. Three files had been misfiled from a *different* post and were the only copy
+of that release; they now have their own folders. The remaining **364 stay in place**: each
+is its own post's fallback download sitting beside that post's real album, so there is no
+second album to move it to and no reliable way to tell a bad YouTube match from a genuine
+bonus track. `generate-albums` already hides them, and trashing them would risk audio for
+no catalog gain.
+
+Two traps when relocating, both hit during that sweep:
+
+- **Never compare folder names by stripping non-alphanumerics.** That deletes accents rather
+  than folding them, so "Máquina" becomes `mquina` and stops matching `maquina`. Twenty-eight
+  relocations were about to mint near-duplicate folders. `_tokens()` NFD-folds and drops
+  PT-BR articles; `same_album()` compares token sets.
+- **The slug-tail is whichever file sorts last, and the Rust uses a natural sort.** A plain
+  byte sort disagrees (`churrus-….mp3` vs `NA. Churrus - ….mp3`, lowercase outranks
+  uppercase) and picks a file the indexer never drops. `natural_cmp()` mirrors the Rust.
+
+### Completing singles that are really albums
+
+```bash
+python3 scripts/download/complete_singles.py --dry-run
+python3 scripts/download/complete_singles.py
+```
+
+Finds 1-track folders whose post still points at a Bandcamp album with more tracks. Yield is
+low — 1 of 79 — because the artist pages are mostly gone a decade later and the rest are
+genuine singles. It confirms an artist-page match against the album's *real* title before
+downloading; a wrong match would bury the single under someone else's record.
+
+## Current state (2026-08-03)
 
 - Total posts: 10,704 | With download link: ~10,633
 - Downloaded: 7,496 | Dead: 2,931 | Blocked (EBLOCKED mega): 228
-- Published to S3 + player: **6,649 álbuns**, 0 empty, noyear = 56
+- Published to S3 + player: **6,652 álbuns**, 0 empty, noyear = 55
+- Albums showing 1 faixa: **77** (was 96 — see "Albums with 1 track")
 - Mega quota resets ~6h after last use
+- `DEST/.slug-tail-trash` holds 1,181 files / 13 GB pending a manual purge
 
 The album count fell from 6,909 because 499 duplicate `<Album>-N` folders were collapsed
 (32 GB reclaimed) — same music, previously indexed 2–5× over. Offsetting that, 76 stranded
