@@ -202,6 +202,36 @@ def fold_singles(titles: dict, state: dict) -> int:
     return moved
 
 
+def fold_dirs(titles: dict, state: dict) -> int:
+    """Move audio folders sitting in DEST root into unzips/<title>/.
+
+    dl_ytdlp returns a folder when a playlist yields more than one track. Only
+    unzips/ is indexed, so a folder left in DEST root is as invisible as the
+    loose singles fold_singles rescues.
+    """
+    loose = sorted(d for d in DEST.iterdir()
+                   if d.is_dir()
+                   and d != UNZIPS
+                   and not d.name.startswith(".")
+                   and any(f.suffix.lower() in AUDIO for f in d.rglob("*")))
+    moved = 0
+    for d in loose:
+        folder = safe_folder(titles.get(d.name) or d.name)
+        target = UNZIPS / folder
+        if target.exists():
+            print(f"  SKIP  dir {d.name} -> {folder}/ (já existe)")
+            continue
+        if DRY:
+            print(f"  DRY   dir {d.name} -> {folder}/")
+            moved += 1
+            continue
+        shutil.move(str(d), str(target))
+        state[d.name] = {"folder": folder, "by": "dir"}
+        print(f"  OK    dir {d.name} -> {folder}/")
+        moved += 1
+    return moved
+
+
 def main():
     UNZIPS.mkdir(exist_ok=True)
     state = load_state()
@@ -221,6 +251,7 @@ def main():
 
     print("\nFoldering single-file downloads…")
     n = fold_singles(titles, state)
+    n += fold_dirs(titles, state)
     save_state(state)
     print(f"Singles: {n} foldered")
 

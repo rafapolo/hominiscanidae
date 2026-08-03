@@ -2,6 +2,7 @@ import json
 import os
 import random
 import re
+import shutil
 import socket
 import subprocess
 import threading
@@ -118,6 +119,13 @@ def already_done(slug):
             if f.is_dir() and any(f.iterdir()):
                 return f
     return None
+
+
+def path_size(p):
+    """Byte size of a download result — sums the tree when it came back a folder."""
+    if p.is_dir():
+        return sum(f.stat().st_size for f in p.rglob("*") if f.is_file())
+    return p.stat().st_size
 
 
 def resolve_shortlink(url):
@@ -369,7 +377,18 @@ def dl_dropbox(url, slug):
 
 
 def dl_bandcamp(url, slug):
-    # Expired time-limited download token → find artist page in local .md and try yt-dlp
+    """Bandcamp album/track page or a /download? token page.
+
+    /download? tokens are time-limited but most are still live — they must be
+    requested, not assumed dead. Treating them as expired up front sent every
+    one of them to the yt-dlp fallback, which streams tracks one by one instead
+    of fetching the album ZIP.
+    """
+    dest, err = dl_bandcamp_page(url, slug)
+    if dest:
+        return dest, None
+
+    # Token really is dead → look for the artist page in the local .md instead.
     if "bandcamp.com/download?" in url:
         md_file = ROOT / "posts" / f"{slug}.md"
         if md_file.exists():
@@ -379,11 +398,20 @@ def dl_bandcamp(url, slug):
             for bc_url in dict.fromkeys(bc_urls):
                 if "bandcamp.com/download" in bc_url:
                     continue
-                dest, err = dl_ytdlp(bc_url.rstrip(".,)"), slug)
+                dest, _ = dl_bandcamp_page(bc_url.rstrip(".,)"), slug)
                 if dest:
                     return dest, None
-        return None, "dead:expired-token"
+                dest, _ = dl_ytdlp(bc_url.rstrip(".,)"), slug)
+                if dest:
+                    return dest, None
+        return None, err or "dead:expired-token"
 
+    return None, err
+
+
+def dl_bandcamp_page(url, slug):
+    """Parse a Bandcamp page's data-blob and fetch the album ZIP it offers."""
+    is_token = "bandcamp.com/download?" in url
     s = get_session()
     try:
         r = s.get(url, timeout=20)
@@ -401,8 +429,9 @@ def dl_bandcamp(url, slug):
                 pass
 
         if not blob:
-            # Page exists but no free download — try yt-dlp stream
-            return dl_ytdlp(url, slug)
+            # Page exists but no free download — try yt-dlp stream.
+            # A /download? token page has no stream to fall back to.
+            return (None, "dead:no download blob") if is_token else dl_ytdlp(url, slug)
 
         items = blob.get('download_items', [])
         if not items:
@@ -443,7 +472,7 @@ def dl_bandcamp(url, slug):
             time.sleep(3)
 
         if not download_url:
-            return dl_ytdlp(url, slug)
+            return (None, "dead:statdownload timeout") if is_token else dl_ytdlp(url, slug)
 
         return run_aria2c(download_url, slug, ".zip")
     except Exception as e:
@@ -451,14 +480,37 @@ def dl_bandcamp(url, slug):
 
 
 def dl_ytdlp(url, slug):
-    out_tmpl = str(DEST / f"{slug}.%(ext)s")
+    """Stream-download fallback.
+
+    Every track MUST get its own filename. `--no-playlist` does not protect an
+    album URL — Bandcamp's is a playlist extractor, so the flag is a no-op and
+    all tracks resumed into one `<slug>.<ext>`, appending raw bytes behind the
+    first track's container. ffmpeg then only ever saw track 1 and the rest was
+    dropped at conversion. Multi-track results come back as a folder.
+    """
+    workdir = DEST / f".ytdlp-{slug}"
+    shutil.rmtree(workdir, ignore_errors=True)
+    workdir.mkdir(parents=True, exist_ok=True)
+    out_tmpl = str(workdir / "%(playlist_index|0)02d - %(title)s.%(ext)s")
     r = subprocess.run(
-        ["yt-dlp", "--no-playlist", "--quiet", "--no-warnings", "-o", out_tmpl, url],
-        capture_output=True, text=True, timeout=300,
+        ["yt-dlp", "--quiet", "--no-warnings", "-o", out_tmpl, url],
+        capture_output=True, text=True, timeout=900,
     )
-    files = [f for f in DEST.glob(f"{slug}.*") if f.is_file() and f.stat().st_size > 0]
-    if files:
-        return files[0], None
+    got = sorted(f for f in workdir.iterdir() if f.is_file() and f.stat().st_size > 0)
+
+    if len(got) == 1:
+        # Single track keeps the flat DEST/<slug>.<ext> shape fold_singles expects.
+        dest = DEST / f"{slug}{got[0].suffix.lower()}"
+        shutil.move(str(got[0]), str(dest))
+        shutil.rmtree(workdir, ignore_errors=True)
+        return dest, None
+    if got:
+        dest = DEST / slug
+        shutil.rmtree(dest, ignore_errors=True)
+        shutil.move(str(workdir), str(dest))
+        return dest, None
+
+    shutil.rmtree(workdir, ignore_errors=True)
     err = r.stderr.strip()
     dead = any(k in err.lower() for k in (
         "404", "not found", "removed", "expired", "unavailable",
@@ -629,12 +681,12 @@ def download_post(post):
         if "mega" in post.get("download", ""):
             existing = already_done(slug)
             if existing:
-                update_post(slug, "downloaded", existing.name, existing.stat().st_size)
+                update_post(slug, "downloaded", existing.name, path_size(existing))
                 return "skip-exists"
             dest, err = dl_scrape_blog(url, slug, exclude_url=post.get("download"))
             if dest:
-                update_post(slug, "downloaded", dest.name, dest.stat().st_size)
-                log(f"OK  [{slug}] → {dest.name} ({dest.stat().st_size/1e6:.1f} MB) [via blog-scrape]")
+                update_post(slug, "downloaded", dest.name, path_size(dest))
+                log(f"OK  [{slug}] → {dest.name} ({path_size(dest)/1e6:.1f} MB) [via blog-scrape]")
                 return "ok"
         return "skip-blocked"
 
@@ -642,8 +694,8 @@ def download_post(post):
     if status == "dead_soft":
         dest2, _ = dl_scrape_blog(url, slug, exclude_url=dl)
         if dest2:
-            update_post(slug, "downloaded", dest2.name, dest2.stat().st_size)
-            log(f"OK  [{slug}] → {dest2.name} ({dest2.stat().st_size/1e6:.1f} MB) [via blog-scrape]")
+            update_post(slug, "downloaded", dest2.name, path_size(dest2))
+            log(f"OK  [{slug}] → {dest2.name} ({path_size(dest2)/1e6:.1f} MB) [via blog-scrape]")
             return "ok"
         update_post(slug, "dead_link")
         return "dead"
@@ -670,7 +722,7 @@ def download_post(post):
     # Already on disk
     existing = already_done(slug)
     if existing:
-        update_post(slug, "downloaded", existing.name, existing.stat().st_size)
+        update_post(slug, "downloaded", existing.name, path_size(existing))
         return "skip-exists"
 
     # Dispatch
@@ -692,8 +744,8 @@ def download_post(post):
         dest, err = dl_generic(dl, slug)
 
     if dest:
-        update_post(slug, "downloaded", dest.name, dest.stat().st_size)
-        log(f"OK  [{slug}] → {dest.name} ({dest.stat().st_size/1e6:.1f} MB)")
+        update_post(slug, "downloaded", dest.name, path_size(dest))
+        log(f"OK  [{slug}] → {dest.name} ({path_size(dest)/1e6:.1f} MB)")
         return "ok"
 
     is_dead = err and err.startswith("dead:")
@@ -704,8 +756,8 @@ def download_post(post):
     if not is_blocked:
         dest2, _ = dl_scrape_blog(url, slug, exclude_url=dl)
         if dest2:
-            update_post(slug, "downloaded", dest2.name, dest2.stat().st_size)
-            log(f"OK  [{slug}] → {dest2.name} ({dest2.stat().st_size/1e6:.1f} MB) [via blog-scrape]")
+            update_post(slug, "downloaded", dest2.name, path_size(dest2))
+            log(f"OK  [{slug}] → {dest2.name} ({path_size(dest2)/1e6:.1f} MB) [via blog-scrape]")
             return "ok"
 
     if is_dead:
