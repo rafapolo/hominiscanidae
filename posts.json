@@ -73142,9 +73142,9 @@
     "lastmod": "2013-03-12T13:58:00Z",
     "title": "Reverendo T Os Discipulos Descrentes",
     "download": "https://bandcamp.com/download?id=1208642762&ts=1470694556.2131410235&tsig=59ff8d2140ce5d5653bd47773e3247d5&type=album",
-    "file_size": 3928815,
+    "file_size": 24035986,
     "status": "downloaded",
-    "downloaded_as": "reverendo-t-os-discipulos-descrentes.mp3"
+    "downloaded_as": "reverendo-t-os-discipulos-descrentes"
   },
   {
     "url": "https://www.hominiscanidae.org/2013/03/radio-morto-testamento-2013.html",
@@ -94462,6 +94462,15 @@
     "download": "https://bandcamp.com/download?fsig=76ee77aa79e79ae958aacff696778daf&id=431333202&ts=1784245863.3908928198&type=album",
     "file_size": 3584834,
     "downloaded_as": "sistema-som-rachado-efusao-2026.mp3",
+    "status": "downloaded"
+  },
+  {
+    "url": "https://www.hominiscanidae.org/2026/08/cantavento-quintais-de-dentro-2026.html",
+    "lastmod": null,
+    "title": "Cantavento - Quintais de Dentro (2026)...",
+    "download": "https://mega.nz/file/ryIURD6T#6M72Ekuz3tAC3U0lp92hEkTWDQGoik9Cs2BlOjuLSB0",
+    "file_size": 69477501,
+    "downloaded_as": "cantavento-quintais-de-dentro-2026.rar",
     "status": "downloaded"
   }
 ]

@@ -1353,6 +1353,16 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tocador.cc/?album=Cantavento+-+Quintais+de+Dentro+%282026%29&amp;artista=Cantavento</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://cdn.tocador.cc/indie/Cantavento%20-%20Quintais%20de%20Dentro%20%282026%29/capa-min.jpg</image:loc>
+      <image:title>Quintais de Dentro — Cantavento (2026)</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tocador.cc/?album=Cassiel+-+ON+%282026%29&amp;artista=Cassiel</loc>
     <lastmod>2026-01-01</lastmod>
     <changefreq>yearly</changefreq>

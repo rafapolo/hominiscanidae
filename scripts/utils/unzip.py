@@ -27,6 +27,7 @@ Usage:
     python3 scripts/utils/unzip.py --singles   # only folder the loose audio files
 """
 
+import hashlib
 import json
 import os
 import re
@@ -202,6 +203,11 @@ def fold_singles(titles: dict, state: dict) -> int:
     return moved
 
 
+# A bare kebab-case filename is the "slug-tail" generate-albums hides when the folder
+# also holds numbered tracks. Keep it in sync with RE_SLUG_TAIL in generate-albums.
+RE_SLUG_NAME = re.compile(r"^[a-z][a-z0-9\-]+\.mp3$")
+
+
 def fold_dirs(titles: dict, state: dict) -> int:
     """Move audio folders sitting in DEST root into unzips/<title>/.
 
@@ -218,18 +224,70 @@ def fold_dirs(titles: dict, state: dict) -> int:
     for d in loose:
         folder = safe_folder(titles.get(d.name) or d.name)
         target = UNZIPS / folder
-        if target.exists():
-            print(f"  SKIP  dir {d.name} -> {folder}/ (já existe)")
-            continue
         if DRY:
             print(f"  DRY   dir {d.name} -> {folder}/")
             moved += 1
             continue
-        shutil.move(str(d), str(target))
-        state[d.name] = {"folder": folder, "by": "dir"}
-        print(f"  OK    dir {d.name} -> {folder}/")
+        if target.exists():
+            # The target usually exists because an earlier rescue landed one track
+            # there. Skipping abandoned the freshly downloaded *full album* in DEST
+            # root, where generate-albums never sees it — the exact invisibility this
+            # function exists to prevent. Merge instead.
+            n = merge_into(d, target)
+            state[d.name] = {"folder": folder, "by": "dir-merge"}
+            print(f"  MERGE dir {d.name} -> {folder}/ ({n} arquivos)")
+        else:
+            shutil.move(str(d), str(target))
+            state[d.name] = {"folder": folder, "by": "dir"}
+            print(f"  OK    dir {d.name} -> {folder}/")
         moved += 1
     return moved
+
+
+def merge_into(src: Path, target: Path) -> int:
+    """Move src's files into target, dropping exact duplicates, never overwriting."""
+    moved = 0
+    have = {}
+    for f in target.rglob("*"):
+        if f.is_file():
+            have.setdefault(f.stat().st_size, []).append(f)
+    for f in sorted(src.rglob("*")):
+        if not f.is_file() or f.name.startswith("._"):
+            continue
+        digest = None
+        for other in have.get(f.stat().st_size, []):
+            if digest is None:
+                digest = _md5(f)
+            if digest != _md5(other):
+                continue
+            # Same audio under two names. Keep the numbered one: a bare kebab-case
+            # name is the slug-tail that generate-albums hides, so keeping *that*
+            # copy would drop the track from the album entirely.
+            if RE_SLUG_NAME.match(other.name) and not RE_SLUG_NAME.match(f.name):
+                other.unlink()
+                have[f.stat().st_size].remove(other)
+                continue
+            f.unlink()              # already there under an equal-or-better name
+            break
+        else:
+            dest = target / f.name
+            i = 1
+            while dest.exists():
+                i += 1
+                dest = target / f"{f.stem} ({i}){f.suffix}"
+            f.rename(dest)
+            have.setdefault(dest.stat().st_size, []).append(dest)
+            moved += 1
+    shutil.rmtree(src, ignore_errors=True)
+    return moved
+
+
+def _md5(path: Path) -> str:
+    h = hashlib.md5()
+    with path.open("rb") as fh:
+        for chunk in iter(lambda: fh.read(1 << 20), b""):
+            h.update(chunk)
+    return h.hexdigest()
 
 
 def main():
