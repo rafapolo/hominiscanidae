@@ -24,6 +24,74 @@ OVERRIDES   = ROOT / "data" / "itunes_overrides.json"
 POSTS_DIR   = ROOT / "posts"
 POSTS_JSON  = ROOT / "posts.json"
 
+# v2 columnar payload (see tocador/js/acervo-format.js, tocador/script/convert-acervo-v2.js).
+# This script edits albums as plain v1 dicts, so v2 files are decoded on read
+# and re-encoded on write — mirroring those two files exactly.
+FK_LITERAL, FK_DASH, FK_PLAIN = 0, 1, 2
+
+
+def decode_v2(data: dict) -> list[dict]:
+    a, t = data["a"], data["t"]
+    albums = []
+    k = 0
+    for i in range(len(a["t"])):
+        title, artist, year = a["t"][i], a["r"][i], a["y"][i]
+        n = a["n"][i]
+        tracks = []
+        for j in range(n):
+            tt, kind = t["t"][k], t["k"][k]
+            if kind == FK_DASH:
+                file = f"{j+1:02d} - {tt}.mp3"
+            elif kind == FK_PLAIN:
+                file = f"{j+1:02d} {tt}.mp3"
+            else:
+                file = t["f"][k]
+            track = {"title": tt, "file": file, "artists": t["r"][k] or artist, "duration": t["d"][k]}
+            if t["n"][k]:
+                track["num"] = t["n"][k]
+            tracks.append(track)
+            k += 1
+        albums.append({
+            "title": title, "artist": artist, "year": year,
+            "path": a["p"][i] or f"{year} - {artist} - {title}",
+            "has_cover": a["c"][i] == 1,
+            "tracks": tracks,
+        })
+    return albums
+
+
+def encode_v2(meta: dict, albums: list[dict]) -> dict:
+    A = sorted(albums, key=lambda a: (a.get("artist") or "", a.get("year") or 0))
+    aT, aR, aY, aP, aC, aN = [], [], [], [], [], []
+    tT, tF, tK, tD, tR, tN = [], [], [], [], [], []
+    for a in A:
+        year = a.get("year") or 0
+        aT.append(a["title"]); aR.append(a["artist"]); aY.append(year)
+        aP.append("" if a["path"] == f"{year} - {a['artist']} - {a['title']}" else a["path"])
+        aC.append(0 if a.get("has_cover") is False else 1)
+        aN.append(len(a["tracks"]))
+        for j, t in enumerate(a["tracks"]):
+            title = t.get("title") or ""
+            n = f"{j+1:02d}"
+            f = t.get("file") or ""
+            if f == f"{n} - {title}.mp3":
+                kind = FK_DASH
+            elif f == f"{n} {title}.mp3":
+                kind = FK_PLAIN
+            else:
+                kind = FK_LITERAL
+            tT.append(title); tK.append(kind)
+            tF.append("" if kind != FK_LITERAL else f)
+            tD.append(t.get("duration") or 0)
+            artists = t.get("artists")
+            tR.append("" if not artists or artists == a["artist"] else artists)
+            tN.append(0 if t.get("num") is None else t["num"])
+    return {
+        "meta": meta, "v": 2,
+        "a": {"t": aT, "r": aR, "y": aY, "p": aP, "c": aC, "n": aN},
+        "t": {"t": tT, "f": tF, "k": tK, "d": tD, "r": tR, "n": tN},
+    }
+
 def _path_to_slug(path: str, year: int, slug_index: dict, year_slugs: dict) -> str | None:
     """Find the posts/* slug matching an album path using several fallback strategies."""
     raw = re.sub(r'^\d{4} - ', '', path)
@@ -241,7 +309,8 @@ def main():
 
     with gzip.open(ALBUMS_GZ) as f:
         data = json.load(f)
-    albums = data["albums"]
+    is_v2 = data.get("v") == 2
+    albums = decode_v2(data) if is_v2 else data["albums"]
 
     posts = json.load(POSTS_JSON.open())
     slug_to_post = {}
@@ -386,9 +455,9 @@ def main():
             albums[idx]["artwork"] = ov["artwork"]
         applied += 1
 
-    data["albums"] = albums
+    out = encode_v2(data["meta"], albums) if is_v2 else {**data, "albums": albums}
     with gzip.open(ALBUMS_GZ, "wt", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, separators=(",", ":"))
+        json.dump(out, f, ensure_ascii=False, separators=(",", ":"))
     print(f"\napplied {applied} fixes → {ALBUMS_GZ}")
 
 
