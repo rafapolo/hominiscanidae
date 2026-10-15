@@ -15,7 +15,7 @@ from bs4 import BeautifulSoup
 from urllib.parse import urlparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-DEST = Path("/Volumes/EXTRA/hominiscanidae")
+DEST = Path(os.environ.get("HOMI_DEST", "/Volumes/EXTRA/hominiscanidae"))  # HOMI_DEST: staging fora do disco externo
 ROOT = Path(__file__).resolve().parents[2]
 POSTS_JSON = ROOT / "posts.json"
 LOG = ROOT / "download.log"
@@ -831,7 +831,11 @@ def main():
     else:
         log(f"AVISO: tunnel SSH para {first_host} falhou — mega sem proxy")
 
-    DEST.mkdir(parents=True, exist_ok=True)
+    # Sem parents=True: com o volume ausente, criar a árvore no disco interno e depois
+    # regenerar o índice dela apagaria o catálogo. O pai precisa existir.
+    if not DEST.parent.is_dir():
+        raise SystemExit(f"{DEST.parent} não existe (volume desmontado?) — use HOMI_DEST")
+    DEST.mkdir(exist_ok=True)
     with open(POSTS_JSON) as f:
         posts_data = json.load(f)
 

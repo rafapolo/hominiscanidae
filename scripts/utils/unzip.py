@@ -38,7 +38,7 @@ import tempfile
 import unicodedata
 from pathlib import Path
 
-DEST     = Path("/Volumes/EXTRA/hominiscanidae")
+DEST     = Path(os.environ.get("HOMI_DEST", "/Volumes/EXTRA/hominiscanidae"))  # HOMI_DEST: staging fora do disco externo
 UNZIPS   = DEST / "unzips"
 STATE    = DEST / ".extract-state.json"
 POSTS    = Path(__file__).resolve().parents[2] / "posts.json"

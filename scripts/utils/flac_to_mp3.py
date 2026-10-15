@@ -8,11 +8,12 @@ it never reaches the index and never reaches S3. So: convert everything.
 
 Run before generate-albums (unzip.py calls this automatically).
 """
+import os
 import subprocess
 import sys
 from pathlib import Path
 
-DEST   = Path("/Volumes/EXTRA/hominiscanidae")
+DEST   = Path(os.environ.get("HOMI_DEST", "/Volumes/EXTRA/hominiscanidae"))  # HOMI_DEST: staging fora do disco externo
 UNZIPS = DEST / "unzips"
 
 # Everything ffmpeg can decode that the pipeline can't publish as-is.
